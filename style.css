@@ -13,6 +13,10 @@ html,body{
 
 html { -webkit-tap-highlight-color: transparent; }
 
+b{
+    font-weight: 600;
+}
+
 /* ======================================= ROOT LAYOUT */
 body{
     display: flex;
@@ -191,11 +195,16 @@ body{
     box-shadow: none;
     background-color: transparent;
     text-align: justify;
-    justify-content: center;
-    /* margin-top: -1rem; */
-
-    /* TODO: display flex centers text but then blod has issue */
 }
+
+.card.text.center{
+    text-align-last: center;
+}
+
+.card.text ul{
+    padding-left: 1rem;
+}
+
 
 .card.section{
     box-shadow: none;
