@@ -179,7 +179,7 @@ body{
 /* } */
 
 /* ======================================= CARDS - SPECIFIC */
-.card.span{
+.wall-container .span{
     grid-column: 1 / -1;
 }
 
@@ -213,77 +213,54 @@ body{
     font-family: "Anton";
 }
 
+
+.card.map{
+    padding: 4px;
+}
+.card.map iframe{
+    width: 100%;
+    height: 60vh;
+    border: 0;
+    border-radius: calc(0.6rem - 4px);
+}
+
+
+/* CATEGORY SELECTOR */
+.catbar{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 0rem 1rem 0rem;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.catbar.hide{
+    display: none;
+}
+
+.catbar div{
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.3rem;
+    background-color: rgba(255,255,255,0.2);
+    cursor: pointer;
+    color:rgba(255,255,255,0.8)
+}
+
+.catbar div.active{
+    background-color: white;
+    color: black;
+}
+
+
+
+
+
+
 /* ======================================= CARDS - SPECIFIC-II */
-/* ===================== PARTICIPANT */
-.card.participant{
-    display: flex;
-    gap: 1rem;
-    height: max-content;
-}
-
-.card.participants{
-    display: flex;
-    flex-direction: column;
-}
-
-.card.participants>.member{
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 0rem;
-}
-
-.card.participants>.member:not(:last-child){
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.card.participants>.member:first-child{
-    padding-top: 0rem;
-}
-
-.card.participants>.member:last-child{
-    padding-bottom: 0rem;
-}
-
-/* ===================== PARTICIPANT */
-.card.pts-table{
-    display: grid;
-}
-
-.card.pts-table table{
-    border-collapse: collapse;
-}
-
-.card.card.pts-table tr>th{
-    text-align: left;
-    font-family: "Poppins";
-    padding-bottom: 0.5rem;
-}
-
-.card.card.pts-table tr>td{
-    padding: 0.25rem 0rem;
-}
-
-.card.card.pts-table tr:not(:last-child)>td{
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.card.card.pts-table tr:nth-child(4)>td{
-    border-bottom: 1.5px solid rgba(0,0,0,0.4);
-}
-
-.card.card.pts-table tr:nth-child(2)>td{
-    border-top: 1.5px solid rgba(0,0,0,0.4);
-}
-
-.card.card.pts-table tr>th:last-child,
-.card.card.pts-table tr>td:last-child{
-    text-align: right;
-}
-
-
-
-
-
 /* ===================== EVENTS */
 .card.event{
     height: 6rem;
@@ -327,3 +304,130 @@ body{
 .card.event:hover .svg-logo{
     animation: breathing 1s infinite ease-in-out;
 }
+
+
+
+
+
+/* ===================== PARTICIPANT */
+/* Single Member */
+.card.participant{
+    display: flex;
+    gap: 1rem;
+}
+
+.card.participant .text{
+    flex-grow: 1;
+}
+
+.card.participant .text .name{
+    font-weight: 500;
+}
+
+.card.participant .text .msg{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.card.participant .icon,
+.card.participant .point{
+    align-content: center;
+}
+
+
+
+/* Single Member */
+.card.participants{
+    display: flex;
+    gap: 1rem;
+}
+
+.card.participants .member-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.participants .member-list>div{
+    display: flex;
+    background-color: red;
+    border: 1px solid ;
+}
+
+.card.participants .member-list div .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.participants .member-list div .text .name{
+    font-weight: 500;
+}
+
+.card.participants .member-list div .text .msg{
+    font-size: 0.7rem;
+    font-weight: 300;
+}
+
+.card.participants .icon,
+.card.participants .point{
+    align-content: center;
+}
+
+
+
+
+
+
+/* .card.participants>.member{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0rem;
+}
+
+.card.participants>.member:not(:last-child){
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.card.participants>.member:first-child{
+    padding-top: 0rem;
+}
+
+.card.participants>.member:last-child{
+    padding-bottom: 0rem;
+} */
+
+/* ===================== POINTS TABLE */
+.card.pts-table{
+    display: grid;
+}
+
+.card.pts-table table{
+    border-collapse: collapse;
+}
+
+.card.card.pts-table tr>th{
+    text-align: left;
+    font-family: "Poppins";
+    padding-bottom: 0.5rem;
+}
+
+.card.card.pts-table tr>td{
+    padding: 0.25rem 0rem;
+}
+
+.card.card.pts-table tr:not(:last-child)>td{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.card.card.pts-table tr:nth-child(4)>td{
+    border-bottom: 1.5px solid rgba(0,0,0,0.4);
+}
+
+.card.card.pts-table tr:nth-child(2)>td{
+    border-top: 1.5px solid rgba(0,0,0,0.4);
+}
+
+.card.card.pts-table tr>th:last-child,
+.card.card.pts-table tr>td:last-child{
+    text-align: right;
+}
+

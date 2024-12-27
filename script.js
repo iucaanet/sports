@@ -6,19 +6,27 @@ head_text   = document.querySelector(".head-text")
 back_btn    = document.querySelector(".btn-back")
 
 
+
+// Google Map
+// var myOptions = {
+//     center: new google.maps.LatLng(40.744556,-73.987378),
+//     zoom: 18,
+//     mapTypeId: google.maps.MapTypeId.ROADMAP,
+//     disableDefaultUI: true
+// };
+
+// var map = new google.maps.Map(document.getElementsByClassName("gmap")[0], myOptions);
+
+
+
+
+
+
 // ====================================
 // Connect to Data
 // ====================================
-fetch("data\\data.json").then(
-    response =>{
-        if(!response.ok){
-            throw new Error("HTTP Error: "+response.status);
-        }
-        return response.json();
-    }
-).then(jsonData=>{
-    data=jsonData
-})
+marathonData = MAR25;
+
 
 
 // TODO: Alternate
@@ -37,6 +45,15 @@ class TabManger{
     clear(){
         this.target.innerHTML = "";
     }
+
+    hide(){
+        this.target.classList.add("hide")
+    }
+    
+    unhide(){
+        this.target.classList.remove("hide")
+    }
+
 
     add_tab(label="Tab",iconname="crop_square",callback_fun=null){
         this.target.innerHTML +=`
@@ -84,13 +101,18 @@ class WallManager{
         `
     }
 
-    add_card_participant_single(name,gender){
+    add_card_participant_single(name,gender,msg="",point=""){
         let logo = (gender.toLowerCase()[0]=="m")?"face":"face_3";
-        this.target.innerHTML +=`
-            <div class="card participant">
-                <div class="material-symbols-outlined">${logo}</div>
-                <div>${name}</div>
+        this.target.innerHTML +=
+        `
+        <div class="card participant">
+            <div class="icon material-symbols-outlined">${logo}</div>
+            <div class="text">
+                <div class="name">${name}</div>
+                <div class="msg">${msg}</div>
             </div>
+            <div class="point">${point}</div>
+        </div>
         `
     }
     
@@ -115,6 +137,44 @@ class WallManager{
 wall = new WallManager()
 
 
+// ====================================
+// CATEGORY MANAGEMENT
+// ====================================
+function toggleCatActive(sender){
+    sender.classList.toggle("active");
+    catbar.get_active_categories();
+}
+
+class CategoryManager{
+    constructor(){
+        this.target = document.getElementsByClassName("catbar")[0];
+    }
+
+    clear(){
+        this.target.innerHTML = ""
+    }
+
+    add_category(name,state=""){
+        this.target.innerHTML += `
+            <div class="${state}" onclick="toggleCatActive(this)">${name}</div>
+        `
+    }
+
+    get_active_categories(){
+        return Array.from(this.target.children).map(div => div.textContent);
+    }
+
+}
+
+catbar = new CategoryManager()
+
+catbar.add_category("WS")
+catbar.add_category("WD")
+catbar.add_category("MS")
+catbar.add_category("MD")
+catbar.add_category("XD")
+catbar.add_category("MS-U18")
+catbar.add_category("MD-U18")
 
 
 
@@ -143,29 +203,35 @@ function commonTabClickActions(sender,clearwall=true){
 }
 
 
+
+
+
+
+
 // ====================================
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
     // onHomeLand();
-    onMarathonLand();
+    // onMarathonLand();
 }
 
 // *********************************
 // ===== HOME LANDING
 // *********************************
 function onHomeLand(){
-    head_title.innerText = "IUCA Sports"
+    head_title.innerText = "IUCAA Sports"
     head_text.innerText = "January 2025"
     back_btn.classList.add("hide");
     tabbar.clear();
     tabbar.add_tab("Recents","featured_play_list",onHome_Recents_Click);
     tabbar.add_tab("Events","local_activity",onHome_Events_Click);
+    tabbar.unhide();
     SetDefaultTab(0);
 }
 
 function onHome_Recents_Click(sender){
-    commonTabClickActions(sender,false);
+    commonTabClickActions(sender);
     wall.add_section("Todays Events");
     wall.add_text("This section is under development.");
     wall.add_section("Yesterday Events");
@@ -176,7 +242,7 @@ function onHome_Recents_Click(sender){
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
     wall.add_card_event("Badminton","Starts from 2nd Jan","./media/badminton.svg",onBadmintonLand);
-    wall.add_card_event("Table Tennis","Starts from 2nd Jan","./media/table_tennis.svg",onTableTennishLand);
+    wall.add_card_event("Table Tennis","Starts from 2nd Jan","./media/table_tennis.svg",onTableTennisLand);
     wall.add_card_event("Marathon","Starts from 2nd Jan","./media/marathon.svg",onMarathonLand);
     wall.add_card_event("Chess","Starts from 2nd Jan","./media/chess_queen.svg",onChessLand);
     wall.add_card_event("Cricket","Starts from 2nd Jan","./media/cricket.svg",onCricketLand);
@@ -230,15 +296,42 @@ function onBadminton_Points_Click(sender){
 // *********************************
 // ===== TABLE TENNIS LANDING
 // *********************************
-function onTableTennishLand(){
+function onTableTennisLand(){
     head_title.innerText="Table tennis"
     back_btn.classList.remove("hide");
     tabbar.clear();
-    tabbar.add_tab("Players","groups");
-    tabbar.add_tab("Matches","sports");
-    tabbar.add_tab("Points","leaderboard")
+    tabbar.add_tab("Players","groups",onTableTennis_Player_Click);
+    tabbar.add_tab("Matches","sports",onTableTennis_Matches_Click);
+    tabbar.add_tab("Points","leaderboard",onTableTennis_Points_Click)
     SetDefaultTab(0);
 }
+
+
+
+function onTableTennis_Player_Click(sender){
+    commonTabClickActions(sender);
+    // players = data["badminton"]["mens_single"]["participants"];
+    // players.forEach(player=>{
+    //     wall.add_card_participant_single(player["name"],player["gender"]);
+    //     // console.log(player["name"]);
+    //     // console.log(player["gender"]);
+    // })
+    wall.add_text("Player filling under development.")
+}
+
+function onTableTennis_Matches_Click(sender){
+    commonTabClickActions(sender);
+    wall.add_text("Match filling under development.")
+}
+
+function onTableTennis_Points_Click(sender){
+    commonTabClickActions(sender);
+    wall.add_text("Leadeboard filling under development.")
+}
+
+
+
+
 
 
 
@@ -258,15 +351,37 @@ function onMarathonLand(){
 function onMarathon_Participants_Click(sender){
     commonTabClickActions(sender);
     wall.add_section("Fun Run");
+    marathonData.fun_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
+    
     wall.add_section("Junior Run");
+    marathonData.junior_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
+    
     wall.add_section("Open Run");
+    marathonData.open_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
+        
     wall.add_section("Veteran Run");
+    marathonData.veteran_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
 
     
 }
 
 function onMarathon_Route_Click(sender){
     commonTabClickActions(sender);
+    wall.add_section("Route");
+    wall.clear()
+    wall.target.innerHTML +=`
+            <div class="card map span">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d5349.09851870545!2d73.82208009884545!3d18.556726220727413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x3bc2bf45e3c733a7%3A0x3793ddf52f09988b!2sIUCAA%20Guest%20House%2C%20Pune%20University%2C%20Ganeshkhind%20Road%2C%20Ganeshkhind%2C%20Pune%2C%20Maharashtra!3m2!1d18.5605939!2d73.8245141!4m3!3m2!1d18.5581335!2d73.8231986!5e0!3m2!1sen!2sin!4v1735152744195!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+    `
     
 }
 
@@ -336,11 +451,11 @@ function onMarathon_Readme_Click(sender){
 function onChessLand(){
     head_title.innerText="Chess"
     back_btn.classList.remove("hide");
+    
     tabbar.clear();
-    tabbar.add_tab("Players","groups");
-    tabbar.add_tab("Matches","sports");
-    tabbar.add_tab("Points","leaderboard")
-    SetDefaultTab(0);
+    tabbar.hide();
+    wall.clear();
+    wall.add_text("Under development")
 }
 
 
@@ -354,10 +469,9 @@ function onCricketLand(){
     back_btn.classList.remove("hide");
 
     tabbar.clear();
-    tabbar.add_tab("Players","groups");
-    tabbar.add_tab("Matches","sports");
-    tabbar.add_tab("Points","leaderboard")
-    SetDefaultTab(0);
+    tabbar.hide();
+    wall.clear();
+    wall.add_text("Under development")
 }
 
 
@@ -382,7 +496,7 @@ function onHelp_Click(){
         `For any changes related to event-specific details such as adding players, change event schedules or match partners, kindly contact the event organizers as listed below.
         <br/>
         <br/>
-        <li><b>Badminton</b> : Sourav Das & Ranit Behera</li>
+        <li><b>TableTennis</b> : Sourav Das & Ranit Behera</li>
         <li><b>Table Tennis</b> : First Last & First Last</li>
         <li><b>Chess</b> : First Last & First Last</li>
         <li><b>Marathon</b> : First Last & First Last</li>
