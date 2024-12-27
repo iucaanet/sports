@@ -116,33 +116,42 @@ class WallManager{
         `
     }
     
-    add_card_participant_double(names,genders){
-        let logo0 = (genders[0].toLowerCase()=="male")?"face":"face_3";
-        let logo1 = (genders[1].toLowerCase()=="male")?"face":"face_3";
+    add_card_participant_double(names,genders,msg="",point=""){
+        let logo0 = (genders[0].toLowerCase()[0]=="m")?"face":"face_3";
+        let logo1 = (genders[1].toLowerCase()[0]=="m")?"face":"face_3";
         this.target.innerHTML +=`
             <div class="card participants">
-                <div class="member">
-                    <div class="material-symbols-outlined">${logo0}</div>
-                    <div>${names[0]}</div>
+                <div class="member-info">
+                    <div class="members">
+                        <div>
+                            <div class="icon material-symbols-outlined">${logo0}</div>
+                            <div class="name">${names[0]}</div>
+                        </div>
+                        <div>
+                            <div class="icon material-symbols-outlined">${logo1}</div>
+                            <div class="name">${names[1]}</div>
+                        </div>
+                    </div>
+                    <div class="point">${point}</div>
                 </div>
-                <div class="member">
-                    <div class="material-symbols-outlined">${logo1}</div>
-                    <div>${names[1]}</div>
-                </div>
-            </div>            
+                <div class="msg ${msg==""?"hide":""}">${msg}</div>
+            </div>  
+           
         `
     }
 
 }
 wall = new WallManager()
 
+wall.add_card_participant_double(["ranit","ranit"],["male","male"],"Hello","1.32")
 
 // ====================================
 // CATEGORY MANAGEMENT
 // ====================================
 function toggleCatActive(sender){
     sender.classList.toggle("active");
-    catbar.get_active_categories();
+    console.log(catbar.get_active_categories())
+
 }
 
 class CategoryManager{
@@ -161,7 +170,9 @@ class CategoryManager{
     }
 
     get_active_categories(){
-        return Array.from(this.target.children).map(div => div.textContent);
+        // return Array.from(this.target.children).map(div => div.textContent);
+        return Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
+        
     }
 
 }
@@ -175,7 +186,6 @@ catbar.add_category("MD")
 catbar.add_category("XD")
 catbar.add_category("MS-U18")
 catbar.add_category("MD-U18")
-
 
 
 // ====================================

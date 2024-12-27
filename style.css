@@ -336,35 +336,31 @@ body{
 
 
 
-/* Single Member */
+/* Double Member */
 .card.participants{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.card.participants .member-info{
+    display: flex;
+}
+
+.card.card.participants .members{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+.card.card.participants .members>div{
     display: flex;
     gap: 1rem;
 }
 
-.card.participants .member-list{
-    display: flex;
-    flex-direction: column;
-}
-
-.card.participants .member-list>div{
-    display: flex;
-    background-color: red;
-    border: 1px solid ;
-}
-
-.card.participants .member-list div .text{
-    display: flex;
-    flex-direction: column;
-}
-
-.card.participants .member-list div .text .name{
+.card.card.participants .members>div .name{
     font-weight: 500;
-}
 
-.card.participants .member-list div .text .msg{
-    font-size: 0.7rem;
-    font-weight: 300;
 }
 
 .card.participants .icon,
@@ -372,28 +368,18 @@ body{
     align-content: center;
 }
 
-
-
-
-
-
-/* .card.participants>.member{
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 0rem;
+.card.participants .msg{
+    padding-top: 0.2rem;
+    font-size: 0.7rem;
+    font-weight: 300;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 0.5rem;
 }
 
-.card.participants>.member:not(:last-child){
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+.card.participants .msg.hide{
+    display: none;
 }
 
-.card.participants>.member:first-child{
-    padding-top: 0rem;
-}
-
-.card.participants>.member:last-child{
-    padding-bottom: 0rem;
-} */
 
 /* ===================== POINTS TABLE */
 .card.pts-table{
@@ -431,3 +417,115 @@ body{
     text-align: right;
 }
 
+
+
+
+
+/* ======================================= */
+/* Match Card */
+.card.match{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.card.match .match-info{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 1rem;
+}
+
+.card.match .match-info div:nth-child(2){
+    justify-self: center;
+}
+
+.card.match .match-info div:nth-child(3){
+    justify-self: end;
+}
+
+.card.match .match-info .category{
+    /* background-color: rgba(0,0,0,0.9); */
+    /* color: rgba(255,255,255,1); */
+    background-color: rgba(0,0,0,0.1);
+    color: rgba(0,0,0,1);
+    padding: 0rem 0.5rem;
+    border-radius: 0.3rem;
+    width: max-content;
+    font-weight: 600;
+    font-weight: 500;
+    font-family: "Poppins";
+
+}
+
+/* .card.match .match-info .datetime, */
+.card.match .match-info .datetime{
+    font-weight: 500;
+    /* background-color: red; */
+}
+
+
+
+.card.match .group1,
+.card.match .group2{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.match .group1>.member,
+.card.match .group2>.member{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card.match .group2>.member{
+    flex-direction: row-reverse;
+}
+
+.card.match .group1>.member .name,
+.card.match .group2>.member .name{
+    font-weight: 400;
+}
+
+.card.match .icon{
+    font-weight: 100;
+    font-size: 1.2rem;
+    align-content: center;
+
+}
+
+
+.card.match .scores{
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 2rem;
+}
+.card.match .scores.hide{
+    display: none;
+}
+
+
+.card.match .scores .g1,
+.card.match .scores .g2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card.match .scores *{
+    font-family: "Anton";
+    font-size: 1.5rem;
+    justify-self: center;
+    color: rgba(0,0,0,0.7);
+}
+
+.card.match .scores .g2{
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.card.match .msg{
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 0.4rem;
+    padding: 0.2rem;
+}
