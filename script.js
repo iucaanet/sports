@@ -26,7 +26,7 @@ back_btn    = document.querySelector(".btn-back")
 // Connect to Data
 // ====================================
 marathonData = MAR25;
-
+badmintonData = BAD25;
 
 
 // TODO: Alternate
@@ -64,9 +64,13 @@ class TabManger{
             </div>
         `
     }
+
+    click_active(){
+        this.target.querySelectorAll(".active")[0].click();
+    }
+
 }
 tabbar = new TabManger();
-
 
 // ====================================
 // WALL MANAGER
@@ -140,6 +144,57 @@ class WallManager{
         `
     }
 
+    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2){
+        let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":"face_3";
+        let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":"face_3";
+        let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":"face_3";
+        let logog2g2 = (g2g2.toLowerCase()[0]=="m")?"face":"face_3";
+        this.target.innerHTML+=`
+        <div class="card match">
+                <div class="match-info">
+                    <div></div>
+                    <div class="datetime">${datetime}</div>
+                    <div class="category">${cat}</div>
+                </div>
+                <div class="group1">
+                    <div class="member">
+                        <div class="icon material-symbols-outlined">${logog1g1}</div>
+                        <div class="name">${g1n1}</div>
+                    </div>
+                    <div class="member">
+                        <div class="icon material-symbols-outlined">${logog1g2}</div>
+                        <div class="name">${g1n2}</div>
+                    </div>
+                </div>
+                <div class="scores">
+                    <div class="g1">
+                        <div class="m1 ${r1s1==0?"faint":""}">${r1s1==0?"00":r1s1}</div>
+                        <div class="m2 ${r2s1==0?"faint":""}">${r2s1==0?"00":r1s1}</div>
+                        <div class="m3 ${r3s1==0?"faint":""}">${r3s1==0?"00":r1s1}</div>
+                    </div>
+                    <div class="g2">
+                        <div class="m1 ${r1s2==0?"faint":""}">${r1s2==0?"00":r1s1}</div>
+                        <div class="m2 ${r2s2==0?"faint":""}">${r2s2==0?"00":r1s1}</div>
+                        <div class="m3 ${r3s2==0?"faint":""}">${r3s2==0?"00":r1s1}</div>
+                    </div>
+                </div>
+                <div class="group2">
+                    <div class="member">
+                        <div class="icon material-symbols-outlined">${logog2g1}</div>
+                        <div class="name">${g2n1}</div>
+                    </div>
+                    <div class="member">
+                        <div class="icon material-symbols-outlined">${logog2g2}</div>
+                        <div class="name">${g2n2}</div>
+                    </div>
+                </div>
+                <div class="msg">${msg}</div>
+
+            </div>
+        
+        `
+    }
+
 }
 wall = new WallManager()
 
@@ -150,7 +205,10 @@ wall.add_card_participant_double(["ranit","ranit"],["male","male"],"Hello","1.32
 // ====================================
 function toggleCatActive(sender){
     sender.classList.toggle("active");
-    console.log(catbar.get_active_categories())
+    // console.log(catbar.get_active_categories())
+    tabbar.click_active();
+
+
 
 }
 
@@ -171,8 +229,12 @@ class CategoryManager{
 
     get_active_categories(){
         // return Array.from(this.target.children).map(div => div.textContent);
-        return Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
         
+        let act_cat=Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
+        if (act_cat==""){
+            act_cat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"]
+        }
+        return act_cat
     }
 
 }
@@ -224,6 +286,7 @@ function commonTabClickActions(sender,clearwall=true){
 window.onload=function(){
     // onHomeLand();
     // onMarathonLand();
+    onBadmintonLand()
 }
 
 // *********************************
@@ -276,13 +339,78 @@ function onBadmintonLand(){
 
 function onBadminton_Player_Click(sender){
     commonTabClickActions(sender);
-    // players = data["badminton"]["mens_single"]["participants"];
-    // players.forEach(player=>{
-    //     wall.add_card_participant_single(player["name"],player["gender"]);
-    //     // console.log(player["name"]);
-    //     // console.log(player["gender"]);
-    // })
-    wall.add_text("Player filling under development.")
+    groups = badmintonData.group;
+    let acat=catbar.get_active_categories();
+    
+    // Women's Single
+    if (acat.includes('WS')){
+        wall.add_section("Women's Single (WS)");
+        groups.forEach(grp=>{
+            if (grp.category=='WS'){
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+            }
+        })
+    }
+    
+    // Women's Double
+    if (acat.includes('WD')){
+        wall.add_section("Women's Double (WD)");
+        groups.forEach(grp=>{
+            if (grp.category=='WD'){
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+            }
+        })
+    }
+    
+    // Men's Single
+    if (acat.includes('MS')){
+        wall.add_section("Men's Single (MS)");
+        groups.forEach(grp=>{
+            if (grp.category=='MS'){
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+            }
+        })
+    }
+    
+    // Men's Double
+    if (acat.includes('MD')){
+        wall.add_section("Men's Double (MD)");
+        groups.forEach(grp=>{
+            if (grp.category=='MD'){
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+            }
+        })
+    }
+    
+    // Mixed Double
+    if (acat.includes('XD')){
+        wall.add_section("Mixed Double (XD)");
+        groups.forEach(grp=>{
+            if (grp.category=='XD'){
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+            }
+        })
+    }
+    
+    // Men's Single - Under 18
+    if (acat.includes('MS-U18')){
+        wall.add_section("Men's Single - Under 18 (MS-U18)");
+        groups.forEach(grp=>{
+            if (grp.category=='MS-U18'){
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+            }
+        })
+    }
+
+    // Men's Double - Under 18
+    if (acat.includes('MD-U18')){
+        wall.add_section("Men's Double - Under 18 (MD-U18)");
+        groups.forEach(grp=>{
+            if (grp.category=='MD-U18'){
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+            }
+        })
+    }   
 }
 
 function onBadminton_Matches_Click(sender){
