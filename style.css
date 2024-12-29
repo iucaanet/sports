@@ -195,6 +195,7 @@ body{
     box-shadow: none;
     background-color: transparent;
     text-align: justify;
+    padding: 0;
 }
 
 .card.text.center{
@@ -212,6 +213,12 @@ body{
     text-align: center;
     font-family: "Anton";
 }
+
+
+.section+.text{
+    margin-top: -1rem;
+}
+
 
 
 .card.map{
@@ -532,4 +539,8 @@ body{
     background-color: rgba(0,0,0,0.05);
     border-radius: 0.4rem;
     padding: 0.2rem;
+}
+
+.card.match .msg.hide{
+    display: none;
 }

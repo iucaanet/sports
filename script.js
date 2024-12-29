@@ -68,7 +68,6 @@ class TabManger{
     click_active(){
         this.target.querySelectorAll(".active")[0].click();
     }
-
 }
 tabbar = new TabManger();
 
@@ -144,54 +143,56 @@ class WallManager{
         `
     }
 
-    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2){
-        let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":"face_3";
-        let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":"face_3";
-        let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":"face_3";
-        let logog2g2 = (g2g2.toLowerCase()[0]=="m")?"face":"face_3";
+    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2,mt){
+        let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":(g1g1.toLowerCase()[0]=="f")?"face_3":"";
+        let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":(g1g2.toLowerCase()[0]=="f")?"face_3":"";
+        let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":(g2g1.toLowerCase()[0]=="f")?"face_3":"";
+        let logog2g2 = (g2g2.toLowerCase()[0]=="m")?"face":(g2g2.toLowerCase()[0]=="f")?"face_3":"";
+        let msg_hide = (msg=="")?"hide":""
+        let score_hide = (r1s1==0 && r1s2==0)?"hide":""
+        cat = (mt=="F")?"Final":(mt=="SF")?"SF":cat
+
         this.target.innerHTML+=`
         <div class="card match">
-                <div class="match-info">
-                    <div></div>
-                    <div class="datetime">${datetime}</div>
-                    <div class="category">${cat}</div>
-                </div>
-                <div class="group1">
-                    <div class="member">
-                        <div class="icon material-symbols-outlined">${logog1g1}</div>
-                        <div class="name">${g1n1}</div>
-                    </div>
-                    <div class="member">
-                        <div class="icon material-symbols-outlined">${logog1g2}</div>
-                        <div class="name">${g1n2}</div>
-                    </div>
-                </div>
-                <div class="scores">
-                    <div class="g1">
-                        <div class="m1 ${r1s1==0?"faint":""}">${r1s1==0?"00":r1s1}</div>
-                        <div class="m2 ${r2s1==0?"faint":""}">${r2s1==0?"00":r1s1}</div>
-                        <div class="m3 ${r3s1==0?"faint":""}">${r3s1==0?"00":r1s1}</div>
-                    </div>
-                    <div class="g2">
-                        <div class="m1 ${r1s2==0?"faint":""}">${r1s2==0?"00":r1s1}</div>
-                        <div class="m2 ${r2s2==0?"faint":""}">${r2s2==0?"00":r1s1}</div>
-                        <div class="m3 ${r3s2==0?"faint":""}">${r3s2==0?"00":r1s1}</div>
-                    </div>
-                </div>
-                <div class="group2">
-                    <div class="member">
-                        <div class="icon material-symbols-outlined">${logog2g1}</div>
-                        <div class="name">${g2n1}</div>
-                    </div>
-                    <div class="member">
-                        <div class="icon material-symbols-outlined">${logog2g2}</div>
-                        <div class="name">${g2n2}</div>
-                    </div>
-                </div>
-                <div class="msg">${msg}</div>
-
+            <div class="match-info">
+                <div></div>
+                <div class="datetime">${datetime}</div>
+                <div class="category">${cat}</div>
             </div>
-        
+            <div class="group1">
+                <div class="member">
+                    <div class="icon material-symbols-outlined">${logog1g1}</div>
+                    <div class="name">${g1n1}</div>
+                </div>
+                <div class="member">
+                    <div class="icon material-symbols-outlined">${logog1g2}</div>
+                    <div class="name">${g1n2}</div>
+                </div>
+            </div>
+            <div class="scores ${score_hide}">
+                <div class="g1">
+                    <div class="m1 ${r1s1==0?"faint":""}">${r1s1==0?"00":r1s1}</div>
+                    <div class="m2 ${r2s1==0?"faint":""}">${r2s1==0?"00":r1s1}</div>
+                    <div class="m3 ${r3s1==0?"faint":""}">${r3s1==0?"00":r1s1}</div>
+                </div>
+                <div class="g2">
+                    <div class="m1 ${r1s2==0?"faint":""}">${r1s2==0?"00":r1s1}</div>
+                    <div class="m2 ${r2s2==0?"faint":""}">${r2s2==0?"00":r1s1}</div>
+                    <div class="m3 ${r3s2==0?"faint":""}">${r3s2==0?"00":r1s1}</div>
+                </div>
+            </div>
+            <div class="group2">
+                <div class="member">
+                    <div class="icon material-symbols-outlined">${logog2g1}</div>
+                    <div class="name">${g2n1}</div>
+                </div>
+                <div class="member">
+                    <div class="icon material-symbols-outlined">${logog2g2}</div>
+                    <div class="name">${g2n2}</div>
+                </div>
+            </div>
+            <div class="msg ${msg_hide}">${msg}</div>
+        </div>
         `
     }
 
@@ -221,6 +222,14 @@ class CategoryManager{
         this.target.innerHTML = ""
     }
 
+    hide(){
+        this.target.classList.add("hide")
+    }
+    
+    unhide(){
+        this.target.classList.remove("hide")
+    }
+
     add_category(name,state=""){
         this.target.innerHTML += `
             <div class="${state}" onclick="toggleCatActive(this)">${name}</div>
@@ -228,8 +237,6 @@ class CategoryManager{
     }
 
     get_active_categories(){
-        // return Array.from(this.target.children).map(div => div.textContent);
-        
         let act_cat=Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
         if (act_cat==""){
             act_cat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"]
@@ -241,13 +248,6 @@ class CategoryManager{
 
 catbar = new CategoryManager()
 
-catbar.add_category("WS")
-catbar.add_category("WD")
-catbar.add_category("MS")
-catbar.add_category("MD")
-catbar.add_category("XD")
-catbar.add_category("MS-U18")
-catbar.add_category("MD-U18")
 
 
 // ====================================
@@ -274,7 +274,10 @@ function commonTabClickActions(sender,clearwall=true){
     }
 }
 
-
+function commonPageLandAction(){
+    catbar.clear();
+    catbar.hide();
+}
 
 
 
@@ -284,15 +287,16 @@ function commonTabClickActions(sender,clearwall=true){
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
-    // onHomeLand();
+    onHomeLand();
     // onMarathonLand();
-    onBadmintonLand()
+    // onBadmintonLand()
 }
 
 // *********************************
 // ===== HOME LANDING
 // *********************************
-function onHomeLand(){
+function onHomeLand(tab=0){
+    commonPageLandAction()
     head_title.innerText = "IUCAA Sports"
     head_text.innerText = "January 2025"
     back_btn.classList.add("hide");
@@ -300,7 +304,7 @@ function onHomeLand(){
     tabbar.add_tab("Recents","featured_play_list",onHome_Recents_Click);
     tabbar.add_tab("Events","local_activity",onHome_Events_Click);
     tabbar.unhide();
-    SetDefaultTab(0);
+    SetDefaultTab(tab);
 }
 
 function onHome_Recents_Click(sender){
@@ -326,14 +330,28 @@ function onHome_Events_Click(sender){
 // *********************************
 // ===== BADMINTON LANDING
 // *********************************
+
+
+
 function onBadmintonLand(){
+    commonPageLandAction()
     head_title.innerText="Badminton"
     back_btn.classList.remove("hide");
     tabbar.clear();
     tabbar.add_tab("Players","groups",onBadminton_Player_Click);
     tabbar.add_tab("Matches","sports",onBadminton_Matches_Click);
     tabbar.add_tab("Points","leaderboard",onBadminton_Points_Click)
-    SetDefaultTab(0);
+    SetDefaultTab(1);
+    
+    catbar.clear()
+    catbar.add_category("WS")
+    catbar.add_category("WD")
+    catbar.add_category("MS")
+    catbar.add_category("MD")
+    catbar.add_category("XD")
+    catbar.add_category("MS-U18")
+    catbar.add_category("MD-U18")
+    catbar.unhide()
 }
 
 
@@ -344,7 +362,7 @@ function onBadminton_Player_Click(sender){
     
     // Women's Single
     if (acat.includes('WS')){
-        wall.add_section("Women's Single (WS)");
+        wall.add_section("Women's Single");
         groups.forEach(grp=>{
             if (grp.category=='WS'){
                 wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
@@ -354,7 +372,7 @@ function onBadminton_Player_Click(sender){
     
     // Women's Double
     if (acat.includes('WD')){
-        wall.add_section("Women's Double (WD)");
+        wall.add_section("Women's Double");
         groups.forEach(grp=>{
             if (grp.category=='WD'){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
@@ -364,7 +382,7 @@ function onBadminton_Player_Click(sender){
     
     // Men's Single
     if (acat.includes('MS')){
-        wall.add_section("Men's Single (MS)");
+        wall.add_section("Men's Single");
         groups.forEach(grp=>{
             if (grp.category=='MS'){
                 wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
@@ -374,7 +392,7 @@ function onBadminton_Player_Click(sender){
     
     // Men's Double
     if (acat.includes('MD')){
-        wall.add_section("Men's Double (MD)");
+        wall.add_section("Men's Double");
         groups.forEach(grp=>{
             if (grp.category=='MD'){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
@@ -384,7 +402,7 @@ function onBadminton_Player_Click(sender){
     
     // Mixed Double
     if (acat.includes('XD')){
-        wall.add_section("Mixed Double (XD)");
+        wall.add_section("Mixed Double");
         groups.forEach(grp=>{
             if (grp.category=='XD'){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
@@ -394,7 +412,7 @@ function onBadminton_Player_Click(sender){
     
     // Men's Single - Under 18
     if (acat.includes('MS-U18')){
-        wall.add_section("Men's Single - Under 18 (MS-U18)");
+        wall.add_section("Men's Single - Under 18");
         groups.forEach(grp=>{
             if (grp.category=='MS-U18'){
                 wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
@@ -404,18 +422,140 @@ function onBadminton_Player_Click(sender){
 
     // Men's Double - Under 18
     if (acat.includes('MD-U18')){
-        wall.add_section("Men's Double - Under 18 (MD-U18)");
+        wall.add_section("Men's Double - Under 18");
         groups.forEach(grp=>{
             if (grp.category=='MD-U18'){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
             }
         })
-    }   
+    }
 }
 
 function onBadminton_Matches_Click(sender){
     commonTabClickActions(sender);
-    wall.add_text("Match filling under development.")
+    matches = badmintonData.match;
+    let acat=catbar.get_active_categories();
+    // let 
+
+    // Women's Single
+    if (acat.includes('WS')){
+        wall.add_section("Women's Single");
+        matches.forEach(mat=>{
+            if (mat.category=='WS'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+    }
+    
+    // Women's Double
+    if (acat.includes('WD')){
+        wall.add_section("Women's Double");
+        matches.forEach(mat=>{
+            if (mat.category=='WD'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+    }
+    
+    // Men's Single
+    if (acat.includes('MS')){
+        wall.add_section("Men's Single");
+        matches.forEach(mat=>{
+            if (mat.category=='MS'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+    }
+    
+    // Men's Double
+    if (acat.includes('MD')){
+        wall.add_section("Men's Double");
+        matches.forEach(mat=>{
+            if (mat.category=='MD'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+    }
+    
+    // Mixed Double
+    if (acat.includes('XD')){
+        wall.add_section("Mixed Double");
+        matches.forEach(mat=>{
+            if (mat.category=='XD'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+    }
+    
+    // Men's Single - Under 18
+    if (acat.includes('MS-U18')){
+        wall.add_section("Men's Single - Under 18");
+        matches.forEach(mat=>{
+            if (mat.category=='MS-U18'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })
+
+    }
+
+    // Men's Double - Under 18
+    if (acat.includes('MD-U18')){
+        wall.add_section("Men's Double - Under 18");
+        matches.forEach(mat=>{
+            if (mat.category=='MD-U18'){
+                wall.add_card_match(mat.date_time, mat.category, 
+                    mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                    mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.match_type);
+            }
+        })    
+    }
 }
 
 function onBadminton_Points_Click(sender){
@@ -435,6 +575,7 @@ function onBadminton_Points_Click(sender){
 // ===== TABLE TENNIS LANDING
 // *********************************
 function onTableTennisLand(){
+    commonPageLandAction()
     head_title.innerText="Table tennis"
     back_btn.classList.remove("hide");
     tabbar.clear();
@@ -477,6 +618,7 @@ function onTableTennis_Points_Click(sender){
 // ===== MARATHON LANDING
 // *********************************
 function onMarathonLand(){
+    commonPageLandAction()
     head_title.innerText="Marathon"
     back_btn.classList.remove("hide");
     tabbar.clear();
@@ -623,6 +765,7 @@ function onCricketLand(){
 // ===== HELP LANDING
 // *********************************
 function onHelp_Click(){
+    commonPageLandAction()
     wall.clear();
     cleanActiveTabs();
     wall.add_section("About")
