@@ -27,7 +27,7 @@ back_btn    = document.querySelector(".btn-back")
 // ====================================
 marathonData = MAR25;
 badmintonData = BAD25;
-
+tabletennisData = TAB25;
 
 // TODO: Alternate
 function passfun(sender){
@@ -105,7 +105,7 @@ class WallManager{
     }
 
     add_card_participant_single(name,gender,msg="",point=""){
-        let logo = (gender.toLowerCase()[0]=="m")?"face":"face_3";
+        let logo = (gender.toLowerCase()[0]=="m")?"face":(gender.toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=
         `
         <div class="card participant">
@@ -120,8 +120,8 @@ class WallManager{
     }
     
     add_card_participant_double(names,genders,msg="",point=""){
-        let logo0 = (genders[0].toLowerCase()[0]=="m")?"face":"face_3";
-        let logo1 = (genders[1].toLowerCase()[0]=="m")?"face":"face_3";
+        let logo0 = (genders[0].toLowerCase()[0]=="m")?"face":(genders[0].toLowerCase()[0]=="f")?"face_3":"";
+        let logo1 = (genders[1].toLowerCase()[0]=="m")?"face":(genders[1].toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=`
             <div class="card participants">
                 <div class="member-info">
@@ -239,7 +239,11 @@ class CategoryManager{
     get_active_categories(){
         let act_cat=Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
         if (act_cat==""){
-            act_cat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"]
+            if (head_title.innerText=="Badminton"){
+                act_cat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"];
+            }else if (head_title.innerText=="Table Tennis"){
+                act_cat=["A","B","C","D"];
+            }
         }
         return act_cat
     }
@@ -287,9 +291,10 @@ function commonPageLandAction(){
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
-    onHomeLand();
+    // onHomeLand();
     // onMarathonLand();
     // onBadmintonLand()
+    onTableTennisLand()
 }
 
 // *********************************
@@ -341,7 +346,7 @@ function onBadmintonLand(){
     tabbar.add_tab("Players","groups",onBadminton_Player_Click);
     tabbar.add_tab("Matches","sports",onBadminton_Matches_Click);
     tabbar.add_tab("Points","leaderboard",onBadminton_Points_Click)
-    SetDefaultTab(1);
+    SetDefaultTab(0);
     
     catbar.clear()
     catbar.add_category("WS")
@@ -412,7 +417,7 @@ function onBadminton_Player_Click(sender){
     
     // Men's Single - Under 18
     if (acat.includes('MS-U18')){
-        wall.add_section("Men's Single - Under 18");
+        wall.add_section("Men's Single (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MS-U18'){
                 wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
@@ -422,7 +427,7 @@ function onBadminton_Player_Click(sender){
 
     // Men's Double - Under 18
     if (acat.includes('MD-U18')){
-        wall.add_section("Men's Double - Under 18");
+        wall.add_section("Men's Double (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MD-U18'){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
@@ -524,7 +529,7 @@ function onBadminton_Matches_Click(sender){
     
     // Men's Single - Under 18
     if (acat.includes('MS-U18')){
-        wall.add_section("Men's Single - Under 18");
+        wall.add_section("Men's Single (U18)");
         matches.forEach(mat=>{
             if (mat.category=='MS-U18'){
                 wall.add_card_match(mat.date_time, mat.category, 
@@ -542,7 +547,7 @@ function onBadminton_Matches_Click(sender){
 
     // Men's Double - Under 18
     if (acat.includes('MD-U18')){
-        wall.add_section("Men's Double - Under 18");
+        wall.add_section("Men's Double (U18)");
         matches.forEach(mat=>{
             if (mat.category=='MD-U18'){
                 wall.add_card_match(mat.date_time, mat.category, 
@@ -576,26 +581,70 @@ function onBadminton_Points_Click(sender){
 // *********************************
 function onTableTennisLand(){
     commonPageLandAction()
-    head_title.innerText="Table tennis"
+    head_title.innerText="Table Tennis"
     back_btn.classList.remove("hide");
     tabbar.clear();
     tabbar.add_tab("Players","groups",onTableTennis_Player_Click);
     tabbar.add_tab("Matches","sports",onTableTennis_Matches_Click);
     tabbar.add_tab("Points","leaderboard",onTableTennis_Points_Click)
     SetDefaultTab(0);
+
+    catbar.clear()
+    catbar.add_category("A")
+    catbar.add_category("B")
+    catbar.add_category("C")
+    catbar.add_category("D")
+    catbar.unhide()
 }
 
 
 
 function onTableTennis_Player_Click(sender){
     commonTabClickActions(sender);
-    // players = data["badminton"]["mens_single"]["participants"];
-    // players.forEach(player=>{
-    //     wall.add_card_participant_single(player["name"],player["gender"]);
-    //     // console.log(player["name"]);
-    //     // console.log(player["gender"]);
-    // })
-    wall.add_text("Player filling under development.")
+
+    groups = tabletennisData.group;
+    let acat=catbar.get_active_categories();
+    
+    // Group A
+    if (acat.includes('A')){
+        wall.add_section("Group A");
+        groups.forEach(grp=>{
+            if (grp.category=='A'){
+                wall.add_card_participant_single(grp.member1,"",grp.msg,grp.point);
+            }
+        })
+    }
+
+    // Group B
+    if (acat.includes('B')){
+        wall.add_section("Group B");
+        groups.forEach(grp=>{
+            if (grp.category=='B'){
+                wall.add_card_participant_single(grp.member1,"",grp.msg,grp.point);
+            }
+        })
+    }
+
+    // Group A
+    if (acat.includes('C')){
+        wall.add_section("Group C");
+        groups.forEach(grp=>{
+            if (grp.category=='C'){
+                wall.add_card_participant_single(grp.member1,"",grp.msg,grp.point);
+            }
+        })
+    }
+
+    // Group D
+    if (acat.includes('D')){
+        wall.add_section("Group D");
+        groups.forEach(grp=>{
+            if (grp.category=='D'){
+                wall.add_card_participant_single(grp.member1,"",grp.msg,grp.point);
+            }
+        })
+    }
+    
 }
 
 function onTableTennis_Matches_Click(sender){
@@ -729,6 +778,7 @@ function onMarathon_Readme_Click(sender){
 // ===== CHESS LANDING
 // *********************************
 function onChessLand(){
+    commonPageLandAction()
     head_title.innerText="Chess"
     back_btn.classList.remove("hide");
     
@@ -745,6 +795,7 @@ function onChessLand(){
 // ===== CRICKET LANDING
 // *********************************
 function onCricketLand(){
+    commonPageLandAction()
     head_title.innerText="Cricket"
     back_btn.classList.remove("hide");
 
