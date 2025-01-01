@@ -143,7 +143,7 @@ class WallManager{
         `
     }
 
-    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2,mt){
+    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2,mt,mno=""){
         let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":(g1g1.toLowerCase()[0]=="f")?"face_3":"";
         let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":(g1g2.toLowerCase()[0]=="f")?"face_3":"";
         let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":(g2g1.toLowerCase()[0]=="f")?"face_3":"";
@@ -155,7 +155,7 @@ class WallManager{
         this.target.innerHTML+=`
         <div class="card match">
             <div class="match-info">
-                <div></div>
+                <div>${mno}</div>
                 <div class="datetime">${datetime}</div>
                 <div class="category">${cat}</div>
             </div>
@@ -625,7 +625,7 @@ function onTableTennis_Player_Click(sender){
         })
     }
 
-    // Group A
+    // Group C
     if (acat.includes('C')){
         wall.add_section("Group C");
         groups.forEach(grp=>{
@@ -649,7 +649,78 @@ function onTableTennis_Player_Click(sender){
 
 function onTableTennis_Matches_Click(sender){
     commonTabClickActions(sender);
-    wall.add_text("Match filling under development.")
+    matches = tabletennisData.match;
+    let acat=catbar.get_active_categories();
+
+    // Groups A
+    if (acat.includes('A')){
+        wall.add_section("Group A");
+        matches.forEach(mat=>{
+            if (mat.category=='A'){
+                wall.add_card_match("", mat.category, 
+                    mat.group1.name1, "", mat.group2.name1, "", 
+                    "", "", "", "", 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.category,"");
+            }
+        })
+    }
+
+    // Groups B
+    if (acat.includes('B')){
+        wall.add_section("Group B");
+        matches.forEach(mat=>{
+            if (mat.category=='B'){
+                wall.add_card_match("", mat.category, 
+                    mat.group1.name1, "", mat.group2.name1, "", 
+                    "", "", "", "", 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.category,"");
+            }
+        })
+    }
+
+    // Groups C
+    if (acat.includes('C')){
+        wall.add_section("Group C");
+        matches.forEach(mat=>{
+            if (mat.category=='C'){
+                wall.add_card_match("", mat.category, 
+                    mat.group1.name1, "", mat.group2.name1, "", 
+                    "", "", "", "", 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.category,"");
+            }
+        })
+    }
+
+    // Groups D
+    if (acat.includes('D')){
+        wall.add_section("Group D");
+        matches.forEach(mat=>{
+            if (mat.category=='D'){
+                wall.add_card_match("", mat.category, 
+                    mat.group1.name1, "", mat.group2.name1, "", 
+                    "", "", "", "", 
+                    mat.msg, 
+                    mat.scores.round1[0], mat.scores.round1[1], 
+                    mat.scores.round2[0], mat.scores.round2[1], 
+                    mat.scores.round3[0], mat.scores.round3[1],
+                    mat.category,"");
+            }
+        })
+    }
+
+
 }
 
 function onTableTennis_Points_Click(sender){
@@ -850,10 +921,45 @@ function onHelp_Click(){
 
 
 
+{/* <div class="card pts-table span">
+                <table>
+                    <tr>
+                        <th>#</td>
+                        <th>Name</td>
+                        <th>Points</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Albert Einstein</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Albert Einstein</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Albert Einstein</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Albert Einstein</td>
+                        <td>7.8</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Albert Einstein</td>
+                        <td>7.8</td>
+                    </tr>
+
+                </table>
+            </div>
 
 
 
-
+ */}
 
 
 
