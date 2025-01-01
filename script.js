@@ -291,10 +291,10 @@ function commonPageLandAction(){
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
-    // onHomeLand();
+    onHomeLand();
     // onMarathonLand();
-    // onBadmintonLand()
-    onTableTennisLand()
+    // onBadmintonLand();
+    // onTableTennisLand();
 }
 
 // *********************************
