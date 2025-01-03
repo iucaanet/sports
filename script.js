@@ -321,10 +321,29 @@ function onHomeLand(tab=0){
 
 function onHome_Recents_Click(sender){
     commonTabClickActions(sender);
-    wall.add_section("Todays Events");
-    wall.add_text("This section is under development.");
-    wall.add_section("Yesterday Events");
-    wall.add_text("This section is under development.");
+    matches = badmintonData.match;
+
+    wall.add_section("Upcoming Badminton Events");
+    
+    let day=getFormattedDate();
+    day="4th Jan";
+
+    matches.forEach(mat=>{
+        if (mat.date===day){
+            wall.add_card_match(mat.date_time, mat.category, 
+                mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                mat.message, 
+                mat.scores.round1[0], mat.scores.round1[1], 
+                mat.scores.round2[0], mat.scores.round2[1], 
+                mat.scores.round3[0], mat.scores.round3[1],
+                mat.match_type);
+            }
+
+    })
+
+
+
 
 }
 
@@ -422,6 +441,9 @@ function onBadminton_Player_Click(sender){
                 wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/1");
             }
         })
+
+
+
     }
     
     // Men's Single - Under 18
@@ -611,23 +633,22 @@ function onBadminton_Matches_Click(sender){
 
 
     // Scroll to latest
-    // let scroltarget=null;
-    // let today=getFormattedDate().replace("Jan","January");
+    let scroltarget=null;
+    let today=getFormattedDate().replace("Jan","January");
     // today="10th January"
-    // if (acat.includes("None")){
-    //     date_texts = document.querySelectorAll(".card.text");
-    //     date_texts.forEach(dt=>{
-    //         if(dt.innerText===today){
-    //             scroltarget=dt;
-    //             return
-    //         }
-    //     }) 
+    if (acat.includes("None")){
+        date_texts = document.querySelectorAll(".card.section");
+        date_texts.forEach(dt=>{
+            if(dt.innerText===today){
+                scroltarget=dt;
+                return
+            }
+        }) 
 
-
-    //     if (scroltarget!==null){
-    //         scroltarget.scrollIntoView();
-    //     }
-    // }
+        if (scroltarget!==null){
+            scroltarget.scrollIntoView();
+        }
+    }
 
 
 
@@ -850,7 +871,6 @@ function onMarathon_Route_Click(sender){
     wall.clear()
     wall.target.innerHTML +=`
             <div class="card map span">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d5349.09851870545!2d73.82208009884545!3d18.556726220727413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x3bc2bf45e3c733a7%3A0x3793ddf52f09988b!2sIUCAA%20Guest%20House%2C%20Pune%20University%2C%20Ganeshkhind%20Road%2C%20Ganeshkhind%2C%20Pune%2C%20Maharashtra!3m2!1d18.5605939!2d73.8245141!4m3!3m2!1d18.5581335!2d73.8231986!5e0!3m2!1sen!2sin!4v1735152744195!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
     `
     
@@ -987,7 +1007,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("3<sup>rd</sup> January, 6:10 PM IST");
+        wall.add_text("3<sup>rd</sup> January, 11:45 PM IST");
 
     }else{
         help_btn.innerText="help";
