@@ -4,7 +4,7 @@
 head_title  = document.getElementsByClassName("head-title")[0]
 head_text   = document.querySelector(".head-text")
 back_btn    = document.querySelector(".btn-back")
-
+help_btn    = document.querySelector(".btn-help")
 
 
 // Google Map
@@ -67,6 +67,10 @@ class TabManger{
 
     click_active(){
         this.target.querySelectorAll(".active")[0].click();
+    }
+    
+    click_tab(index){
+        this.target.querySelectorAll(".tab")[index].click();
     }
 }
 tabbar = new TabManger();
@@ -276,11 +280,14 @@ function commonTabClickActions(sender,clearwall=true){
         wall.clear();
 
     }
+    help_btn.innerText="help";
 }
 
-function commonPageLandAction(){
-    catbar.clear();
-    catbar.hide();
+function commonPageLandAction(reset_catbar=true){
+    if (reset_catbar){
+        catbar.clear();
+        catbar.hide();
+    }
 }
 
 
@@ -291,7 +298,7 @@ function commonPageLandAction(){
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
-    onHomeLand(1);
+    onHomeLand(0);
     // onMarathonLand();
     // onBadmintonLand();
     // onTableTennisLand();
@@ -438,10 +445,26 @@ function onBadminton_Player_Click(sender){
     }
 }
 
+function getFormattedDate() {
+    const date = new Date();
+    const day = date.getDate();
+    const month = date.toLocaleString('default', { month: 'short' });
+
+    const suffix = (day === 1 || day === 21 || day === 31) ? 'st' :
+                   (day === 2 || day === 22) ? 'nd' :
+                   (day === 3 || day === 23) ? 'rd' : 'th';
+
+    return `${day}${suffix} ${month}`;
+}
+
+
+
+
 function onBadminton_Matches_Click(sender){
     commonTabClickActions(sender);
     matches = badmintonData.match;
     let acat=catbar.get_active_categories();
+
 
 
     if (acat.includes("None")){
@@ -585,6 +608,30 @@ function onBadminton_Matches_Click(sender){
             }
         })    
     }
+
+
+    // Scroll to latest
+    // let scroltarget=null;
+    // let today=getFormattedDate().replace("Jan","January");
+    // today="10th January"
+    // if (acat.includes("None")){
+    //     date_texts = document.querySelectorAll(".card.text");
+    //     date_texts.forEach(dt=>{
+    //         if(dt.innerText===today){
+    //             scroltarget=dt;
+    //             return
+    //         }
+    //     }) 
+
+
+    //     if (scroltarget!==null){
+    //         scroltarget.scrollIntoView();
+    //     }
+    // }
+
+
+
+
 }
 
 function onBadminton_Points_Click(sender){
@@ -749,7 +796,7 @@ function onTableTennis_Matches_Click(sender){
 
 function onTableTennis_Points_Click(sender){
     commonTabClickActions(sender);
-    wall.add_text("The scores will be updated following the completion of the initial few matches.")
+    wall.add_text("The points will be updated following the completion of the initial few matches.")
 }
 
 
@@ -911,29 +958,42 @@ function onCricketLand(){
 // ===== HELP LANDING
 // *********************************
 function onHelp_Click(){
-    commonPageLandAction()
-    wall.clear();
-    cleanActiveTabs();
-    wall.add_section("About")
-    wall.add_text("This website is a student-led initiative created to provide information about sports events at <b>IUCAA</b>. It is not officially associated with or endorsed by the institute administration. The content and updates shared on this platform are independently managed and reflect the efforts of students, not the official policies or communications of the institute.")
-    
-    wall.add_section("Support")
-    
-    wall.add_text(
-        `For any changes related to event-specific details such as adding players, change event schedules or match partners, kindly contact the event organizers as listed below.
-        <br/>
-        <br/>
-        <li><b>TableTennis</b> : Sourav Das & Ranit Behera</li>
-        <li><b>Table Tennis</b> : First Last & First Last</li>
-        <li><b>Chess</b> : First Last & First Last</li>
-        <li><b>Marathon</b> : First Last & First Last</li>
-        <li><b>Cricket</b> : First Last & First Last</li>
-        `
-    )
-    
-    wall.add_section("Feature Request")
-    wall.add_text("If you wish to suggest new features or provide additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
-    
+    commonPageLandAction(false)
+    if(help_btn.innerText==="help"){
+        help_btn.innerText="cancel";
+        wall.clear();
+        cleanActiveTabs();
+        wall.add_section("About")
+        wall.add_text("This web interface is a student-led initiative created to provide information about sports events at <b>IUCAA</b>. It is not officially associated with or endorsed by the institute administration. The content and updates shared on this platform are independently managed and reflect the efforts of students, not the official policies or communications of the institute.")
+        
+        wall.add_section("Organizers")
+        wall.add_text(
+                `For any changes related to event-specific details such as adding players, change event schedules or match partners, kindly contact the event organizers as listed below.
+                <br/>
+                <br/>
+                <li><b>Badminton</b> : Sourav Das & Ranit Behera</li>
+                <li><b>Table Tennis</b> : </li>
+                <li><b>Marathon</b> : </li>
+                <li><b>Chess</b> : </li>
+                <li><b>Cricket</b> : </li>
+                `
+            ,"left")
+        
+            wall.add_section("Data Privacy")
+        wall.add_text("For privacy reasons, only the 'name' and 'gender' of participants are uploaded to the web. If you wish for this information to be anonymized, please contact the organizers.")
+        
+
+        wall.add_section("Feature Request")
+        wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
+        
+        wall.add_section("Last Updated")
+        wall.add_text("3<sup>rd</sup> January, 6:10 PM IST");
+
+    }else{
+        help_btn.innerText="help";
+        tabbar.click_tab(0);
+    }
+        
 }
 
 
