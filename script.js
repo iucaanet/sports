@@ -398,7 +398,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Women's Single");
         groups.forEach(grp=>{
             if (grp.category=='WS'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.message,grp.played+"/2");
             }
         })
     }
@@ -408,7 +408,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Women's Double");
         groups.forEach(grp=>{
             if (grp.category=='WD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/2");
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/2");
             }
         })
     }
@@ -418,7 +418,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Single");
         groups.forEach(grp=>{
             if (grp.category=='MS'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.message,grp.played+"/2");
             }
         })
     }
@@ -428,7 +428,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Double");
         groups.forEach(grp=>{
             if (grp.category=='MD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/2");
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/2");
             }
         })
     }
@@ -438,7 +438,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Mixed Double");
         groups.forEach(grp=>{
             if (grp.category=='XD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/1");
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/1");
             }
         })
 
@@ -451,7 +451,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Single (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MS-U18'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.message,grp.played+"/2");
             }
         })
     }
@@ -461,7 +461,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Double (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MD-U18'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/1");
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/1");
             }
         })
     }
@@ -1007,7 +1007,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("3<sup>rd</sup> January, 11:45 PM IST");
+        wall.add_text("4<sup>th</sup> January, 1:20 AM IST");
 
     }else{
         help_btn.innerText="help";
