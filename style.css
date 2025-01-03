@@ -298,6 +298,7 @@ body{
 .card.event .text .msg{
     font-family: "Poppins";
     font-size: 0.8rem;
+    font-weight: 500;
 }
 
 /* ==== BREATING EFFECT === */

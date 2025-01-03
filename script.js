@@ -104,7 +104,7 @@ class WallManager{
         `
     }
 
-    add_card_participant_single(name,gender,msg="",point=""){
+    add_card_participant_single(name,gender,msg="",sidetext=""){
         let logo = (gender.toLowerCase()[0]=="m")?"face":(gender.toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=
         `
@@ -114,12 +114,12 @@ class WallManager{
                 <div class="name">${name}</div>
                 <div class="msg">${msg}</div>
             </div>
-            <div class="point">${point}</div>
+            <div class="point">${sidetext}</div>
         </div>
         `
     }
     
-    add_card_participant_double(names,genders,msg="",point=""){
+    add_card_participant_double(names,genders,msg="",sidetext=""){
         let logo0 = (genders[0].toLowerCase()[0]=="m")?"face":(genders[0].toLowerCase()[0]=="f")?"face_3":"";
         let logo1 = (genders[1].toLowerCase()[0]=="m")?"face":(genders[1].toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=`
@@ -135,7 +135,7 @@ class WallManager{
                             <div class="name">${names[1]}</div>
                         </div>
                     </div>
-                    <div class="point">${point}</div>
+                    <div class="point">${sidetext}</div>
                 </div>
                 <div class="msg ${msg==""?"hide":""}">${msg}</div>
             </div>  
@@ -143,7 +143,7 @@ class WallManager{
         `
     }
 
-    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1,r1s2,r2s1,r2s2,r3s1,r3s2,mt,mno=""){
+    add_card_match(datetime,cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,msg,r1s1=0,r1s2=0,r2s1=0,r2s2=0,r3s1=0,r3s2=0,mt,mno=""){
         let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":(g1g1.toLowerCase()[0]=="f")?"face_3":"";
         let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":(g1g2.toLowerCase()[0]=="f")?"face_3":"";
         let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":(g2g1.toLowerCase()[0]=="f")?"face_3":"";
@@ -151,6 +151,7 @@ class WallManager{
         let msg_hide = (msg=="")?"hide":""
         let score_hide = (r1s1==0 && r1s2==0)?"hide":""
         cat = (mt=="F")?"Final":(mt=="SF")?"SF":cat
+
 
         this.target.innerHTML+=`
         <div class="card match">
@@ -171,14 +172,14 @@ class WallManager{
             </div>
             <div class="scores ${score_hide}">
                 <div class="g1">
-                    <div class="m1 ${r1s1==0?"faint":""}">${r1s1==0?"00":r1s1}</div>
-                    <div class="m2 ${r2s1==0?"faint":""}">${r2s1==0?"00":r1s1}</div>
-                    <div class="m3 ${r3s1==0?"faint":""}">${r3s1==0?"00":r1s1}</div>
+                    <div class="m1 ${r1s1==0 && r1s2==0?"faint":""}">${r1s1==0?"00":r1s1.toString().padStart(2,"0")}</div>
+                    <div class="m2 ${r2s1==0 && r2s2==0?"faint":""}">${r2s1==0?"00":r2s1.toString().padStart(2,"0")}</div>
+                    <div class="m3 ${r3s1==0 && r3s2==0?"faint":""}">${r3s1==0?"00":r3s1.toString().padStart(2,"0")}</div>
                 </div>
                 <div class="g2">
-                    <div class="m1 ${r1s2==0?"faint":""}">${r1s2==0?"00":r1s1}</div>
-                    <div class="m2 ${r2s2==0?"faint":""}">${r2s2==0?"00":r1s1}</div>
-                    <div class="m3 ${r3s2==0?"faint":""}">${r3s2==0?"00":r1s1}</div>
+                    <div class="m1 ${r1s1==0 && r1s2==0?"faint":""}">${r1s2==0?"00":r1s2.toString().padStart(2,"0")}</div>
+                    <div class="m2 ${r2s1==0 && r2s2==0?"faint":""}">${r2s2==0?"00":r2s2.toString().padStart(2,"0")}</div>
+                    <div class="m3 ${r3s1==0 && r3s2==0?"faint":""}">${r3s2==0?"00":r3s2.toString().padStart(2,"0")}</div>
                 </div>
             </div>
             <div class="group2">
@@ -199,7 +200,6 @@ class WallManager{
 }
 wall = new WallManager()
 
-wall.add_card_participant_double(["ranit","ranit"],["male","male"],"Hello","1.32")
 
 // ====================================
 // CATEGORY MANAGEMENT
@@ -240,7 +240,7 @@ class CategoryManager{
         let act_cat=Array.from(this.target.querySelectorAll('div.active')).map(div => div.textContent);
         if (act_cat==""){
             if (head_title.innerText=="Badminton"){
-                act_cat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"];
+                act_cat=["None"];
             }else if (head_title.innerText=="Table Tennis"){
                 act_cat=["A","B","C","D"];
             }
@@ -291,7 +291,7 @@ function commonPageLandAction(){
 // PAGE NAVIGATION
 // ====================================
 window.onload=function(){
-    onHomeLand();
+    onHomeLand(1);
     // onMarathonLand();
     // onBadmintonLand();
     // onTableTennisLand();
@@ -323,11 +323,11 @@ function onHome_Recents_Click(sender){
 
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
-    wall.add_card_event("Badminton","Starts from 2nd Jan","./media/badminton.svg",onBadmintonLand);
-    wall.add_card_event("Table Tennis","Starts from 2nd Jan","./media/table_tennis.svg",onTableTennisLand);
-    wall.add_card_event("Marathon","Starts from 2nd Jan","./media/marathon.svg",onMarathonLand);
-    wall.add_card_event("Chess","Starts from 2nd Jan","./media/chess_queen.svg",onChessLand);
-    wall.add_card_event("Cricket","Starts from 2nd Jan","./media/cricket.svg",onCricketLand);
+    wall.add_card_event("Badminton","Starts From 4th January","./media/badminton.svg",onBadmintonLand);
+    wall.add_card_event("Table Tennis","","./media/table_tennis.svg",onTableTennisLand);
+    wall.add_card_event("Marathon","On 12th January","./media/marathon.svg",onMarathonLand);
+    wall.add_card_event("Chess","","./media/chess_queen.svg",onChessLand);
+    wall.add_card_event("Cricket","","./media/cricket.svg",onCricketLand);
 }
 
 
@@ -365,12 +365,14 @@ function onBadminton_Player_Click(sender){
     groups = badmintonData.group;
     let acat=catbar.get_active_categories();
     
+    if (acat.includes("None")){acat=["WS","WD","MS","MD","XD","MS-U18","MD-U18"]}
+
     // Women's Single
     if (acat.includes('WS')){
         wall.add_section("Women's Single");
         groups.forEach(grp=>{
             if (grp.category=='WS'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
             }
         })
     }
@@ -380,7 +382,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Women's Double");
         groups.forEach(grp=>{
             if (grp.category=='WD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/2");
             }
         })
     }
@@ -390,7 +392,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Single");
         groups.forEach(grp=>{
             if (grp.category=='MS'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
             }
         })
     }
@@ -400,7 +402,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Double");
         groups.forEach(grp=>{
             if (grp.category=='MD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/2");
             }
         })
     }
@@ -410,7 +412,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Mixed Double");
         groups.forEach(grp=>{
             if (grp.category=='XD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/1");
             }
         })
     }
@@ -420,7 +422,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Single (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MS-U18'){
-                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.point);
+                wall.add_card_participant_single(grp.member1,grp.gender1,grp.msg,grp.played+"/2");
             }
         })
     }
@@ -430,7 +432,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Men's Double (U18)");
         groups.forEach(grp=>{
             if (grp.category=='MD-U18'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.point);
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.msg,grp.played+"/1");
             }
         })
     }
@@ -440,7 +442,29 @@ function onBadminton_Matches_Click(sender){
     commonTabClickActions(sender);
     matches = badmintonData.match;
     let acat=catbar.get_active_categories();
-    // let 
+
+
+    if (acat.includes("None")){
+        last_date = ""
+        matches.forEach(mat=>{
+            if (last_date!=mat.date){
+                wall.add_section(mat.date.replace("Jan","January"));
+                last_date=mat.date;
+            }
+            
+            wall.add_card_match(mat.date_time, mat.category, 
+                mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                mat.message, 
+                mat.scores.round1[0], mat.scores.round1[1], 
+                mat.scores.round2[0], mat.scores.round2[1], 
+                mat.scores.round3[0], mat.scores.round3[1],
+                mat.match_type);
+    
+        })
+    }
+
+
 
     // Women's Single
     if (acat.includes('WS')){
@@ -450,7 +474,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -467,7 +491,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -484,7 +508,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -501,7 +525,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -518,7 +542,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -535,7 +559,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -553,7 +577,7 @@ function onBadminton_Matches_Click(sender){
                 wall.add_card_match(mat.date_time, mat.category, 
                     mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
                     mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
-                    mat.msg, 
+                    mat.message, 
                     mat.scores.round1[0], mat.scores.round1[1], 
                     mat.scores.round2[0], mat.scores.round2[1], 
                     mat.scores.round3[0], mat.scores.round3[1],
@@ -565,7 +589,7 @@ function onBadminton_Matches_Click(sender){
 
 function onBadminton_Points_Click(sender){
     commonTabClickActions(sender);
-    wall.add_text("Leadeboard filling under development.")
+    wall.add_text("The points will be updated following the completion of the initial few matches.")
 }
 
 
@@ -657,7 +681,7 @@ function onTableTennis_Matches_Click(sender){
         wall.add_section("Group A");
         matches.forEach(mat=>{
             if (mat.category=='A'){
-                wall.add_card_match("", mat.category, 
+                wall.add_card_match("Match "+mat.match_no, mat.category, 
                     mat.group1.name1, "", mat.group2.name1, "", 
                     "", "", "", "", 
                     mat.msg, 
@@ -674,7 +698,7 @@ function onTableTennis_Matches_Click(sender){
         wall.add_section("Group B");
         matches.forEach(mat=>{
             if (mat.category=='B'){
-                wall.add_card_match("", mat.category, 
+                wall.add_card_match("Match "+mat.match_no, mat.category, 
                     mat.group1.name1, "", mat.group2.name1, "", 
                     "", "", "", "", 
                     mat.msg, 
@@ -691,7 +715,7 @@ function onTableTennis_Matches_Click(sender){
         wall.add_section("Group C");
         matches.forEach(mat=>{
             if (mat.category=='C'){
-                wall.add_card_match("", mat.category, 
+                wall.add_card_match("Match "+mat.match_no, mat.category, 
                     mat.group1.name1, "", mat.group2.name1, "", 
                     "", "", "", "", 
                     mat.msg, 
@@ -708,7 +732,7 @@ function onTableTennis_Matches_Click(sender){
         wall.add_section("Group D");
         matches.forEach(mat=>{
             if (mat.category=='D'){
-                wall.add_card_match("", mat.category, 
+                wall.add_card_match("Match "+mat.match_no, mat.category, 
                     mat.group1.name1, "", mat.group2.name1, "", 
                     "", "", "", "", 
                     mat.msg, 
@@ -725,7 +749,7 @@ function onTableTennis_Matches_Click(sender){
 
 function onTableTennis_Points_Click(sender){
     commonTabClickActions(sender);
-    wall.add_text("Leadeboard filling under development.")
+    wall.add_text("The scores will be updated following the completion of the initial few matches.")
 }
 
 
@@ -743,7 +767,7 @@ function onMarathonLand(){
     back_btn.classList.remove("hide");
     tabbar.clear();
     tabbar.add_tab("Participants","groups",onMarathon_Participants_Click);
-    tabbar.add_tab("Route","route",onMarathon_Route_Click);
+    // tabbar.add_tab("Route","route",onMarathon_Route_Click);
     tabbar.add_tab("Readme","format_list_bulleted",onMarathon_Readme_Click);
     SetDefaultTab(0);
 }
@@ -856,7 +880,7 @@ function onChessLand(){
     tabbar.clear();
     tabbar.hide();
     wall.clear();
-    wall.add_text("Under development")
+    wall.add_text("No data available at the moment. Please check back later.")
 }
 
 
@@ -873,7 +897,7 @@ function onCricketLand(){
     tabbar.clear();
     tabbar.hide();
     wall.clear();
-    wall.add_text("Under development")
+    wall.add_text("No data available at the moment. Please check back later.")
 }
 
 
