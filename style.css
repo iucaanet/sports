@@ -545,3 +545,10 @@ body{
 .card.match .msg.hide{
     display: none;
 }
+
+
+
+/* --------------- */
+strike{
+    text-decoration-thickness: 2px;
+}

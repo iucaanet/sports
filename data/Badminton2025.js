@@ -428,7 +428,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "4th Jan, 9th Jan"
+            "message": "<strike>4th Jan</strike>, 9th Jan"
         },
         {
             "category": "MD",
@@ -498,7 +498,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "4th Jan, 10th Jan"
+            "message": "<strike>4th Jan</strike>, 10th Jan"
         },
         {
             "category": "MD",
@@ -635,7 +635,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "The match will be postponed due to the unavailability of players."
         },
         {
             "category": "WS",
