@@ -360,7 +360,6 @@ function onHomeLand(tab=0){
     tabbar.clear();
     tabbar.add_tab("Updates","featured_play_list",onHome_Updates_Click);
     tabbar.add_tab("Events","local_activity",onHome_Events_Click);
-    tabbar.add_tab("Reschedules","event_repeat",onHome_Reschedule_Click);
     tabbar.unhide();
     SetDefaultTab(tab);
 }
@@ -405,18 +404,6 @@ function onHome_Updates_Click(sender){
     
 }
 
-function onHome_Reschedule_Click(sender){
-    commonTabClickActions(sender);
-
-
-    wall.add_section(`Reschedules`)
-    wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
-    wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
-    wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
-
-}
-
-
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
     wall.add_card_event("Badminton","Starts From 4th January","./media/badminton.svg",onBadmintonLand);
@@ -442,6 +429,8 @@ function onBadmintonLand(){
     tabbar.add_tab("Players","groups",onBadminton_Player_Click);
     tabbar.add_tab("Matches","sports",onBadminton_Matches_Click);
     tabbar.add_tab("Points","leaderboard",onBadminton_Points_Click)
+    tabbar.add_tab("Reschedules","event_repeat",onBadminton_Reschedule_Click);
+
     SetDefaultTab(0);
     
     catbar.clear()
@@ -458,6 +447,9 @@ function onBadmintonLand(){
 
 function onBadminton_Player_Click(sender){
     commonTabClickActions(sender);
+    catbar.unhide();
+
+
     groups = badmintonData.group;
     let acat=catbar.get_active_categories();
     
@@ -554,6 +546,9 @@ function getFormattedDate() {
 
 function onBadminton_Matches_Click(sender){
     commonTabClickActions(sender);
+    catbar.unhide();
+    
+    
     matches = badmintonData.match;
     let acat=catbar.get_active_categories();
 
@@ -727,11 +722,23 @@ function onBadminton_Matches_Click(sender){
 
 function onBadminton_Points_Click(sender){
     commonTabClickActions(sender);
+    catbar.hide();
     wall.add_text("The points will be updated following the completion of the initial few matches.")
 }
 
 
 
+
+function onBadminton_Reschedule_Click(sender){
+    commonTabClickActions(sender);
+    catbar.hide();
+
+    wall.add_section(`Reschedules`)
+    wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
+    wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
+    wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
+
+}
 
 
 
