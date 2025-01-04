@@ -8,7 +8,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "4th Jan, 12th Jan"
+            "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -18,7 +18,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "4th Jan, 12th Jan"
+            "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -216,7 +216,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "4th Jan, 9th Jan"
         },
@@ -276,7 +276,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "4th Jan, 14th Jan"
         },
@@ -288,7 +288,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "5th Jan, 7th Jan"
+            "message": "5th Jan, <strike>7th Jan</strike>, 10th Jan"
         },
         {
             "category": "MS",
@@ -298,7 +298,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "7th Jan, 13th Jan"
+            "message": "<strike>7th Jan</strike>, 10th Jan, 13th Jan"
         },
         {
             "category": "MS",
@@ -428,7 +428,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "<strike>4th Jan</strike>, 9th Jan"
+            "message": "<strike>4th Jan</strike>, 9th Jan, 11th Jan"
         },
         {
             "category": "MD",
@@ -498,7 +498,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "<strike>4th Jan</strike>, 10th Jan"
+            "message": "<strike>4th Jan</strike>, 10th Jan, 11th Jan"
         },
         {
             "category": "MD",
@@ -533,41 +533,6 @@ BAD25={
     ],
     "match": [
         {
-            "category": "WS",
-            "date": "4th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "4th Jan, 5:40PM",
-            "group1": {
-                "name1": "Sharanya Shahish Sukale",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Anvita Shahish Sukale",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": ""
-        },
-        {
             "category": "MS",
             "date": "4th Jan",
             "match_no": 3,
@@ -587,12 +552,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    11,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    14,
+                    21
                 ],
                 "round3": [
                     0,
@@ -600,42 +565,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
-        },
-        {
-            "category": "MD",
-            "date": "4th Jan",
-            "match_no": 4,
-            "match_time": "7:00PM",
-            "date_time": "4th Jan, 7:00PM",
-            "group1": {
-                "name1": "K Roshan Raj ",
-                "name2": "Partha Pratim Deka ",
-                "gender1": "Male",
-                "gender2": "Male"
-            },
-            "group2": {
-                "name1": "Shivaraj Kandhasamy",
-                "name2": "Bikram Kesari Pradhan",
-                "gender1": "Male",
-                "gender2": "Male"
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": "The match will be postponed due to the unavailability of players."
+            "message": "<b>Swarnim Shirke</b> won the match."
         },
         {
             "category": "WS",
@@ -918,21 +848,21 @@ BAD25={
             "message": ""
         },
         {
-            "category": "MS",
+            "category": "WS",
             "date": "7th Jan",
-            "match_no": 3,
-            "match_time": "6:20PM",
-            "date_time": "7th Jan, 6:20PM",
+            "match_no": 2,
+            "match_time": "5:40PM",
+            "date_time": "7th Jan, 5:40PM",
             "group1": {
-                "name1": "Hitesh Deshmukh",
+                "name1": "Sharanya Shahish Sukale",
                 "name2": "",
-                "gender1": "Male",
+                "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "Partha Pratim Deka ",
+                "name1": "Anvita Shahish Sukale",
                 "name2": "",
-                "gender1": "Male",
+                "gender1": "Female",
                 "gender2": ""
             },
             "scores": {
@@ -1303,6 +1233,41 @@ BAD25={
             "message": ""
         },
         {
+            "category": "MS",
+            "date": "10th Jan",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "10th Jan, 5:00PM",
+            "group1": {
+                "name1": "Hitesh Deshmukh",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "Partha Pratim Deka ",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "match_type": "R",
+            "message": ""
+        },
+        {
             "category": "MS-U18",
             "date": "10th Jan",
             "match_no": 2,
@@ -1416,6 +1381,41 @@ BAD25={
             "group1": {
                 "name1": "Rohan shelar",
                 "name2": "Anindya",
+                "gender1": "Male",
+                "gender2": "Male"
+            },
+            "group2": {
+                "name1": "Shivaraj Kandhasamy",
+                "name2": "Bikram Kesari Pradhan",
+                "gender1": "Male",
+                "gender2": "Male"
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "match_type": "R",
+            "message": ""
+        },
+        {
+            "category": "MD",
+            "date": "11th Jan",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "11th Jan, 5:00PM",
+            "group1": {
+                "name1": "K Roshan Raj ",
+                "name2": "Partha Pratim Deka ",
                 "gender1": "Male",
                 "gender2": "Male"
             },

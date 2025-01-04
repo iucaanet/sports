@@ -201,6 +201,51 @@ class WallManager{
         `
     }
 
+
+    add_card_reschedule(cat,g1n1,g1n2,g2n1,g2n2,g1g1,g1g2,g2g1,g2g2,from_date,to_date){
+        let logog1g1 = (g1g1.toLowerCase()[0]=="m")?"face":(g1g1.toLowerCase()[0]=="f")?"face_3":"";
+        let logog1g2 = (g1g2.toLowerCase()[0]=="m")?"face":(g1g2.toLowerCase()[0]=="f")?"face_3":"";
+        let logog2g1 = (g2g1.toLowerCase()[0]=="m")?"face":(g2g1.toLowerCase()[0]=="f")?"face_3":"";
+        let logog2g2 = (g2g2.toLowerCase()[0]=="m")?"face":(g2g2.toLowerCase()[0]=="f")?"face_3":"";
+
+
+        this.target.innerHTML+=
+        `
+        <div class="card reschedule">
+                <div class="info">
+                    <div><span>${cat}</span></div>
+                </div>
+                <div class="match">
+                    <div class="group1">
+                        <div class="member">
+                            <div class="icon material-symbols-outlined">${logog1g1}</div>
+                            <div class="name">${g1n1}</div>
+                        </div>
+                        <div class="member">
+                            <div class="icon material-symbols-outlined">${logog1g2}</div>
+                            <div class="name">${g1n2}</div>
+                        </div>
+                    </div>
+                    <div class="group2">
+                        <div class="member">
+                            <div class="icon material-symbols-outlined">${logog2g1}</div>
+                            <div class="name">${g2n1}</div>
+                        </div>
+                        <div class="member">
+                            <div class="icon material-symbols-outlined">${logog2g2}</div>
+                            <div class="name">${g2n2}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="res">
+                    <div class="from">${from_date}</div>
+                    <div class="icon material-symbols-outlined">arrow_right_alt</div>
+                    <div class="to">${to_date}</div>
+                </div>
+            </div>
+        `
+    }
+
 }
 wall = new WallManager()
 
@@ -313,21 +358,20 @@ function onHomeLand(tab=0){
     head_text.innerText = "January 2025"
     back_btn.classList.add("hide");
     tabbar.clear();
-    tabbar.add_tab("Recents","featured_play_list",onHome_Recents_Click);
+    tabbar.add_tab("Updates","featured_play_list",onHome_Updates_Click);
     tabbar.add_tab("Events","local_activity",onHome_Events_Click);
+    tabbar.add_tab("Reschedules","event_repeat",onHome_Reschedule_Click);
     tabbar.unhide();
     SetDefaultTab(tab);
 }
 
-function onHome_Recents_Click(sender){
+function onHome_Updates_Click(sender){
     commonTabClickActions(sender);
     matches = badmintonData.match;
+    // let day=getFormattedDate();
 
-    wall.add_section("Upcoming Badminton Events");
-    
-    let day=getFormattedDate();
-    day="4th Jan";
-
+    wall.add_section("Match Results");
+    day = "4th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -342,10 +386,36 @@ function onHome_Recents_Click(sender){
 
     })
 
+    wall.add_section("Upcoming Matches");
+    day = "5th Jan"
+    matches.forEach(mat=>{
+        if (mat.date===day){
+            wall.add_card_match(mat.date_time, mat.category, 
+                mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                mat.message, 
+                mat.scores.round1[0], mat.scores.round1[1], 
+                mat.scores.round2[0], mat.scores.round2[1], 
+                mat.scores.round3[0], mat.scores.round3[1],
+                mat.match_type);
+            }
+
+    })
+
+    
+}
+
+function onHome_Reschedule_Click(sender){
+    commonTabClickActions(sender);
 
 
+    wall.add_section(`Reschedules`)
+    wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
+    wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
+    wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
 
 }
+
 
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
@@ -1007,7 +1077,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("4<sup>th</sup> January, 11:54 AM IST");
+        wall.add_text("4<sup>th</sup> January, 8:30 PM IST");
 
     }else{
         help_btn.innerText="help";

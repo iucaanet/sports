@@ -547,6 +547,78 @@ body{
 }
 
 
+/* CARD RESCHEDULE */
+.card.reschedule{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.reschedule .res{
+    display: flex;
+}
+
+
+.card.reschedule .info{
+    align-self: center;
+    padding-bottom: 0.4rem;
+}
+
+
+.card.reschedule .info span{
+    background-color: rgba(0,0,0,0.1);
+    padding: 0rem 0.5rem;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+
+.card.reschedule .cat{
+    /* align-self: flex-end; */
+    align-self: center;
+}
+
+.card.reschedule .res div:nth-child(2){
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.card.reschedule .group1,
+.card.reschedule .group2{
+    display: flex;
+    flex-direction: column;
+}
+
+.card.reschedule .group1>.member,
+.card.reschedule .group2>.member{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card.reschedule .group2>.member{
+    flex-direction: row-reverse;
+}
+
+.card.reschedule .group1>.member .name,
+.card.reschedule .group2>.member .name{
+    font-weight: 400;
+}
+
+.card.reschedule .icon{
+    font-weight: 100;
+    font-size: 1.2rem;
+    align-content: center;
+
+}
+
+.card.reschedule .res{
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding: 0rem 0.5rem;
+    padding-top: 0.4rem;
+}
+
+.card.reschedule .group2{
+    padding-bottom: 0.4rem;
+}
 
 /* --------------- */
 strike{
