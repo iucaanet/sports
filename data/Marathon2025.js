@@ -7,12 +7,6 @@ MAR25={
             "msg": ""
         },
         {
-            "name": "Vedant Purohit",
-            "gender": "Male",
-            "point": "",
-            "msg": ""
-        },
-        {
             "name": "Sharanya Shahish Sukale",
             "gender": "Female",
             "point": "",
@@ -52,6 +46,12 @@ MAR25={
         },
         {
             "name": "Atharva Kakade",
+            "gender": "Male",
+            "point": "",
+            "msg": ""
+        },
+        {
+            "name": "Vedant Purohit",
             "gender": "Male",
             "point": "",
             "msg": ""

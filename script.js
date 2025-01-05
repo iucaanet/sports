@@ -370,7 +370,7 @@ function onHome_Updates_Click(sender){
     // let day=getFormattedDate();
 
     wall.add_section("Match Results");
-    day = "4th Jan"
+    day = "5th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -386,7 +386,7 @@ function onHome_Updates_Click(sender){
     })
 
     wall.add_section("Upcoming Matches");
-    day = "5th Jan"
+    day = "6th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -406,8 +406,8 @@ function onHome_Updates_Click(sender){
 
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
-    wall.add_card_event("Badminton","Starts From 4th January","./media/badminton.svg",onBadmintonLand);
-    wall.add_card_event("Table Tennis","","./media/table_tennis.svg",onTableTennisLand);
+    wall.add_card_event("Badminton","Started January 4th","./media/badminton.svg",onBadmintonLand);
+    wall.add_card_event("Table Tennis","Starts from January 13th","./media/table_tennis.svg",onTableTennisLand);
     wall.add_card_event("Marathon","On 12th January","./media/marathon.svg",onMarathonLand);
     wall.add_card_event("Chess","","./media/chess_queen.svg",onChessLand);
     wall.add_card_event("Cricket","","./media/cricket.svg",onCricketLand);
@@ -425,6 +425,7 @@ function onBadmintonLand(){
     commonPageLandAction()
     head_title.innerText="Badminton"
     back_btn.classList.remove("hide");
+
     tabbar.clear();
     tabbar.add_tab("Players","groups",onBadminton_Player_Click);
     tabbar.add_tab("Matches","sports",onBadminton_Matches_Click);
@@ -737,6 +738,7 @@ function onBadminton_Reschedule_Click(sender){
     wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
     wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
     wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
+    wall.add_card_reschedule("MS","Rohan shelar","","Tanuman Ghosh","","M","","M","","5th Jan","9th Jan")
 
 }
 
@@ -752,6 +754,7 @@ function onTableTennisLand(){
     commonPageLandAction()
     head_title.innerText="Table Tennis"
     back_btn.classList.remove("hide");
+
     tabbar.clear();
     tabbar.add_tab("Players","groups",onTableTennis_Player_Click);
     tabbar.add_tab("Matches","sports",onTableTennis_Matches_Click);
@@ -764,6 +767,11 @@ function onTableTennisLand(){
     catbar.add_category("C")
     catbar.add_category("D")
     catbar.unhide()
+
+
+    // OUT LINK
+    // wall.clear()
+    // wall.add_text("Event details are <a href='https://challonge.com/nhiql1er'>Here</a>.")
 }
 
 
@@ -1084,7 +1092,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("4<sup>th</sup> January, 8:30 PM IST");
+        wall.add_text("5<sup>th</sup> January, 8:40 PM IST");
 
     }else{
         help_btn.innerText="help";

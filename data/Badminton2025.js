@@ -318,7 +318,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "5th Jan, 14th Jan"
+            "message": "<strike>5th Jan</strike>, 9th Jan, 14th Jan"
         },
         {
             "category": "MS",
@@ -328,7 +328,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "5th Jan, 6th Jan"
+            "message": "<strike>5th Jan</strike>, 9th Jan, 6th Jan"
         },
         {
             "category": "MS",
@@ -600,7 +600,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "This match will be rescheduled."
         },
         {
             "category": "MS-U18",
@@ -622,12 +622,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    14
                 ],
                 "round3": [
                     0,
@@ -635,42 +635,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
-        },
-        {
-            "category": "MS",
-            "date": "5th Jan",
-            "match_no": 4,
-            "match_time": "7:00PM",
-            "date_time": "5th Jan, 7:00PM",
-            "group1": {
-                "name1": "Rohan shelar",
-                "name2": "",
-                "gender1": "Male",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Tanuman Ghosh",
-                "name2": "",
-                "gender1": "Male",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": ""
+            "message": "<b>Vedant Purohit</b> won the match."
         },
         {
             "category": "MS",
@@ -692,12 +657,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    9,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    8,
+                    21
                 ],
                 "round3": [
                     0,
@@ -705,7 +670,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "<b>Partha Pratim Deka</b> won the match."
         },
         {
             "category": "MS-U18",
@@ -1074,6 +1039,41 @@ BAD25={
                 "name2": "Sourav Das",
                 "gender1": "Male",
                 "gender2": "Male"
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "match_type": "R",
+            "message": ""
+        },
+        {
+            "category": "MS",
+            "date": "9th Jan",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "9th Jan, 5:00PM",
+            "group1": {
+                "name1": "Rohan shelar",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "Tanuman Ghosh",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
             },
             "scores": {
                 "round1": [
