@@ -736,9 +736,12 @@ function onBadminton_Reschedule_Click(sender){
 
     wall.add_section(`Reschedules`)
     wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
-    wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
-    wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
     wall.add_card_reschedule("MS","Rohan shelar","","Tanuman Ghosh","","M","","M","","5th Jan","9th Jan")
+    wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
+    wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
+    wall.add_card_reschedule("WS","Radha Bhushan Joshi","","Samruddhi Bhandare","","F","","F","","5th Jan","11th Jan")
+    wall.add_card_reschedule("MD","Prafull Siddharth Barathe ","SAGAR CHOTALAL SHAH ","Asim Ansari","Shubham Sati","M","M","M","M","13th Jan","11th Jan")
+    wall.add_card_reschedule("MD","Rahul Gopalakrishnan","Swarnim Shirke","Shahish Keshav Sukale","Deepak Bankar","M","M","M","M","11th Jan","13th Jan")
 
 }
 
@@ -1092,7 +1095,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("6<sup>th</sup> January, 2:02 PM IST");
+        wall.add_text("6<sup>th</sup> January, 5:33 PM IST");
 
     }else{
         help_btn.innerText="help";

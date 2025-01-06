@@ -28,7 +28,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "5th Jan, 12th Jan"
+            "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -38,7 +38,7 @@ BAD25={
             "gender2": "",
             "played": 0,
             "points": "",
-            "message": "5th Jan, 12th Jan"
+            "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -458,7 +458,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "6th Jan, 11th Jan"
+            "message": "6th Jan, <strike>11th Jan</strike>, 13th Jan"
         },
         {
             "category": "MD",
@@ -478,7 +478,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "6th Jan, 13th Jan"
+            "message": "6th Jan, <strike>13th Jan</strike>, 11th Jan"
         },
         {
             "category": "MD",
@@ -488,7 +488,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "11th Jan, 15th Jan"
+            "message": "<strike>11th Jan</strike>, 13th Jan, 15th Jan"
         },
         {
             "category": "MD",
@@ -508,7 +508,7 @@ BAD25={
             "gender2": "Male",
             "played": 0,
             "points": "",
-            "message": "7th Jan, 13th Jan"
+            "message": "7th Jan, <strike>13th Jan</strike>, 11th Jan"
         },
         {
             "category": "XD",
@@ -566,41 +566,6 @@ BAD25={
             },
             "match_type": "R",
             "message": "<b>Swarnim Shirke</b> won the match."
-        },
-        {
-            "category": "WS",
-            "date": "5th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "5th Jan, 5:40PM",
-            "group1": {
-                "name1": "Radha Bhushan Joshi",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Samruddhi Bhandare",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": "This match will be rescheduled."
         },
         {
             "category": "MS-U18",
@@ -1408,6 +1373,41 @@ BAD25={
             "message": ""
         },
         {
+            "category": "WS",
+            "date": "11th Jan",
+            "match_no": 0,
+            "match_time": "4:20PM",
+            "date_time": "11th Jan, 4:20PM",
+            "group1": {
+                "name1": "Radha Bhushan Joshi",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "Samruddhi Bhandare",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "match_type": "R",
+            "message": ""
+        },
+        {
             "category": "MD",
             "date": "11th Jan",
             "match_no": 1,
@@ -1554,14 +1554,14 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "11th Jan, 7:40PM",
             "group1": {
-                "name1": "Rahul Gopalakrishnan",
-                "name2": "Swarnim Shirke",
+                "name1": "Prafull Siddharth Barathe",
+                "name2": "SAGAR CHOTALAL SHAH",
                 "gender1": "Male",
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "Shahish Keshav Sukale",
-                "name2": "Deepak Bankar",
+                "name1": "Asim Ansari",
+                "name2": "Shubham Sati",
                 "gender1": "Male",
                 "gender2": "Male"
             },
@@ -1869,14 +1869,14 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "13th Jan, 7:40PM",
             "group1": {
-                "name1": "Prafull Siddharth Barathe",
-                "name2": "SAGAR CHOTALAL SHAH",
+                "name1": "Rahul Gopalakrishnan",
+                "name2": "Swarnim Shirke",
                 "gender1": "Male",
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "Asim Ansari",
-                "name2": "Shubham Sati",
+                "name1": "Shahish Keshav Sukale",
+                "name2": "Deepak Bankar",
                 "gender1": "Male",
                 "gender2": "Male"
             },
