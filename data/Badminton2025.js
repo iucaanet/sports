@@ -106,7 +106,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "5th Jan, 11th Jan"
         },
@@ -116,7 +116,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "5th Jan, 11th Jan"
         },
@@ -286,7 +286,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "5th Jan, <strike>7th Jan</strike>, 10th Jan"
         },
@@ -336,7 +336,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "points": "",
             "message": "5th Jan, 6th Jan"
         },
