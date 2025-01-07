@@ -388,6 +388,7 @@ function onHome_Updates_Click(sender){
 
     })
 
+    
     wall.add_section("Upcoming Matches");
     day = "8th Jan"
     matches.forEach(mat=>{
