@@ -7,6 +7,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
         },
@@ -17,6 +18,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
         },
@@ -27,6 +29,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
         },
@@ -37,6 +40,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
         },
@@ -47,6 +51,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "12th Jan, 16th Jan"
         },
@@ -57,6 +62,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "9th Jan, 16th Jan"
         },
@@ -67,6 +73,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "9th Jan, 12th Jan"
         },
@@ -77,6 +84,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "Female",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "11th Jan, 13th Jan"
         },
@@ -87,6 +95,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "Female",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "11th Jan, 15th Jan"
         },
@@ -97,6 +106,7 @@ BAD25={
             "gender1": "Female",
             "gender2": "Female",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "13th Jan, 15th Jan"
         },
@@ -107,6 +117,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 1,
+            "won": "",
             "points": "",
             "message": "5th Jan, 11th Jan"
         },
@@ -117,6 +128,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 1,
+            "won": "",
             "points": "",
             "message": "5th Jan, 11th Jan"
         },
@@ -127,6 +139,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "10th Jan, 11th Jan"
         },
@@ -136,7 +149,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, 11th Jan"
         },
@@ -146,7 +160,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, 10th Jan"
         },
@@ -157,6 +172,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "12th Jan"
         },
@@ -167,6 +183,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "12th Jan"
         },
@@ -177,6 +194,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "7th Jan, 10th Jan"
         },
@@ -187,6 +205,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 10th Jan"
         },
@@ -197,6 +216,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -207,6 +227,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "14th Jan, 16th Jan"
         },
@@ -217,6 +238,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 1,
+            "won": "",
             "points": "",
             "message": "4th Jan, 9th Jan"
         },
@@ -227,6 +249,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -237,6 +260,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "12th Jan, 16th Jan"
         },
@@ -246,7 +270,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, 16th Jan"
         },
@@ -257,6 +282,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 9th Jan"
         },
@@ -267,6 +293,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 10th Jan"
         },
@@ -277,6 +304,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 1,
+            "won": "",
             "points": "",
             "message": "4th Jan, 14th Jan"
         },
@@ -287,6 +315,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 1,
+            "won": "",
             "points": "",
             "message": "5th Jan, <strike>7th Jan</strike>, 10th Jan"
         },
@@ -297,6 +326,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>7th Jan</strike>, 10th Jan, 13th Jan"
         },
@@ -307,6 +337,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "7th Jan, 12th Jan"
         },
@@ -317,6 +348,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>5th Jan</strike>, 9th Jan, 14th Jan"
         },
@@ -326,7 +358,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "<strike>5th Jan</strike>, 9th Jan, 6th Jan"
         },
@@ -336,7 +369,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
+            "won": "",
             "points": "",
             "message": "5th Jan, 6th Jan"
         },
@@ -347,6 +381,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 14th Jan"
         },
@@ -357,6 +392,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "14th Jan, 16th Jan"
         },
@@ -367,6 +403,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "15th Jan, 16th Jan"
         },
@@ -376,7 +413,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, 9th Jan"
         },
@@ -387,6 +425,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "9th Jan, 16th Jan"
         },
@@ -397,6 +436,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 14th Jan"
         },
@@ -407,6 +447,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -417,6 +458,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "9th Jan, 15th Jan"
         },
@@ -427,6 +469,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>4th Jan</strike>, 9th Jan, 11th Jan"
         },
@@ -437,6 +480,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "8th Jan, 15th Jan"
         },
@@ -447,6 +491,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -456,7 +501,8 @@ BAD25={
             "member2": "Swarnim Shirke",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, <strike>11th Jan</strike>, 13th Jan"
         },
@@ -467,6 +513,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "7th Jan, 13th Jan"
         },
@@ -476,7 +523,8 @@ BAD25={
             "member2": "SAGAR CHOTALAL SHAH",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
+            "won": "",
             "points": "",
             "message": "6th Jan, <strike>13th Jan</strike>, 11th Jan"
         },
@@ -487,6 +535,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>11th Jan</strike>, 13th Jan, 15th Jan"
         },
@@ -497,6 +546,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "<strike>4th Jan</strike>, 10th Jan, 11th Jan"
         },
@@ -507,6 +557,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Male",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "7th Jan, <strike>13th Jan</strike>, 11th Jan"
         },
@@ -517,6 +568,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Female",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "14th Jan"
         },
@@ -527,6 +579,7 @@ BAD25={
             "gender1": "Male",
             "gender2": "Female",
             "played": 0,
+            "won": "",
             "points": "",
             "message": "14th Jan"
         }
@@ -658,11 +711,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -670,7 +723,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "<b>Prasanna Khodade</b> won the match due to the opponent's absence. "
         },
         {
             "category": "MS",
@@ -692,12 +745,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    18
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    13
                 ],
                 "round3": [
                     0,
@@ -705,7 +758,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "<b>VK VIJAY BALAJI</b> won the match."
         },
         {
             "category": "MS",
@@ -727,12 +780,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    9,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    6,
+                    21
                 ],
                 "round3": [
                     0,
@@ -740,7 +793,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "<b>Vaibhav Sharma</b> won the match."
         },
         {
             "category": "MD",
@@ -762,12 +815,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    12
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round3": [
                     0,
@@ -775,7 +828,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "<b>Rahul Gopalakrishnan</b>, <b>Swarnim Shirke</b> won the match."
         },
         {
             "category": "WS",
