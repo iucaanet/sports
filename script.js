@@ -292,6 +292,8 @@ class CategoryManager{
                 act_cat=["None"];
             }else if (head_title.innerText=="Table Tennis"){
                 act_cat=["A","B","C","D"];
+            }else if (head_title.innerText=="Chess"){
+                act_cat=["Under 15","Over 15"];
             }
         }
         return act_cat
@@ -347,6 +349,7 @@ window.onload=function(){
     // onMarathonLand();
     // onBadmintonLand();
     // onTableTennisLand();
+    // onChessLand();
 }
 
 // *********************************
@@ -409,7 +412,7 @@ function onHome_Events_Click(sender){
     wall.add_card_event("Badminton","Started January 4th","./media/badminton.svg",onBadmintonLand);
     wall.add_card_event("Table Tennis","Starts from January 13th","./media/table_tennis.svg",onTableTennisLand);
     wall.add_card_event("Marathon","On 12th January","./media/marathon.svg",onMarathonLand);
-    wall.add_card_event("Chess","","./media/chess_queen.svg",onChessLand);
+    wall.add_card_event("Chess","On 12th January","./media/chess_queen.svg",onChessLand);
     wall.add_card_event("Cricket","","./media/cricket.svg",onCricketLand);
 }
 
@@ -1058,11 +1061,124 @@ function onChessLand(){
     commonPageLandAction()
     head_title.innerText="Chess"
     back_btn.classList.remove("hide");
-    
+
     tabbar.clear();
-    tabbar.hide();
+    tabbar.add_tab("Participants","groups",onChess_Player_Click);
+    tabbar.add_tab("Readme","format_list_bulleted",onChess_Readme_Click);
+    tabbar.add_tab("Join","chess_pawn",onChess_Join_Click);
+
+    SetDefaultTab(0);
+    
+    catbar.clear()
+    catbar.add_category("Under 15")
+    catbar.add_category("Over 15")
+    catbar.unhide()
+
+
+}
+
+
+function onChess_Player_Click(sender){
+    commonTabClickActions(sender);
+    catbar.unhide();
     wall.clear();
-    wall.add_text("No data available at the moment. Please check back later.")
+
+    let acat=catbar.get_active_categories();
+
+
+    if(acat.includes("Under 15")){
+        wall.add_section("Under 15")
+        wall.add_card_participant_single("Sharanya Sukale","");
+        wall.add_card_participant_single("Anvita Sukale","");
+        wall.add_card_participant_single("Aarya Rajarshi","");
+        wall.add_card_participant_single("Siddharth Bhandare","");
+        wall.add_card_participant_single("Arjun Kohok","");
+        wall.add_card_participant_single("Ameya Saha","");
+        wall.add_card_participant_single("Avneesh Vijay","");
+
+    }
+
+    if(acat.includes("Over 15")){
+        wall.add_section("Over 15")
+        wall.add_card_participant_single("Aryan Sahu","")
+        wall.add_card_participant_single("Saqlain Afroz ","")
+        wall.add_card_participant_single("Sumit Ghosh","")
+        wall.add_card_participant_single("Vaibhav Sharma","")
+        wall.add_card_participant_single("Aniket Kadu","")
+        wall.add_card_participant_single("Jitendra Joshi","")
+        wall.add_card_participant_single("Rahul Gopalakrishnan","")
+        wall.add_card_participant_single("Partha Pratim Deka ","")
+        wall.add_card_participant_single("Harshad  Sawant","")
+        wall.add_card_participant_single("Hitesh Deshmukh","")
+        wall.add_card_participant_single("Tanuman Ghosh","")
+        wall.add_card_participant_single("Sagar Jeevan Bhosale","")
+        wall.add_card_participant_single("Mayur Shende","")
+        wall.add_card_participant_single("Prafull  Barathe ","")
+        wall.add_card_participant_single("Chaitanya Rajarshi","")
+        wall.add_card_participant_single("RAHUL  GAIKWAD","")
+        wall.add_card_participant_single("AbhayKohok","")
+    }
+}
+
+
+
+function onChess_Readme_Click(sender){
+    commonTabClickActions(sender);
+    catbar.hide();
+    wall.clear();
+
+    wall.add_section("Event Date")
+    wall.add_text(`<b style='color:red'>Sunday 12th January</b>`)
+    
+    wall.add_section("Instructions")
+    wall.add_text(`
+        We want all players to be respectful to each other and to play fair. Please play on your own and do not take the help of friends/relatives. This tournament is held to bring the chess community together and have fun.
+        `)
+
+    wall.add_section("Platform Details")
+    wall.add_text(`
+        Online Tournament on Lichess Platform. The tournament will be played in the Swiss league format. Lichess software will randomly select the white/black player. The pairing is also done by the software. For more details visit:
+        `,"left")
+
+    wall.add_text(`<a href=" https://lichess.org/swiss"> https://lichess.org/swiss</a>`)
+
+    wall.add_section("Event Details")
+    wall.add_text(`
+        <ul>
+            <li><b>Time Duration</b> : <br>10 min + 5 sec increment</li>
+            <li><b>No. of Rounds</b> : 5</li>
+            <li><b>Break between rounds</b> : 2 min</li>
+        </ul>
+        `,"left")
+
+    wall.add_section("Point System")
+    wall.add_text(`
+        <ul>
+        <li><b>Win</b> : 1 point</li>
+            <li><b>Draw</b> : 1/2 point</li>
+            <li><b>Lose</b> : 0 point</li>
+            </ul>
+        After the last round, players are ranked by their score. If players remain tied, a tie-break score is used (Sonneborn–Berger score.)
+        `,"left")
+
+}
+
+
+function onChess_Join_Click(sender){
+    commonTabClickActions(sender);
+    catbar.hide();
+    wall.clear();
+
+    wall.add_section("Event Date")
+    wall.add_text(`Sunday 12th January`)
+
+    wall.add_section(`Under 15 - <span style="font-family:'Anton';color:black">9:30 AM</span>`)
+    wall.add_text(`<a href="https://lichess.org/swiss/cehpksD0">https://lichess.org/swiss/cehpksD0</a>`)
+
+    wall.add_section(`Over 15 - <span style="font-family:'Anton';color:black">11:00 AM</span>`)
+    wall.add_text(`<a href="https://lichess.org/swiss/Hi5FrNzh">https://lichess.org/swiss/Hi5FrNzh</a>`)
+
+
 }
 
 
@@ -1109,7 +1225,7 @@ function onHelp_Click(){
                 <li><b>Badminton</b> : Sourav Das & Ranit Behera</li>
                 <li><b>Table Tennis</b> : </li>
                 <li><b>Marathon</b> : </li>
-                <li><b>Chess</b> : </li>
+                <li><b>Chess</b> : Chaitanya Rajarshi</li>
                 <li><b>Cricket</b> : </li>
                 `
             ,"left")
