@@ -724,7 +724,34 @@ function onBadminton_Matches_Click(sender){
 function onBadminton_Points_Click(sender){
     commonTabClickActions(sender);
     catbar.hide();
-    wall.add_text("This will be updated soon.")
+    wall.add_text("This will be updated soon.");
+
+    wall.add_section("Points Awarding")
+    wall.add_text(`This points awarding system rewards the winning side with a high point, while the losing side can still accumulate points based on how close the match was in individual games.`,"left")
+    wall.add_text(`<b style="border-bottom:1.5px solid rgba(0,0,0,0.5);display:block">Winning Side</b>`);
+    wall.add_text(`
+        The winning side automatically earns <span class="hlspan">9</span> points. If they win the match in exactly 2 games, they are awarded an additional <span class="hlspan">2</span> point, bringing their total to a maximum of <span class="hlspan">11</span> points.
+        </ul>
+        `,"left")
+
+    wall.add_text(`<b style="border-bottom:1.5px solid rgba(0,0,0,0.5);display:block">Losing Side</b>`);
+    wall.add_text(`
+        The losing side’s points are based on the score gaps of their best two games, chosen from the match. The score gap is the difference in the final scores of the two teams.
+        `,"left");
+
+    wall.add_text(`
+        <ul>
+        <li>Gets <span class="hlspan">4</span> for a gap of <b>1</b> or <b>2</b>.</li>
+        <li>Gets <span class="hlspan">3</span> for a gap of <b>3</b> or <b>4</b>.</li>
+        <li>Gets <span class="hlspan">2</span> for a gap of <b>5</b> or <b>6</b>.</li>
+        <li>Gets <span class="hlspan">1</span> for a gap of <b>7</b> or <b>8</b>.</li>
+
+        </ul>
+        `,"left")
+    
+    wall.add_text(`By selecting the two games with the smallest score gaps, the losing side can earn a maximum of <span class="hlspan">8</span> points`,"left")
+
+
 }
 
 
@@ -1095,7 +1122,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("7<sup>th</sup> January, 6:07 AM IST");
+        wall.add_text("7<sup>th</sup> January, 3:44 PM IST");
 
     }else{
         help_btn.innerText="help";

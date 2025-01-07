@@ -9,7 +9,7 @@ BAD25={
             "played": 0,
             "won": "",
             "points": "",
-            "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
+            "message": "Withdrew from the tournament."
         },
         {
             "category": "WS",
@@ -20,7 +20,7 @@ BAD25={
             "played": 0,
             "won": "",
             "points": "",
-            "message": "<strike>4th Jan</strike>, 7th Jan, 12th Jan"
+            "message": "Withdrew from the tournament."
         },
         {
             "category": "WS",
@@ -86,7 +86,7 @@ BAD25={
             "played": 0,
             "won": "",
             "points": "",
-            "message": "11th Jan, 13th Jan"
+            "message": "Withdrew from the tournament."
         },
         {
             "category": "WD",
@@ -863,7 +863,7 @@ BAD25={
                 ]
             },
             "match_type": "R",
-            "message": ""
+            "message": "The match has been canceled as both participants have withdrawn from the tournament."
         },
         {
             "category": "MS",
