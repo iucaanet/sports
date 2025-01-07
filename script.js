@@ -724,7 +724,7 @@ function onBadminton_Matches_Click(sender){
 function onBadminton_Points_Click(sender){
     commonTabClickActions(sender);
     catbar.hide();
-    wall.add_text("The points will be updated following the completion of the initial few matches.")
+    wall.add_text("This will be updated soon.")
 }
 
 
