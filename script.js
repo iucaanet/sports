@@ -108,7 +108,7 @@ class WallManager{
         `
     }
 
-    add_card_participant_single(name,gender,msg="",sidetext=""){
+    add_card_participant_single(name,gender,msg="",sidetext="",msg2=""){
         let logo = (gender.toLowerCase()[0]=="m")?"face":(gender.toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=
         `
@@ -117,13 +117,14 @@ class WallManager{
             <div class="text">
                 <div class="name">${name}</div>
                 <div class="msg">${msg}</div>
+                <div class="msg">${msg2}</div>
             </div>
             <div class="point">${sidetext}</div>
         </div>
         `
     }
     
-    add_card_participant_double(names,genders,msg="",sidetext=""){
+    add_card_participant_double(names,genders,msg="",sidetext="",msg2=""){
         let logo0 = (genders[0].toLowerCase()[0]=="m")?"face":(genders[0].toLowerCase()[0]=="f")?"face_3":"";
         let logo1 = (genders[1].toLowerCase()[0]=="m")?"face":(genders[1].toLowerCase()[0]=="f")?"face_3":"";
         this.target.innerHTML +=`
@@ -142,6 +143,7 @@ class WallManager{
                     <div class="point">${sidetext}</div>
                 </div>
                 <div class="msg ${msg==""?"hide":""}">${msg}</div>
+                <div class="msg ${msg2==""?"hide":""}">${msg2}</div>
             </div>  
            
         `
@@ -154,7 +156,7 @@ class WallManager{
         let logog2g2 = (g2g2.toLowerCase()[0]=="m")?"face":(g2g2.toLowerCase()[0]=="f")?"face_3":"";
         let msg_hide = (msg=="")?"hide":""
         let score_hide = (r1s1==0 && r1s2==0)?"hide":""
-        cat = (mt=="F")?"Final":(mt=="SF")?"SF":cat
+        cat = (mt=="F")?"Final":(mt=="SF")?"SF":(mt=="QF")?"QF":cat
 
 
         this.target.innerHTML+=`
@@ -246,8 +248,49 @@ class WallManager{
         `
     }
 
+
+    add_table(names_list,pts_list,qualify_no=2){
+        let text = ""
+        text+=
+        `
+            <div class="card pts-table span">
+                <table>
+                    <tr>
+                        <th>#</td>
+                        <th>Name</td>
+                        <th>Points</td>
+                    </tr>
+                    `
+
+        for(let i=0;i<names_list.length;i++){
+            text+=`
+                    <tr class="${i==qualify_no-1?"addline":""}" style="font-weight:${i<qualify_no?500:300}">
+                        <td>${i+1}</td>
+                    <td class="names">`
+            for(let n=0;n<names_list[i].length;n++){
+                text+=`<div>${names_list[i][n]}</div>`
+            }
+            text+=`</td>
+                        <td>${pts_list[i]}</td>
+                    </tr>
+            `
+        }
+
+        text+=
+        `
+                </table>
+            </div>
+        `
+    
+        this.target.innerHTML+=text
+    
+    
+    }
+
+
 }
 wall = new WallManager()
+
 
 
 // ====================================
@@ -388,7 +431,7 @@ function onHome_Updates_Click(sender){
 
     })
 
-    
+
     wall.add_section("Upcoming Matches");
     day = "8th Jan"
     matches.forEach(mat=>{
@@ -475,7 +518,7 @@ function onBadminton_Player_Click(sender){
         wall.add_section("Women's Double");
         groups.forEach(grp=>{
             if (grp.category=='WD'){
-                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/2");
+                wall.add_card_participant_double([grp.member1, grp.member2],[grp.gender1,grp.gender2],grp.message,grp.played+"/1");
             }
         })
     }
@@ -728,15 +771,88 @@ function onBadminton_Matches_Click(sender){
 function onBadminton_Points_Click(sender){
     commonTabClickActions(sender);
     catbar.hide();
-    wall.add_text("This will be updated soon.");
+    
+    points = badmintonData.points;
+
+
+    wall.add_section("Men's Single")
+    wall.add_text("There are a total of 23 participants in this category. The <b>TOP 8</b> will qualify for the <b>QUARTERFINALS</b>.")
+    ms_table=points.MS
+    wall.add_table(Object.entries(ms_table)
+        .filter(([name, points]) => points !== 0)
+        .map(([name, _]) => [name, ""]),
+        Object.values(ms_table),8)
+    
+
+
+    wall.add_section("Men's Double")
+    wall.add_text("There are a total of 11 teams in this category. The <b>TOP 4</b> will qualify for the <b>SEMIFINALS</b>.")
+    md_table=points.MD
+    wall.add_table(md_table.filter(item => item.pts != 0).map(item => [item.mem1, item.mem2]),
+                    md_table.filter(item => item.pts != 0).map(item => item.pts),4);
+
+
+
+    wall.add_section("Women's Single")
+    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>FINALS</b>.")
+    ws_table=points.WS
+
+    // wall.add_table(Object.entries(ws_table)
+    // .filter(([name, points]) => points !== 0)
+    // .map(([name, _]) => [name, ""]),
+    // Object.values(ws_table),4)
+
+    wall.add_text("No match has been played.")
+  
+
+
+    wall.add_section("Men's Single (Under 18)")
+    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>FINALS</b>.")
+    msu18_table=points.MSU18
+
+    wall.add_table(Object.entries(msu18_table)
+    .filter(([name, points]) => points !== 0)
+    .map(([name, _]) => [name, ""]),
+    Object.values(msu18_table),4)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     wall.add_section("Points Awarding")
     wall.add_text(`This points awarding system rewards the winning side with a high point, while the losing side can still accumulate points based on how close the match was in individual games.`,"left")
     wall.add_text(`<b style="border-bottom:1.5px solid rgba(0,0,0,0.5);display:block">Winning Side</b>`);
     wall.add_text(`
-        The winning side automatically earns <span class="hlspan">9</span> points. If they win the match in exactly 2 games, they are awarded an additional <span class="hlspan">2</span> point, bringing their total to a maximum of <span class="hlspan">11</span> points.
+        The winning side automatically earns <span class="hlspan">9</span> points. If they win in exactly 2 games, they are awarded an additional <span class="hlspan">2</span> points, bringing their total to 11 points. Additionally, the winner earns extra points based on the best game's score gap. The highest score gap determines the best match, and extra points are only awarded if the match was played.
+        <ul>
+            <li>Gets <span class="hlspan">4</span> for a gap greater than 15.</li>
+            <li>Gets <span class="hlspan">3</span> for a gap greater than 10 and less than or equal to 15.</li>
+            <li>Gets <span class="hlspan">2</span> for a gap greater than 5 and less than or equal to 10.</li>
+            <li>Gets <span class="hlspan">1</span> for a gap greater than 2 and less than or equal to 5.</li>
         </ul>
+        The winning side can get a maximum of <span class="hlspan">15</span> points in a single match.
         `,"left")
+
+
 
     wall.add_text(`<b style="border-bottom:1.5px solid rgba(0,0,0,0.5);display:block">Losing Side</b>`);
     wall.add_text(`
@@ -766,7 +882,7 @@ function onBadminton_Reschedule_Click(sender){
     catbar.hide();
 
     wall.add_section(`Reschedules`)
-    wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
+    // wall.add_card_reschedule("WS","Sharanya Shahish Sukale","","Anvita Shahish Sukale","","F","","F","","4th Jan","7th Jan")
     wall.add_card_reschedule("MS","Rohan shelar","","Tanuman Ghosh","","M","","M","","5th Jan","9th Jan")
     wall.add_card_reschedule("MS","Hitesh Deshmukh","","Partha Pratim Deka","","M","","M","","7th Jan","10th Jan")
     wall.add_card_reschedule("MD","K Roshan Raj","Partha Pratim Deka ","Shivaraj Kandhasamy","Bikram Kesari Pradhan","M","M","M","M","4th Jan","11th Jan")
@@ -1239,7 +1355,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("7<sup>th</sup> January, 3:44 PM IST");
+        wall.add_text("8<sup>th</sup> January, 5:30 PM IST");
 
     }else{
         help_btn.innerText="help";
@@ -1257,45 +1373,11 @@ function onHelp_Click(){
 
 
 
-{/* <div class="card pts-table span">
-                <table>
-                    <tr>
-                        <th>#</td>
-                        <th>Name</td>
-                        <th>Points</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Albert Einstein</td>
-                        <td>7.8</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Albert Einstein</td>
-                        <td>7.8</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Albert Einstein</td>
-                        <td>7.8</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Albert Einstein</td>
-                        <td>7.8</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Albert Einstein</td>
-                        <td>7.8</td>
-                    </tr>
-
-                </table>
-            </div>
+/* 
 
 
 
- */}
+ */
 
 
 

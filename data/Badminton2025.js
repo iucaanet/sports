@@ -9,7 +9,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
+            "message": "11th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -20,7 +20,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>5th Jan</strike>, 11th Jan, 12th Jan"
+            "message": "11th Jan, 12th Jan"
         },
         {
             "category": "WS",
@@ -584,8 +584,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 1,
+                "group2": 13
+            },
             "match_type": "R",
-            "message": "<b>Swarnim Shirke</b> won the match."
+            "match_held": 1,
+            "message": " <b>Swarnim Shirke</b>,<b></b> won the match and got <b>13</b> points. Nishad Prashant , got <b>1</b> points."
         },
         {
             "category": "MS-U18",
@@ -619,8 +624,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 13,
+                "group2": 3
+            },
             "match_type": "R",
-            "message": "<b>Vedant Purohit</b> won the match."
+            "match_held": 1,
+            "message": " <b>Vedant Purohit</b>,<b></b> won the match and got <b>13</b> points. Siddharth Bhandare, got <b>3</b> points."
         },
         {
             "category": "MS",
@@ -654,8 +664,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 14
+            },
             "match_type": "R",
-            "message": "<b>Partha Pratim Deka</b> won the match."
+            "match_held": 1,
+            "message": " <b>Partha Pratim Deka </b>,<b></b> won the match and got <b>14</b> points. Mayur Shende, got <b>0</b> points."
         },
         {
             "category": "MS-U18",
@@ -689,8 +704,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 11
+            },
             "match_type": "R",
-            "message": "<b>Prasanna Khodade</b> won the match due to the opponent's absence. "
+            "match_held": 0,
+            "message": " <b>Prasanna Khodade</b>,<b></b> won the match and got <b>11</b> points. Avneesh Vijay, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -724,8 +744,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 13,
+                "group2": 4
+            },
             "match_type": "R",
-            "message": "<b>VK VIJAY BALAJI</b> won the match."
+            "match_held": 1,
+            "message": " <b>VK VIJAY BALAJI</b>,<b></b> won the match and got <b>13</b> points. Tanuman Ghosh, got <b>4</b> points."
         },
         {
             "category": "MS",
@@ -759,8 +784,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 14
+            },
             "match_type": "R",
-            "message": "<b>Vaibhav Sharma</b> won the match."
+            "match_held": 1,
+            "message": " <b>Vaibhav Sharma</b>,<b></b> won the match and got <b>14</b> points. Mayur Shende, got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -794,8 +824,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 13,
+                "group2": 2
+            },
             "match_type": "R",
-            "message": "<b>Rahul Gopalakrishnan</b>, <b>Swarnim Shirke</b> won the match."
+            "match_held": 1,
+            "message": " <b>Rahul Gopalakrishnan</b>,<b>Swarnim Shirke</b> won the match and got <b>13</b> points. Prafull Siddharth Barathe ,SAGAR CHOTALAL SHAH got <b>2</b> points."
         },
         {
             "category": "MS",
@@ -829,8 +864,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 15
+            },
             "match_type": "R",
-            "message": "<b>Pranav Bhujbal</b> won the match."
+            "match_held": 1,
+            "message": " <b>Pranav Bhujbal</b>,<b></b> won the match and got <b>15</b> points. Manish Kataria , got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -864,8 +904,13 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 15,
+                "group2": 0
+            },
             "match_type": "R",
-            "message": "<b>Tanuman Ghosh</b>, <b>VK VIJAY BALAJI</b> won the match."
+            "match_held": 1,
+            "message": " <b>Tanuman Ghosh</b>,<b>VK VIJAY BALAJI</b> won the match and got <b>15</b> points. Asim Ansari,Shubham Sati got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -899,7 +944,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -934,7 +984,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -969,7 +1024,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1004,7 +1064,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1039,7 +1104,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1074,7 +1144,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1109,7 +1184,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1144,7 +1224,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1179,7 +1264,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1214,7 +1304,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1249,7 +1344,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1284,7 +1384,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1319,7 +1424,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1354,15 +1464,20 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "WS",
             "date": "11th Jan",
-            "match_no": 0,
-            "match_time": "4:20PM",
-            "date_time": "11th Jan, 4:20PM",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "11th Jan, 5:00PM",
             "group1": {
                 "name1": "Radha Bhushan Joshi",
                 "name2": "",
@@ -1389,15 +1504,20 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "MD",
             "date": "11th Jan",
-            "match_no": 1,
-            "match_time": "5:00PM",
-            "date_time": "11th Jan, 5:00PM",
+            "match_no": 2,
+            "match_time": "5:40PM",
+            "date_time": "11th Jan, 5:40PM",
             "group1": {
                 "name1": "K Roshan Raj ",
                 "name2": "Partha Pratim Deka ",
@@ -1424,15 +1544,20 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "MS-U18",
             "date": "11th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "11th Jan, 5:40PM",
+            "match_no": 3,
+            "match_time": "6:20PM",
+            "date_time": "11th Jan, 6:20PM",
             "group1": {
                 "name1": "Prasanna Khodade",
                 "name2": "",
@@ -1459,15 +1584,20 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "MS-U18",
             "date": "11th Jan",
-            "match_no": 3,
-            "match_time": "6:20PM",
-            "date_time": "11th Jan, 6:20PM",
+            "match_no": 4,
+            "match_time": "7:00PM",
+            "date_time": "11th Jan, 7:00PM",
             "group1": {
                 "name1": "Vedant Purohit",
                 "name2": "",
@@ -1494,42 +1624,12 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "R",
-            "message": ""
-        },
-        {
-            "category": "WD",
-            "date": "11th Jan",
-            "match_no": 4,
-            "match_time": "7:00PM",
-            "date_time": "11th Jan, 7:00PM",
-            "group1": {
-                "name1": "Sharanya Shahish Sukale",
-                "name2": "Anvita Shahish Sukale",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "group2": {
-                "name1": "Khushi Lalit",
-                "name2": "Yogita Kumari",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
             },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1564,7 +1664,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1599,7 +1704,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1609,42 +1719,7 @@ BAD25={
             "match_time": "5:40PM",
             "date_time": "12th Jan, 5:40PM",
             "group1": {
-                "name1": "Anvita Shahish Sukale",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Samruddhi Bhandare",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": ""
-        },
-        {
-            "category": "WS",
-            "date": "12th Jan",
-            "match_no": 3,
-            "match_time": "6:20PM",
-            "date_time": "12th Jan, 6:20PM",
-            "group1": {
-                "name1": "Sharanya Shahish Sukale",
+                "name1": "Yogita Kumari",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
@@ -1669,7 +1744,52 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "WS",
+            "date": "12th Jan",
+            "match_no": 3,
+            "match_time": "6:20PM",
+            "date_time": "12th Jan, 6:20PM",
+            "group1": {
+                "name1": "Samruddhi Bhandare",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "Shivani chaudhary",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1704,77 +1824,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "F",
-            "message": ""
-        },
-        {
-            "category": "WS",
-            "date": "12th Jan",
-            "match_no": 5,
-            "match_time": "7:40PM",
-            "date_time": "12th Jan, 7:40PM",
-            "group1": {
-                "name1": "Yogita Kumari",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Shivani chaudhary",
-                "name2": "",
-                "gender1": "Female",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
-            "message": ""
-        },
-        {
-            "category": "WD",
-            "date": "13th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "13th Jan, 5:40PM",
-            "group1": {
-                "name1": "Sharanya Shahish Sukale",
-                "name2": "Anvita Shahish Sukale",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "group2": {
-                "name1": "Radha Bhushan Joshi",
-                "name2": "Shivani chaudhary",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1809,7 +1864,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1844,7 +1904,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1879,7 +1944,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1914,7 +1984,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1949,7 +2024,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -1984,7 +2064,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2019,7 +2104,12 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "R",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "F",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2054,7 +2144,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2089,7 +2184,12 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "R",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "F",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2124,7 +2224,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2159,7 +2264,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2194,7 +2304,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2229,7 +2344,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2264,7 +2384,12 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2299,25 +2424,70 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "R",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "WS",
+            "category": "MS-U18",
+            "date": "17th Jan",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "17th Jan, 5:00PM",
+            "group1": {
+                "name1": "PT1",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "PT4",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "MS",
             "date": "17th Jan",
             "match_no": 2,
             "match_time": "5:40PM",
             "date_time": "17th Jan, 5:40PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT1",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT8",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "scores": {
@@ -2334,25 +2504,30 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "SF",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "QF",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "WS",
+            "category": "MS",
             "date": "17th Jan",
             "match_no": 3,
             "match_time": "6:20PM",
             "date_time": "17th Jan, 6:20PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT2",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT7",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "scores": {
@@ -2369,7 +2544,12 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "SF",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "QF",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2379,13 +2559,13 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "17th Jan, 7:00PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT3",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT6",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2404,7 +2584,12 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "SF",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "QF",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2414,13 +2599,13 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "17th Jan, 7:40PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT4",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT5",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2439,23 +2624,28 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "SF",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "QF",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "MS-U18",
             "date": "18th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "18th Jan, 5:40PM",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "18th Jan, 5:00PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT2",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT3",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2474,7 +2664,52 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "F",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "WS",
+            "date": "18th Jan",
+            "match_no": 2,
+            "match_time": "5:40PM",
+            "date_time": "18th Jan, 5:40PM",
+            "group1": {
+                "name1": "PT1",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "PT4",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
             "message": ""
         },
         {
@@ -2484,13 +2719,13 @@ BAD25={
             "match_time": "6:20PM",
             "date_time": "18th Jan, 6:20PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "PT2",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "PT4",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
@@ -2509,26 +2744,31 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "F",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "MD",
+            "category": "MS",
             "date": "18th Jan",
             "match_no": 4,
             "match_time": "7:00PM",
             "date_time": "18th Jan, 7:00PM",
             "group1": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "QF1",
+                "name2": "",
                 "gender1": "Male",
-                "gender2": "Male"
+                "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "QF4",
+                "name2": "",
                 "gender1": "Male",
-                "gender2": "Male"
+                "gender2": ""
             },
             "scores": {
                 "round1": [
@@ -2544,26 +2784,31 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "SF",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "MD",
+            "category": "MS",
             "date": "18th Jan",
             "match_no": 5,
             "match_time": "7:40PM",
             "date_time": "18th Jan, 7:40PM",
             "group1": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "QF2",
+                "name2": "",
                 "gender1": "Male",
-                "gender2": "Male"
+                "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "QF3",
+                "name2": "",
                 "gender1": "Male",
-                "gender2": "Male"
+                "gender2": ""
             },
             "scores": {
                 "round1": [
@@ -2579,26 +2824,31 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "SF",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "WD",
+            "category": "MS-U18",
             "date": "19th Jan",
             "match_no": 2,
             "match_time": "5:40PM",
             "date_time": "19th Jan, 5:40PM",
             "group1": {
                 "name1": "TBD",
-                "name2": "TBD",
-                "gender1": "Female",
-                "gender2": "Female"
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
             },
             "group2": {
                 "name1": "TBD",
-                "name2": "TBD",
-                "gender1": "Female",
-                "gender2": "Female"
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
             },
             "scores": {
                 "round1": [
@@ -2614,26 +2864,71 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "F",
+            "match_held": -1,
             "message": ""
         },
         {
-            "category": "MS",
+            "category": "WS",
+            "date": "19th Jan",
+            "match_no": 3,
+            "match_time": "6:20PM",
+            "date_time": "19th Jan, 6:20PM",
+            "group1": {
+                "name1": "TBD",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "TBD",
+                "name2": "",
+                "gender1": "Female",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "F",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "MD",
             "date": "19th Jan",
             "match_no": 4,
             "match_time": "7:00PM",
             "date_time": "19th Jan, 7:00PM",
             "group1": {
-                "name1": "TBD",
-                "name2": "",
+                "name1": "PT1",
+                "name2": "PT1",
                 "gender1": "Male",
-                "gender2": ""
+                "gender2": "Male"
             },
             "group2": {
-                "name1": "TBD",
-                "name2": "",
+                "name1": "PT4",
+                "name2": "PT4",
                 "gender1": "Male",
-                "gender2": ""
+                "gender2": "Male"
             },
             "scores": {
                 "round1": [
@@ -2649,17 +2944,142 @@ BAD25={
                     0
                 ]
             },
-            "match_type": "F",
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
             "message": ""
         },
         {
             "category": "MD",
+            "date": "19th Jan",
+            "match_no": 5,
+            "match_time": "7:40PM",
+            "date_time": "19th Jan, 7:40PM",
+            "group1": {
+                "name1": "PT2",
+                "name2": "PT2",
+                "gender1": "Male",
+                "gender2": "Male"
+            },
+            "group2": {
+                "name1": "PT3",
+                "name2": "PT3",
+                "gender1": "Male",
+                "gender2": "Male"
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "SF",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "WD",
+            "date": "20th Jan",
+            "match_no": 2,
+            "match_time": "5:40PM",
+            "date_time": "20th Jan, 5:40PM",
+            "group1": {
+                "name1": "TBD",
+                "name2": "TBD",
+                "gender1": "Female",
+                "gender2": "Female"
+            },
+            "group2": {
+                "name1": "TBD",
+                "name2": "TBD",
+                "gender1": "Female",
+                "gender2": "Female"
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "F",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "MS",
             "date": "20th Jan",
             "match_no": 4,
             "match_time": "7:00PM",
             "date_time": "20th Jan, 7:00PM",
             "group1": {
                 "name1": "TBD",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "TBD",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "F",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "MD",
+            "date": "21st Jan",
+            "match_no": 4,
+            "match_time": "7:00PM",
+            "date_time": "21st Jan, 7:00PM",
+            "group1": {
+                "name1": "TBD",
                 "name2": "TBD",
                 "gender1": "Male",
                 "gender2": "Male"
@@ -2684,8 +3104,150 @@ BAD25={
                     0
                 ]
             },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
             "match_type": "F",
+            "match_held": -1,
             "message": ""
         }
-    ]
+    ],
+    "points": {
+        "MSU18": {
+            "Vedant Purohit": 13,
+            "Prasanna Khodade": 11,
+            "Siddharth Bhandare": 3,
+            "Avneesh Vijay": 0,
+            "Arjun Kohok": 0,
+            "PT1": 0,
+            "PT4": 0,
+            "PT2": 0,
+            "PT3": 0
+        },
+        "WS": {
+            "Khushi Lalit": 0,
+            "Yogita Kumari": 0,
+            "Radha Bhushan Joshi": 0,
+            "Samruddhi Bhandare": 0,
+            "Shivani chaudhary": 0,
+            "PT1": 0,
+            "PT4": 0,
+            "PT2": 0
+        },
+        "MS": {
+            "Pranav Bhujbal": 15,
+            "Partha Pratim Deka": 14,
+            "Vaibhav Sharma": 14,
+            "Swarnim Shirke": 13,
+            "VK VIJAY BALAJI": 13,
+            "Tanuman Ghosh": 4,
+            "Nishad Prashant": 1,
+            "Mayur Shende": 0,
+            "Manish Kataria": 0,
+            "Prafull Siddharth Barathe": 0,
+            "Rohan": 0,
+            "Aniket Kadu": 0,
+            "Jay Mestry": 0,
+            "Rahul Gopalakrishnan": 0,
+            "Shubham Sati": 0,
+            "Rohan shelar": 0,
+            "Asim Ansari": 0,
+            "Hitesh Deshmukh": 0,
+            "K Roshan Raj": 0,
+            "Sourav Das": 0,
+            "Shahish Keshav Sukale": 0,
+            "Soumil Girish Sahu": 0,
+            "Shivaraj Kandhasamy": 0,
+            "PT1": 0,
+            "PT8": 0,
+            "PT2": 0,
+            "PT7": 0,
+            "PT3": 0,
+            "PT6": 0,
+            "PT4": 0,
+            "PT5": 0,
+            "QF1": 0,
+            "QF4": 0,
+            "QF2": 0,
+            "QF3": 0
+        },
+        "MD": [
+            {
+                "mem1": "Tanuman Ghosh",
+                "mem2": "VK VIJAY BALAJI",
+                "pts": 15
+            },
+            {
+                "mem1": "Rahul Gopalakrishnan",
+                "mem2": "Swarnim Shirke",
+                "pts": 13
+            },
+            {
+                "mem1": "Prafull Siddharth Barathe",
+                "mem2": "SAGAR CHOTALAL SHAH",
+                "pts": 2
+            },
+            {
+                "mem1": "Asim Ansari",
+                "mem2": "Shubham Sati",
+                "pts": 0
+            },
+            {
+                "mem1": "Pranav Bhujbal",
+                "mem2": "Vaibhav Sharma",
+                "pts": 0
+            },
+            {
+                "mem1": "Nishad Prashant",
+                "mem2": "Sourav Das",
+                "pts": 0
+            },
+            {
+                "mem1": "Jay Mestry",
+                "mem2": "Mayur Shende",
+                "pts": 0
+            },
+            {
+                "mem1": "K Roshan Raj",
+                "mem2": "Partha Pratim Deka",
+                "pts": 0
+            },
+            {
+                "mem1": "Rohan shelar",
+                "mem2": "Anindya",
+                "pts": 0
+            },
+            {
+                "mem1": "Shivaraj Kandhasamy",
+                "mem2": "Bikram Kesari Pradhan",
+                "pts": 0
+            },
+            {
+                "mem1": "Shahish Keshav Sukale",
+                "mem2": "Deepak Bankar",
+                "pts": 0
+            },
+            {
+                "mem1": "PT1",
+                "mem2": "PT1",
+                "pts": 0
+            },
+            {
+                "mem1": "PT4",
+                "mem2": "PT4",
+                "pts": 0
+            },
+            {
+                "mem1": "PT2",
+                "mem2": "PT2",
+                "pts": 0
+            },
+            {
+                "mem1": "PT3",
+                "mem2": "PT3",
+                "pts": 0
+            }
+        ]
+    }
 }
