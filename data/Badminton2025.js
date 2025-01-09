@@ -64,7 +64,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "11th Jan, 15th Jan"
+            "message": "15th Jan"
         },
         {
             "category": "WD",
@@ -75,7 +75,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "13th Jan, 15th Jan"
+            "message": "15th Jan"
         },
         {
             "category": "MS-U18",
@@ -160,8 +160,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "7th Jan, 10th Jan"
         },
@@ -171,8 +171,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 10th Jan"
         },
@@ -215,8 +215,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -248,7 +248,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "8th Jan, 9th Jan"
@@ -259,8 +259,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 10th Jan"
         },
@@ -284,7 +284,7 @@ BAD25={
             "played": 1,
             "won": 1,
             "points": "",
-            "message": "5th Jan, <strike>7th Jan</strike>, 10th Jan"
+            "message": "5th Jan, 10th Jan"
         },
         {
             "category": "MS",
@@ -295,7 +295,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>7th Jan</strike>, 10th Jan, 13th Jan"
+            "message": "10th Jan, 13th Jan"
         },
         {
             "category": "MS",
@@ -317,7 +317,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>5th Jan</strike>, 9th Jan, 14th Jan"
+            "message": "9th Jan, 14th Jan"
         },
         {
             "category": "MS",
@@ -328,7 +328,7 @@ BAD25={
             "played": 1,
             "won": 0,
             "points": "",
-            "message": "<strike>5th Jan</strike>, 9th Jan, 6th Jan"
+            "message": "6th Jan, 9th Jan"
         },
         {
             "category": "MS",
@@ -347,7 +347,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "8th Jan, 14th Jan"
@@ -402,7 +402,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "8th Jan, 14th Jan"
@@ -413,8 +413,8 @@ BAD25={
             "member2": "Vaibhav Sharma",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -438,7 +438,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>4th Jan</strike>, 9th Jan, 11th Jan"
+            "message": "9th Jan, 11th Jan"
         },
         {
             "category": "MD",
@@ -446,7 +446,7 @@ BAD25={
             "member2": "Sourav Das",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "8th Jan, 15th Jan"
@@ -471,7 +471,7 @@ BAD25={
             "played": 1,
             "won": 1,
             "points": "",
-            "message": "6th Jan, <strike>11th Jan</strike>, 13th Jan"
+            "message": "6th Jan, 13th Jan"
         },
         {
             "category": "MD",
@@ -493,7 +493,7 @@ BAD25={
             "played": 1,
             "won": 0,
             "points": "",
-            "message": "6th Jan, <strike>13th Jan</strike>, 11th Jan"
+            "message": "6th Jan, 11th Jan"
         },
         {
             "category": "MD",
@@ -504,7 +504,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>11th Jan</strike>, 13th Jan, 15th Jan"
+            "message": "13th Jan, 15th Jan"
         },
         {
             "category": "MD",
@@ -515,7 +515,7 @@ BAD25={
             "played": 0,
             "won": 0,
             "points": "",
-            "message": "<strike>4th Jan</strike>, 10th Jan, 11th Jan"
+            "message": "10th Jan, 11th Jan"
         },
         {
             "category": "MD",
@@ -526,7 +526,7 @@ BAD25={
             "played": 1,
             "won": 0,
             "points": "",
-            "message": "7th Jan, <strike>13th Jan</strike>, 11th Jan"
+            "message": "7th Jan, 11th Jan"
         },
         {
             "category": "XD",
@@ -813,7 +813,7 @@ BAD25={
             "scores": {
                 "round1": [
                     21,
-                    12
+                    13
                 ],
                 "round2": [
                     21,
@@ -826,11 +826,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 13,
-                "group2": 2
+                "group2": 3
             },
             "match_type": "R",
             "match_held": 1,
-            "message": " <b>Rahul Gopalakrishnan</b>,<b>Swarnim Shirke</b> won the match and got <b>13</b> points. Prafull Siddharth Barathe ,SAGAR CHOTALAL SHAH got <b>2</b> points."
+            "message": " <b>Rahul Gopalakrishnan</b>,<b>Swarnim Shirke</b> won the match and got <b>13</b> points. Prafull Siddharth Barathe ,SAGAR CHOTALAL SHAH got <b>3</b> points."
         },
         {
             "category": "MS",
@@ -932,12 +932,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    5,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    4,
+                    21
                 ],
                 "round3": [
                     0,
@@ -946,11 +946,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rohan</b>,<b></b> won the match and got <b>15</b> points. Prafull Siddharth Barathe , got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -973,11 +973,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -986,11 +986,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Jay Mestry</b>,<b></b> won the match and got <b>11</b> points. Aniket Kadu, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1012,12 +1012,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    3
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    1
                 ],
                 "round3": [
                     0,
@@ -1025,12 +1025,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rahul Gopalakrishnan</b>,<b></b> won the match and got <b>15</b> points. Shubham Sati, got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -1052,12 +1052,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    9
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    8
                 ],
                 "round3": [
                     0,
@@ -1065,12 +1065,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Pranav Bhujbal</b>,<b>Vaibhav Sharma</b> won the match and got <b>14</b> points. Nishad Prashant ,Sourav Das got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1412,12 +1412,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round3": [
                     0,
@@ -1425,12 +1425,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 13,
+                "group2": 4
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Pranav Bhujbal</b>,<b></b> won the match and got <b>13</b> points. Rahul Gopalakrishnan, got <b>4</b> points."
         },
         {
             "category": "MD",
@@ -3136,20 +3136,20 @@ BAD25={
             "PT2": 0
         },
         "MS": {
-            "Pranav Bhujbal": 15,
+            "Pranav Bhujbal": 28,
+            "Rahul Gopalakrishnan": 19,
+            "Rohan": 15,
             "Partha Pratim Deka": 14,
             "Vaibhav Sharma": 14,
             "Swarnim Shirke": 13,
             "VK VIJAY BALAJI": 13,
+            "Jay Mestry": 11,
             "Tanuman Ghosh": 4,
             "Nishad Prashant": 1,
             "Mayur Shende": 0,
             "Manish Kataria": 0,
             "Prafull Siddharth Barathe": 0,
-            "Rohan": 0,
             "Aniket Kadu": 0,
-            "Jay Mestry": 0,
-            "Rahul Gopalakrishnan": 0,
             "Shubham Sati": 0,
             "Rohan shelar": 0,
             "Asim Ansari": 0,
@@ -3179,6 +3179,11 @@ BAD25={
                 "pts": 15
             },
             {
+                "mem1": "Pranav Bhujbal",
+                "mem2": "Vaibhav Sharma",
+                "pts": 14
+            },
+            {
                 "mem1": "Rahul Gopalakrishnan",
                 "mem2": "Swarnim Shirke",
                 "pts": 13
@@ -3186,16 +3191,11 @@ BAD25={
             {
                 "mem1": "Prafull Siddharth Barathe",
                 "mem2": "SAGAR CHOTALAL SHAH",
-                "pts": 2
+                "pts": 3
             },
             {
                 "mem1": "Asim Ansari",
                 "mem2": "Shubham Sati",
-                "pts": 0
-            },
-            {
-                "mem1": "Pranav Bhujbal",
-                "mem2": "Vaibhav Sharma",
                 "pts": 0
             },
             {
