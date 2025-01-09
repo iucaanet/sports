@@ -453,7 +453,7 @@ BAD25={
         },
         {
             "category": "MD",
-            "member1": "Rohan shelar",
+            "member1": "Rohan",
             "member2": "Anindya",
             "gender1": "Male",
             "gender2": "Male",
@@ -1439,7 +1439,7 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "10th Jan, 7:40PM",
             "group1": {
-                "name1": "Rohan shelar",
+                "name1": "Rohan",
                 "name2": "Anindya",
                 "gender1": "Male",
                 "gender2": "Male"
@@ -2239,7 +2239,7 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "15th Jan, 7:40PM",
             "group1": {
-                "name1": "Rohan shelar",
+                "name1": "Rohan",
                 "name2": "Anindya",
                 "gender1": "Male",
                 "gender2": "Male"
@@ -3174,7 +3174,7 @@ BAD25={
                 "pts": 0
             },
             {
-                "mem1": "Rohan shelar",
+                "mem1": "Rohan",
                 "mem2": "Anindya",
                 "pts": 0
             },
