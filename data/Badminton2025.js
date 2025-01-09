@@ -2993,46 +2993,6 @@ BAD25={
             "message": ""
         },
         {
-            "category": "WD",
-            "date": "20th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "20th Jan, 5:40PM",
-            "group1": {
-                "name1": "TBD",
-                "name2": "TBD",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "group2": {
-                "name1": "TBD",
-                "name2": "TBD",
-                "gender1": "Female",
-                "gender2": "Female"
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "point_awards": {
-                "group1": 0,
-                "group2": 0
-            },
-            "match_type": "F",
-            "match_held": -1,
-            "message": ""
-        },
-        {
             "category": "MS",
             "date": "20th Jan",
             "match_no": 4,
