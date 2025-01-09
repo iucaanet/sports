@@ -794,7 +794,7 @@ function onBadminton_Points_Click(sender){
 
 
     wall.add_section("Women's Single")
-    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>FINALS</b>.")
+    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>SEMIFINALS</b>.")
     ws_table=points.WS
 
     // wall.add_table(Object.entries(ws_table)
@@ -807,7 +807,7 @@ function onBadminton_Points_Click(sender){
 
 
     wall.add_section("Men's Single (Under 18)")
-    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>FINALS</b>.")
+    wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>SEMIFINALS</b>.")
     msu18_table=points.MSU18
 
     wall.add_table(Object.entries(msu18_table)
