@@ -7,8 +7,20 @@ MAR25={
             "msg": ""
         },
         {
+            "name": "Vedant Purohit",
+            "gender": "Male",
+            "point": "",
+            "msg": ""
+        },
+        {
             "name": "Sharanya Shahish Sukale",
             "gender": "Female",
+            "point": "",
+            "msg": ""
+        },
+        {
+            "name": "Ojas Prafull Barathe",
+            "gender": "Male",
             "point": "",
             "msg": ""
         },
@@ -22,6 +34,12 @@ MAR25={
     "junior_run": [
         {
             "name": "Asmi More",
+            "gender": "Female",
+            "point": "",
+            "msg": ""
+        },
+        {
+            "name": "Hrudayee Rahul Gaikwad",
             "gender": "Female",
             "point": "",
             "msg": ""
@@ -49,15 +67,9 @@ MAR25={
             "gender": "Male",
             "point": "",
             "msg": ""
-        },
-        {
-            "name": "Vedant Purohit",
-            "gender": "Male",
-            "point": "",
-            "msg": ""
         }
     ],
-    "open_run": [
+    "youth_run": [
         {
             "name": "Jay Mestry",
             "gender": "Male",
@@ -123,9 +135,17 @@ MAR25={
             "gender": "Male",
             "point": "",
             "msg": ""
-        },
+        }
+    ],
+    "open_run": [
         {
             "name": "Hitesh Deshmukh",
+            "gender": "Male",
+            "point": "",
+            "msg": ""
+        },
+        {
+            "name": "Ramesh Karagani",
             "gender": "Male",
             "point": "",
             "msg": ""
@@ -159,9 +179,7 @@ MAR25={
             "gender": "Male",
             "point": "",
             "msg": ""
-        }
-    ],
-    "veteran_run": [
+        },
         {
             "name": "Shahish Keshav Sukale",
             "gender": "Male",
@@ -181,6 +199,12 @@ MAR25={
             "msg": ""
         },
         {
+            "name": "Prafull Sidharth Barathe",
+            "gender": "Male",
+            "point": "",
+            "msg": ""
+        },
+        {
             "name": "Chaitanya Rajarshi",
             "gender": "Male",
             "point": "",
@@ -191,7 +215,9 @@ MAR25={
             "gender": "Male",
             "point": "",
             "msg": ""
-        },
+        }
+    ],
+    "veteran_run": [
         {
             "name": "Samir Dhurde",
             "gender": "Male",
@@ -221,7 +247,9 @@ MAR25={
             "gender": "Male",
             "point": "",
             "msg": ""
-        },
+        }
+    ],
+    "golden_year_run": [
         {
             "name": "Shrikant More",
             "gender": "Male",

@@ -1070,13 +1070,14 @@ function onMarathonLand(){
     back_btn.classList.remove("hide");
     tabbar.clear();
     tabbar.add_tab("Participants","groups",onMarathon_Participants_Click);
-    // tabbar.add_tab("Route","route",onMarathon_Route_Click);
-    tabbar.add_tab("Readme","format_list_bulleted",onMarathon_Readme_Click);
+    tabbar.add_tab("Route","route",onMarathon_Route_Click);
+    tabbar.add_tab("Guidelines","format_list_bulleted",onMarathon_Readme_Click);
     SetDefaultTab(0);
 }
 
 function onMarathon_Participants_Click(sender){
     commonTabClickActions(sender);
+
     wall.add_section("Fun Run");
     marathonData.fun_run.forEach(partcipant=>{
         wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
@@ -1084,6 +1085,11 @@ function onMarathon_Participants_Click(sender){
     
     wall.add_section("Junior Run");
     marathonData.junior_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
+
+    wall.add_section("Youth Run");
+    marathonData.youth_run.forEach(partcipant=>{
         wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
     })
     
@@ -1097,75 +1103,104 @@ function onMarathon_Participants_Click(sender){
         wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
     })
 
+    wall.add_section("Golden Year Run");
+    marathonData.golden_year_run.forEach(partcipant=>{
+        wall.add_card_participant_single(partcipant.name,partcipant.gender,partcipant.msg,partcipant.point);
+    })
+
     
 }
 
 function onMarathon_Route_Click(sender){
     commonTabClickActions(sender);
-    wall.add_section("Route");
-    wall.clear()
-    wall.target.innerHTML +=`
-            <div class="card map span">
-                </div>
-    `
+    wall.add_section("Fun Run");
+    wall.add_text(`
+         Starting Point– Chittaranjan Parking– Akashganga Gate (Turn Right)– Takshashila
+ Gate– SPPU boys Hostel # 9– International Students Hostel– Adarsh canteen back
+ side– SPPU Computer Science Department Square and return using reverse path.-
+End Point Chittaranjan Parking
+        `,"left")
+
+    wall.add_section("Other Run");
+    wall.add_text(
+        `
+        Starting Point– Chittaranjan Parking– Akashganga Gate (Turn Right)– Takshashila
+ Gate (LHS)– SPPU boys Hostel # 9 (RHS)– International Students Hostel (RHS)
+Adarsh canteen back side (LHS)– SPPU Computer Science Department Square
+Alongside of SPPU Teacher quarters (RHS)– SPPU Electronic Department (LHS)
+SPPU New Jaykar Building (RHS)– Alongside of SPPU Department of Physics
+ (LHS)– Get on main road of Main building to SPPU Main gate near Department of
+ Physics (Turn Right)– SPPU Department of Botany (RHS)– SPPU Ambedkar
+ Garden (LHS)– SPPU Main Gate– and return using reverse path.-- End Point
+ Chittaranjan Parking
+
+        `
+    );    
+
+    wall.add_text(`
+        The LHS (Left Hand Side) and RHS (Right Hand Side) mentioned above are for
+ reference of the location mentioned in the list. If there is LHS mentioned, it means the
+ location is on the Left Hand Side of the route (while approaching to SPPU Main Gate)
+        `)
     
 }
 
 function onMarathon_Readme_Click(sender){
     commonTabClickActions(sender);
-    wall.add_section("Instructions");
-    wall.add_text(
-        `
-        <ul>
-        <li>Report to start line at least 30 minutes before the start time i.e. by <b style="color:red">7:30AM</b>.</li>
-        <li>Follow the marked route without using shortcuts.</li>
-        <li>Avail medical assistance at checkpoints if needed.</li>
 
-        </ul>
-        `,"");
-        
-        wall.add_section("Categories");
-        wall.add_text(
-            `
-            There are following four categories based on age group:
-            <ul>
-                <li><b>Fun Run</b> : 5y to 10y.</li>
-                <li><b>Junior Run</b> : 11y to 16y.</li>
-                <li><b>Open Run</b> : 17y to 39y.</li>
-                <li><b>Veterans Run</b> : above 40y.</li>
-            </ul>
-            `,"");
-    
-
-
-    wall.add_section("Disqualification Rules")
-    wall.add_text(
-        `
-        <ul>
-            <li>using shortcuts without following the marked route.</li>
-            <li>obstructing and cheating during the run.</li>
-            <li>Not finishing within the time under Did-Not-Finish (<b>DNF</b>).</>
-        </ul>
-        `,"");
-
-    wall.add_section("Facilities")
-    wall.add_text(
-        `
-        <ul>
-            <li><b>Hydration Point</b>: Water and Energy Drink.</li>
-            <li><b>Medical Aid</b>: First-aid along the route near checkpoints.</li>
-            <li><b>Refreshment</b>: Post-run refreshment includes fruits, tea, biscuits and poha/upma for all participants.</li>
-            <li><b>Guide</b>: Volunteers to guide participants and provide support.</li>
-        </ul>
-        `,"")
-
-    wall.add_section("Awards")
+    wall.add_section("Event")
     wall.add_text(`
         <ul>
-            <li><b>Medals</b> for all finishers.</li>
-            <li><b>Trophies</b> for winners in each categories.</li>
+            <li><b>Date</b> : Sunday, January 12, 2025</li>
+            <li><b>Report Time</b> : 6:30 AM</li>
+            <li><b>Starting and Ending Point</b> : Chittaranjan Parking, Near AkashGanga Guest House,
+ IUCAA, Pune</li>
         </ul>
-        `,"")
+        `,"left")
+
+        wall.add_section("Categories")
+        wall.add_text(`
+            <ul>
+                <li><b>FUN RUN</b> : 5y to 10y - 2km </li>
+                <li><b>JUNIOR RUN</b> : 11y to 18y - 5km </li>
+                <li><b>YOUTH RUN</b> : 19y to 29y - 5km </li>
+                <li><b>OPEN RUN</b> : 30y to 44y - 5km </li>
+                <li><b>VETERANS RUN</b> : 45y to 60y - 5km </li>
+                <li><b>GOLDEN YEARS RUN</b> : 60y and above - 5km </li>
+            </ul>
+            `,"left")
+
+
+        wall.add_section(" Instructions")
+        wall.add_text(`
+            <b>On The Day Rules:</b><br>
+            <ul>
+                <li>Report to the starting point in time.</li>
+                <li>Follow the given route without shortcuts.</li>
+                <li>There will be three reporting points along the route.</li>
+                <li>The representative will mark you once you have crossed the point.</li>
+            </ul>
+            <br>
+            <b>Disqualification Rules:</b><br>
+            <ul>
+                <li>Misbehavior, obstruction, or cheating during the run will result in
+ disqualification.</li>
+                <li>Not completing the route and or taking shortcuts will be considered Did
+ Not Finish (DNF).</li>
+            </ul>
+            <br>
+            <b>Facilities for participants:</b><br>
+            <ul>
+                <li>Hydration Point : There will be three hydration points along the route.</li>
+                <li>Refreshments : Post-run refreshments, including fruits and Tea / coffee poha/upma for all participants.</li>
+            </ul>
+
+
+
+            `,"left")
+        
+
+
 
 }
 
