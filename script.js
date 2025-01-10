@@ -454,10 +454,10 @@ function onHome_Updates_Click(sender){
 function onHome_Events_Click(sender){
     commonTabClickActions(sender);
     wall.add_card_event("Badminton","Started January 4th","./media/badminton.svg",onBadmintonLand);
-    wall.add_card_event("Table Tennis","Starts from January 13th","./media/table_tennis.svg",onTableTennisLand);
+    // wall.add_card_event("Table Tennis","Starts from January 13th","./media/table_tennis.svg",onTableTennisLand);
     wall.add_card_event("Marathon","On 12th January","./media/marathon.svg",onMarathonLand);
     wall.add_card_event("Chess","On 12th January","./media/chess_queen.svg",onChessLand);
-    wall.add_card_event("Cricket","","./media/cricket.svg",onCricketLand);
+    // wall.add_card_event("Cricket","","./media/cricket.svg",onCricketLand);
 }
 
 
