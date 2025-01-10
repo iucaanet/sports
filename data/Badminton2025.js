@@ -105,8 +105,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "10th Jan, 11th Jan"
         },
@@ -127,7 +127,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "6th Jan, 10th Jan"
@@ -171,7 +171,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 1,
             "points": "",
             "message": "8th Jan, 10th Jan"
@@ -182,8 +182,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -281,8 +281,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "5th Jan, 10th Jan"
         },
@@ -292,7 +292,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "10th Jan, 13th Jan"
@@ -457,8 +457,8 @@ BAD25={
             "member2": "Anindya",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -512,7 +512,7 @@ BAD25={
             "member2": "Bikram Kesari Pradhan",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "10th Jan, 11th Jan"
@@ -1292,12 +1292,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    4,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    6,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1306,11 +1306,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Partha Pratim Deka </b>,<b></b> won the match and got <b>15</b> points. Hitesh Deshmukh, got <b>0</b> points."
         },
         {
             "category": "MS-U18",
@@ -1333,11 +1333,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -1346,11 +1346,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Arjun Kohok</b>,<b></b> won the match and got <b>11</b> points. Avneesh Vijay, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1372,12 +1372,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    3,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    3,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1386,11 +1386,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>K Roshan Raj </b>,<b></b> won the match and got <b>15</b> points. Jay Mestry, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1452,12 +1452,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    9
                 ],
                 "round3": [
                     0,
@@ -1465,12 +1465,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 14,
+                "group2": 2
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rohan</b>,<b>Anindya</b> won the match and got <b>14</b> points. Shivaraj Kandhasamy,Bikram Kesari Pradhan got <b>2</b> points."
         },
         {
             "category": "WS",
@@ -3077,9 +3077,9 @@ BAD25={
         "MSU18": {
             "Vedant Purohit": 13,
             "Prasanna Khodade": 11,
+            "Arjun Kohok": 11,
             "Siddharth Bhandare": 3,
             "Avneesh Vijay": 0,
-            "Arjun Kohok": 0,
             "PT1": 0,
             "PT4": 0,
             "PT2": 0,
@@ -3096,12 +3096,13 @@ BAD25={
             "PT2": 0
         },
         "MS": {
+            "Partha Pratim Deka": 29,
             "VK VIJAY BALAJI": 28,
             "Pranav Bhujbal": 28,
             "Rahul Gopalakrishnan": 19,
             "Tanuman Ghosh": 15,
             "Rohan": 15,
-            "Partha Pratim Deka": 14,
+            "K Roshan Raj": 15,
             "Vaibhav Sharma": 14,
             "Swarnim Shirke": 13,
             "Nishad Prashant": 12,
@@ -3114,7 +3115,6 @@ BAD25={
             "Rohan shelar": 0,
             "Asim Ansari": 0,
             "Hitesh Deshmukh": 0,
-            "K Roshan Raj": 0,
             "Sourav Das": 0,
             "Shahish Keshav Sukale": 0,
             "Soumil Girish Sahu": 0,
@@ -3149,6 +3149,11 @@ BAD25={
                 "pts": 14
             },
             {
+                "mem1": "Rohan",
+                "mem2": "Anindya",
+                "pts": 14
+            },
+            {
                 "mem1": "Rahul Gopalakrishnan",
                 "mem2": "Swarnim Shirke",
                 "pts": 13
@@ -3157,6 +3162,11 @@ BAD25={
                 "mem1": "Prafull Siddharth Barathe",
                 "mem2": "SAGAR CHOTALAL SHAH",
                 "pts": 3
+            },
+            {
+                "mem1": "Shivaraj Kandhasamy",
+                "mem2": "Bikram Kesari Pradhan",
+                "pts": 2
             },
             {
                 "mem1": "Asim Ansari",
@@ -3171,16 +3181,6 @@ BAD25={
             {
                 "mem1": "Jay Mestry",
                 "mem2": "Mayur Shende",
-                "pts": 0
-            },
-            {
-                "mem1": "Rohan",
-                "mem2": "Anindya",
-                "pts": 0
-            },
-            {
-                "mem1": "Shivaraj Kandhasamy",
-                "mem2": "Bikram Kesari Pradhan",
                 "pts": 0
             },
             {
