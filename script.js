@@ -416,7 +416,7 @@ function onHome_Updates_Click(sender){
     // let day=getFormattedDate();
 
     wall.add_section("Match Results");
-    day = "8th Jan"
+    day = "9th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -433,7 +433,7 @@ function onHome_Updates_Click(sender){
 
 
     wall.add_section("Upcoming Matches");
-    day = "9th Jan"
+    day = "10th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -797,12 +797,11 @@ function onBadminton_Points_Click(sender){
     wall.add_text("There are a total of 5 teams in this category. The <b>TOP 4</b> will qualify for the <b>SEMIFINALS</b>.")
     ws_table=points.WS
 
-    // wall.add_table(Object.entries(ws_table)
-    // .filter(([name, points]) => points !== 0)
-    // .map(([name, _]) => [name, ""]),
-    // Object.values(ws_table),4)
+    wall.add_table(Object.entries(ws_table)
+    .filter(([name, points]) => points !== 0)
+    .map(([name, _]) => [name, ""]),
+    Object.values(ws_table),4)
 
-    wall.add_text("No match has been played.")
   
 
 
@@ -861,7 +860,7 @@ function onBadminton_Points_Click(sender){
 
     wall.add_text(`
         <ul>
-        <li>Gets <span class="hlspan">4</span> for a gap of <b>1</b> or <b>2</b>.</li>
+        <li>Gets <span class="hlspan">4</span> for a gap of <b>1</b> or <b>2</b> or winning one game.</li>
         <li>Gets <span class="hlspan">3</span> for a gap of <b>3</b> or <b>4</b>.</li>
         <li>Gets <span class="hlspan">2</span> for a gap of <b>5</b> or <b>6</b>.</li>
         <li>Gets <span class="hlspan">1</span> for a gap of <b>7</b> or <b>8</b>.</li>
@@ -869,7 +868,7 @@ function onBadminton_Points_Click(sender){
         </ul>
         `,"left")
     
-    wall.add_text(`By selecting the two games with the smallest score gaps, the losing side can earn a maximum of <span class="hlspan">8</span> points`,"left")
+    wall.add_text(`By selecting the two best games, the losing side can earn a maximum of <span class="hlspan">8</span> points.`,"left")
 
 
 }
@@ -1390,7 +1389,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("9<sup>th</sup> January, 8:15 AM IST");
+        wall.add_text("10<sup>th</sup> January, 8:15 AM IST");
 
     }else{
         help_btn.innerText="help";

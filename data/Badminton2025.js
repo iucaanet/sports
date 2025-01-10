@@ -39,8 +39,8 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "9th Jan, 16th Jan"
         },
@@ -50,7 +50,7 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "9th Jan, 12th Jan"
@@ -204,8 +204,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "4th Jan, 9th Jan"
         },
@@ -248,7 +248,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "8th Jan, 9th Jan"
@@ -314,7 +314,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "9th Jan, 14th Jan"
@@ -325,8 +325,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "6th Jan, 9th Jan"
         },
@@ -380,8 +380,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "6th Jan, 9th Jan"
         },
@@ -391,7 +391,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "9th Jan, 16th Jan"
@@ -424,7 +424,7 @@ BAD25={
             "member2": "Mayur Shende",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "9th Jan, 15th Jan"
@@ -435,8 +435,8 @@ BAD25={
             "member2": "Partha Pratim Deka ",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "9th Jan, 11th Jan"
         },
@@ -1093,11 +1093,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -1106,11 +1106,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Tanuman Ghosh</b>,<b></b> won the match and got <b>11</b> points. Rohan shelar, got <b>0</b> points."
         },
         {
             "category": "WS",
@@ -1132,25 +1132,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    18
                 ],
                 "round2": [
-                    0,
-                    0
+                    6,
+                    21
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    16
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 10,
+                "group2": 7
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Khushi Lalit</b>,<b></b> won the match and got <b>10</b> points. Yogita Kumari, got <b>7</b> points."
         },
         {
             "category": "MS",
@@ -1173,11 +1173,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -1186,11 +1186,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Nishad Prashant </b>,<b></b> won the match and got <b>11</b> points. Aniket Kadu, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1212,12 +1212,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    6,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    4,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1226,11 +1226,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>VK VIJAY BALAJI</b>,<b></b> won the match and got <b>15</b> points. Asim Ansari, got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -1252,12 +1252,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    3,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    4,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1266,11 +1266,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>K Roshan Raj </b>,<b>Partha Pratim Deka </b> won the match and got <b>15</b> points. Jay Mestry,Mayur Shende got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -3086,8 +3086,8 @@ BAD25={
             "PT3": 0
         },
         "WS": {
-            "Khushi Lalit": 0,
-            "Yogita Kumari": 0,
+            "Khushi Lalit": 10,
+            "Yogita Kumari": 7,
             "Radha Bhushan Joshi": 0,
             "Samruddhi Bhandare": 0,
             "Shivani chaudhary": 0,
@@ -3096,16 +3096,16 @@ BAD25={
             "PT2": 0
         },
         "MS": {
+            "VK VIJAY BALAJI": 28,
             "Pranav Bhujbal": 28,
             "Rahul Gopalakrishnan": 19,
+            "Tanuman Ghosh": 15,
             "Rohan": 15,
             "Partha Pratim Deka": 14,
             "Vaibhav Sharma": 14,
             "Swarnim Shirke": 13,
-            "VK VIJAY BALAJI": 13,
+            "Nishad Prashant": 12,
             "Jay Mestry": 11,
-            "Tanuman Ghosh": 4,
-            "Nishad Prashant": 1,
             "Mayur Shende": 0,
             "Manish Kataria": 0,
             "Prafull Siddharth Barathe": 0,
@@ -3139,6 +3139,11 @@ BAD25={
                 "pts": 15
             },
             {
+                "mem1": "K Roshan Raj",
+                "mem2": "Partha Pratim Deka",
+                "pts": 15
+            },
+            {
                 "mem1": "Pranav Bhujbal",
                 "mem2": "Vaibhav Sharma",
                 "pts": 14
@@ -3166,11 +3171,6 @@ BAD25={
             {
                 "mem1": "Jay Mestry",
                 "mem2": "Mayur Shende",
-                "pts": 0
-            },
-            {
-                "mem1": "K Roshan Raj",
-                "mem2": "Partha Pratim Deka",
                 "pts": 0
             },
             {
