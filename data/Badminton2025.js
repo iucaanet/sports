@@ -6,8 +6,8 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "11th Jan, 12th Jan"
         },
@@ -17,7 +17,7 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "11th Jan, 12th Jan"
@@ -79,11 +79,33 @@ BAD25={
         },
         {
             "category": "MS-U18",
+            "member1": "Arjun Kohok",
+            "member2": "",
+            "gender1": "Male",
+            "gender2": "",
+            "played": 2,
+            "won": 2,
+            "points": "",
+            "message": "10th Jan, 11th Jan"
+        },
+        {
+            "category": "MS-U18",
+            "member1": "Prasanna Khodade",
+            "member2": "",
+            "gender1": "Male",
+            "gender2": "",
+            "played": 2,
+            "won": 2,
+            "points": "",
+            "message": "6th Jan, 11th Jan"
+        },
+        {
+            "category": "MS-U18",
             "member1": "Vedant Purohit",
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 1,
             "points": "",
             "message": "5th Jan, 11th Jan"
@@ -94,32 +116,10 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "5th Jan, 11th Jan"
-        },
-        {
-            "category": "MS-U18",
-            "member1": "Arjun Kohok",
-            "member2": "",
-            "gender1": "Male",
-            "gender2": "",
-            "played": 1,
-            "won": 1,
-            "points": "",
-            "message": "10th Jan, 11th Jan"
-        },
-        {
-            "category": "MS-U18",
-            "member1": "Prasanna Khodade",
-            "member2": "",
-            "gender1": "Male",
-            "gender2": "",
-            "played": 1,
-            "won": 1,
-            "points": "",
-            "message": "6th Jan, 11th Jan"
         },
         {
             "category": "MS-U18",
@@ -1492,25 +1492,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    16,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    10
                 ],
                 "round3": [
-                    0,
-                    0
+                    23,
+                    21
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 12,
+                "group2": 8
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Radha Bhushan Joshi</b>,<b></b> won the match and got <b>12</b> points. Samruddhi Bhandare, got <b>8</b> points."
         },
         {
             "category": "MD",
@@ -1532,12 +1532,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    14
                 ],
                 "round3": [
                     0,
@@ -1545,12 +1545,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 13,
+                "group2": 3
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>K Roshan Raj </b>,<b>Partha Pratim Deka </b> won the match and got <b>13</b> points. Shivaraj Kandhasamy,Bikram Kesari Pradhan got <b>3</b> points."
         },
         {
             "category": "MS-U18",
@@ -1572,12 +1572,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    9
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    12
                 ],
                 "round3": [
                     0,
@@ -1585,12 +1585,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Prasanna Khodade</b>,<b></b> won the match and got <b>14</b> points. Siddharth Bhandare, got <b>0</b> points."
         },
         {
             "category": "MS-U18",
@@ -1612,25 +1612,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    17,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round3": [
-                    0,
-                    0
+                    20,
+                    22
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 8,
+                "group2": 10
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Arjun Kohok</b>,<b></b> won the match and got <b>10</b> points. Vedant Purohit, got <b>8</b> points."
         },
         {
             "category": "MD",
@@ -1652,12 +1652,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    2
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    3
                 ],
                 "round3": [
                     0,
@@ -1665,12 +1665,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Prafull Siddharth Barathe</b>,<b>SAGAR CHOTALAL SHAH</b> won the match and got <b>15</b> points. Asim Ansari,Shubham Sati got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -3075,9 +3075,9 @@ BAD25={
     ],
     "points": {
         "MSU18": {
-            "Vedant Purohit": 13,
-            "Prasanna Khodade": 11,
-            "Arjun Kohok": 11,
+            "Prasanna Khodade": 25,
+            "Arjun Kohok": 21,
+            "Vedant Purohit": 21,
             "Siddharth Bhandare": 3,
             "Avneesh Vijay": 0,
             "PT1": 0,
@@ -3086,10 +3086,10 @@ BAD25={
             "PT3": 0
         },
         "WS": {
+            "Radha Bhushan Joshi": 12,
             "Khushi Lalit": 10,
+            "Samruddhi Bhandare": 8,
             "Yogita Kumari": 7,
-            "Radha Bhushan Joshi": 0,
-            "Samruddhi Bhandare": 0,
             "Shivani chaudhary": 0,
             "PT1": 0,
             "PT4": 0,
@@ -3134,13 +3134,18 @@ BAD25={
         },
         "MD": [
             {
-                "mem1": "Tanuman Ghosh",
-                "mem2": "VK VIJAY BALAJI",
-                "pts": 15
-            },
-            {
                 "mem1": "K Roshan Raj",
                 "mem2": "Partha Pratim Deka",
+                "pts": 28
+            },
+            {
+                "mem1": "Prafull Siddharth Barathe",
+                "mem2": "SAGAR CHOTALAL SHAH",
+                "pts": 18
+            },
+            {
+                "mem1": "Tanuman Ghosh",
+                "mem2": "VK VIJAY BALAJI",
                 "pts": 15
             },
             {
@@ -3159,14 +3164,9 @@ BAD25={
                 "pts": 13
             },
             {
-                "mem1": "Prafull Siddharth Barathe",
-                "mem2": "SAGAR CHOTALAL SHAH",
-                "pts": 3
-            },
-            {
                 "mem1": "Shivaraj Kandhasamy",
                 "mem2": "Bikram Kesari Pradhan",
-                "pts": 2
+                "pts": 5
             },
             {
                 "mem1": "Asim Ansari",
