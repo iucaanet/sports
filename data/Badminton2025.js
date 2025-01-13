@@ -6,8 +6,8 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "11th Jan, 12th Jan"
         },
@@ -17,8 +17,8 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "11th Jan, 12th Jan"
         },
@@ -28,7 +28,7 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "12th Jan, 16th Jan"
@@ -50,7 +50,7 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "9th Jan, 12th Jan"
@@ -138,8 +138,8 @@ BAD25={
             "member2": "Ameya Narayan Saha",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "12th Jan"
         },
@@ -149,7 +149,7 @@ BAD25={
             "member2": "Arjun Kohok",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "12th Jan"
@@ -226,8 +226,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "12th Jan, 16th Jan"
         },
@@ -303,7 +303,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "7th Jan, 12th Jan"
@@ -1692,12 +1692,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    17,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    11,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1705,12 +1705,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 3,
+                "group2": 13
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Sourav Das</b>,<b></b> won the match and got <b>13</b> points. Manish Kataria , got <b>3</b> points."
         },
         {
             "category": "WS",
@@ -1732,25 +1732,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    10,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    18
                 ],
                 "round3": [
-                    0,
-                    0
+                    12,
+                    21
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 4,
+                "group2": 12
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Radha Bhushan Joshi</b>,<b></b> won the match and got <b>12</b> points. Yogita Kumari, got <b>4</b> points."
         },
         {
             "category": "WS",
@@ -1772,25 +1772,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    16,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    11
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 11,
+                "group2": 6
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Samruddhi Bhandare</b>,<b></b> won the match and got <b>11</b> points. Shivani chaudhary, got <b>6</b> points."
         },
         {
             "category": "MD-U18",
@@ -1812,12 +1812,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    9
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    17
                 ],
                 "round3": [
                     0,
@@ -1825,12 +1825,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 14,
+                "group2": 3
             },
             "match_type": "F",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Atharva Kakade</b> and <b>Ameya Narayan Saha</b> won Men's Double (U18) Final."
         },
         {
             "category": "MD",
@@ -3076,8 +3076,8 @@ BAD25={
     "points": {
         "MSU18": {
             "Prasanna Khodade": 25,
-            "Arjun Kohok": 21,
             "Vedant Purohit": 21,
+            "Arjun Kohok": 21,
             "Siddharth Bhandare": 3,
             "Avneesh Vijay": 0,
             "PT1": 0,
@@ -3086,11 +3086,11 @@ BAD25={
             "PT3": 0
         },
         "WS": {
-            "Radha Bhushan Joshi": 12,
+            "Radha Bhushan Joshi": 24,
+            "Samruddhi Bhandare": 19,
+            "Yogita Kumari": 11,
             "Khushi Lalit": 10,
-            "Samruddhi Bhandare": 8,
-            "Yogita Kumari": 7,
-            "Shivani chaudhary": 0,
+            "Shivani chaudhary": 6,
             "PT1": 0,
             "PT4": 0,
             "PT2": 0
@@ -3105,17 +3105,17 @@ BAD25={
             "K Roshan Raj": 15,
             "Vaibhav Sharma": 14,
             "Swarnim Shirke": 13,
+            "Sourav Das": 13,
             "Nishad Prashant": 12,
             "Jay Mestry": 11,
+            "Manish Kataria": 3,
             "Mayur Shende": 0,
-            "Manish Kataria": 0,
             "Prafull Siddharth Barathe": 0,
             "Aniket Kadu": 0,
             "Shubham Sati": 0,
             "Rohan shelar": 0,
             "Asim Ansari": 0,
             "Hitesh Deshmukh": 0,
-            "Sourav Das": 0,
             "Shahish Keshav Sukale": 0,
             "Soumil Girish Sahu": 0,
             "Shivaraj Kandhasamy": 0,
