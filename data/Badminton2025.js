@@ -215,8 +215,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -292,7 +292,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "10th Jan, 13th Jan"
@@ -413,8 +413,8 @@ BAD25={
             "member2": "Vaibhav Sharma",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "8th Jan, 13th Jan"
         },
@@ -468,8 +468,8 @@ BAD25={
             "member2": "Swarnim Shirke",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "6th Jan, 13th Jan"
         },
@@ -479,7 +479,7 @@ BAD25={
             "member2": "VK VIJAY BALAJI",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
+            "played": 2,
             "won": 1,
             "points": "",
             "message": "7th Jan, 13th Jan"
@@ -501,7 +501,7 @@ BAD25={
             "member2": "Deepak Bankar",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "13th Jan, 15th Jan"
@@ -1852,12 +1852,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    7
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    12
                 ],
                 "round3": [
                     0,
@@ -1865,12 +1865,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Pranav Bhujbal</b>,<b>Vaibhav Sharma</b> won the match and got <b>14</b> points. Tanuman Ghosh,VK VIJAY BALAJI got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -1892,12 +1892,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    7,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    4,
+                    21
                 ],
                 "round3": [
                     0,
@@ -1906,11 +1906,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rohan</b>,<b></b> won the match and got <b>15</b> points. Hitesh Deshmukh, got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -1932,12 +1932,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    1
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    8
                 ],
                 "round3": [
                     0,
@@ -1945,12 +1945,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rahul Gopalakrishnan</b>,<b>Swarnim Shirke</b> won the match and got <b>15</b> points. Shahish Keshav Sukale,Deepak Bankar got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -2439,13 +2439,13 @@ BAD25={
             "match_time": "5:00PM",
             "date_time": "17th Jan, 5:00PM",
             "group1": {
-                "name1": "PT1",
+                "name1": "Prasanna Khodade",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT4",
+                "name1": "Siddharth Bhandare",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2639,13 +2639,13 @@ BAD25={
             "match_time": "5:00PM",
             "date_time": "18th Jan, 5:00PM",
             "group1": {
-                "name1": "PT2",
+                "name1": "Arjun Kohok",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT3",
+                "name1": "Vedant Purohit",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -3079,11 +3079,7 @@ BAD25={
             "Vedant Purohit": 21,
             "Arjun Kohok": 21,
             "Siddharth Bhandare": 3,
-            "Avneesh Vijay": 0,
-            "PT1": 0,
-            "PT4": 0,
-            "PT2": 0,
-            "PT3": 0
+            "Avneesh Vijay": 0
         },
         "WS": {
             "Radha Bhushan Joshi": 24,
@@ -3096,12 +3092,12 @@ BAD25={
             "PT2": 0
         },
         "MS": {
+            "Rohan": 30,
             "Partha Pratim Deka": 29,
             "VK VIJAY BALAJI": 28,
             "Pranav Bhujbal": 28,
             "Rahul Gopalakrishnan": 19,
             "Tanuman Ghosh": 15,
-            "Rohan": 15,
             "K Roshan Raj": 15,
             "Vaibhav Sharma": 14,
             "Swarnim Shirke": 13,
@@ -3134,6 +3130,16 @@ BAD25={
         },
         "MD": [
             {
+                "mem1": "Rahul Gopalakrishnan",
+                "mem2": "Swarnim Shirke",
+                "pts": 28
+            },
+            {
+                "mem1": "Pranav Bhujbal",
+                "mem2": "Vaibhav Sharma",
+                "pts": 28
+            },
+            {
                 "mem1": "K Roshan Raj",
                 "mem2": "Partha Pratim Deka",
                 "pts": 28
@@ -3149,19 +3155,9 @@ BAD25={
                 "pts": 15
             },
             {
-                "mem1": "Pranav Bhujbal",
-                "mem2": "Vaibhav Sharma",
-                "pts": 14
-            },
-            {
                 "mem1": "Rohan",
                 "mem2": "Anindya",
                 "pts": 14
-            },
-            {
-                "mem1": "Rahul Gopalakrishnan",
-                "mem2": "Swarnim Shirke",
-                "pts": 13
             },
             {
                 "mem1": "Shivaraj Kandhasamy",
