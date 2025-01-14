@@ -193,7 +193,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "14th Jan, 16th Jan"
@@ -270,8 +270,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "4th Jan, 14th Jan"
         },
@@ -314,7 +314,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "9th Jan, 14th Jan"
@@ -358,8 +358,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "14th Jan, 16th Jan"
         },
@@ -534,7 +534,7 @@ BAD25={
             "member2": "Shreya Mukherjee",
             "gender1": "Male",
             "gender2": "Female",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "14th Jan"
@@ -545,8 +545,8 @@ BAD25={
             "member2": "Shivani Chaudhary",
             "gender1": "Male",
             "gender2": "Female",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "14th Jan"
         }
@@ -1989,8 +1989,8 @@ BAD25={
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": "Reschedule Requested."
         },
         {
             "category": "MS",
@@ -2012,11 +2012,11 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
+                    21,
                     0
                 ],
                 "round2": [
-                    0,
+                    21,
                     0
                 ],
                 "round3": [
@@ -2025,12 +2025,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 11,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Shahish Keshav Sukale</b>,<b></b> won the match and got <b>11</b> points. Soumil Girish Sahu, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -2053,11 +2053,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -2066,11 +2066,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Swarnim Shirke</b>,<b></b> won the match and got <b>11</b> points. Rohan shelar, got <b>0</b> points."
         },
         {
             "category": "XD",
@@ -2092,12 +2092,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    5,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    8,
+                    21
                 ],
                 "round3": [
                     0,
@@ -2106,11 +2106,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 15
             },
             "match_type": "F",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Vaibhav Sharma</b> and <b>Shivani Chaudhary</b> won Mixed Double Final."
         },
         {
             "category": "MS",
@@ -3096,14 +3096,15 @@ BAD25={
             "Partha Pratim Deka": 29,
             "VK VIJAY BALAJI": 28,
             "Pranav Bhujbal": 28,
+            "Swarnim Shirke": 24,
             "Rahul Gopalakrishnan": 19,
             "Tanuman Ghosh": 15,
             "K Roshan Raj": 15,
             "Vaibhav Sharma": 14,
-            "Swarnim Shirke": 13,
             "Sourav Das": 13,
             "Nishad Prashant": 12,
             "Jay Mestry": 11,
+            "Shahish Keshav Sukale": 11,
             "Manish Kataria": 3,
             "Mayur Shende": 0,
             "Prafull Siddharth Barathe": 0,
@@ -3112,7 +3113,6 @@ BAD25={
             "Rohan shelar": 0,
             "Asim Ansari": 0,
             "Hitesh Deshmukh": 0,
-            "Shahish Keshav Sukale": 0,
             "Soumil Girish Sahu": 0,
             "Shivaraj Kandhasamy": 0,
             "PT1": 0,
