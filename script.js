@@ -1389,7 +1389,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("13<sup>th</sup> January, 11:37 PM IST");
+        wall.add_text("14<sup>th</sup> January, 10:50 AM IST");
 
     }else{
         help_btn.innerText="help";
