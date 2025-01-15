@@ -61,7 +61,7 @@ BAD25={
             "member2": "Yogita Kumari",
             "gender1": "Female",
             "gender2": "Female",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "15th Jan"
@@ -72,8 +72,8 @@ BAD25={
             "member2": "Shivani chaudhary",
             "gender1": "Female",
             "gender2": "Female",
-            "played": 0,
-            "won": 0,
+            "played": 1,
+            "won": 1,
             "points": "",
             "message": "15th Jan"
         },
@@ -237,8 +237,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "6th Jan, 16th Jan"
         },
@@ -369,7 +369,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 0,
+            "played": 1,
             "won": 0,
             "points": "",
             "message": "15th Jan, 16th Jan"
@@ -424,7 +424,7 @@ BAD25={
             "member2": "Mayur Shende",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "9th Jan, 15th Jan"
@@ -435,8 +435,8 @@ BAD25={
             "member2": "Partha Pratim Deka ",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "9th Jan, 11th Jan"
         },
@@ -446,8 +446,8 @@ BAD25={
             "member2": "Sourav Das",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 15th Jan"
         },
@@ -457,8 +457,8 @@ BAD25={
             "member2": "Anindya",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -501,7 +501,7 @@ BAD25={
             "member2": "Deepak Bankar",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "13th Jan, 15th Jan"
@@ -2092,12 +2092,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    8
                 ],
                 "round3": [
                     0,
@@ -2105,12 +2105,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 14,
+                "group2": 2
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Vaibhav Sharma</b>,<b></b> won the match and got <b>14</b> points. Shivaraj Kandhasamy, got <b>2</b> points."
         },
         {
             "category": "WD",
@@ -2132,12 +2132,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    13
                 ],
                 "round3": [
                     0,
@@ -2145,12 +2145,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 13,
+                "group2": 3
             },
             "match_type": "F",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Radha Bhushan Joshi</b> and <b>Shivani chaudhary</b> won Women's Double Final."
         },
         {
             "category": "MD",
@@ -2173,11 +2173,11 @@ BAD25={
             "scores": {
                 "round1": [
                     0,
-                    0
+                    21
                 ],
                 "round2": [
                     0,
-                    0
+                    21
                 ],
                 "round3": [
                     0,
@@ -2186,11 +2186,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 11
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Nishad Prashant </b>,<b>Sourav Das</b> won the match and got <b>11</b> points. Jay Mestry,Mayur Shende got <b>0</b> points."
         },
         {
             "category": "MD",
@@ -2212,11 +2212,11 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    2
                 ],
                 "round2": [
-                    0,
+                    21,
                     0
                 ],
                 "round3": [
@@ -2225,12 +2225,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Rohan</b>,<b>Anindya</b> won the match and got <b>15</b> points. Shahish Keshav Sukale,Deepak Bankar got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -2919,14 +2919,14 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "19th Jan, 7:00PM",
             "group1": {
-                "name1": "PT1",
-                "name2": "PT1",
+                "name1": "Rohan",
+                "name2": "Anindya",
                 "gender1": "Male",
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "PT4",
-                "name2": "PT4",
+                "name1": "K Roshan Raj ",
+                "name2": "Partha Pratim Deka ",
                 "gender1": "Male",
                 "gender2": "Male"
             },
@@ -2959,14 +2959,14 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "19th Jan, 7:40PM",
             "group1": {
-                "name1": "PT2",
-                "name2": "PT2",
+                "name1": "Pranav Bhujbal",
+                "name2": "Vaibhav Sharma",
                 "gender1": "Male",
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "PT3",
-                "name2": "PT3",
+                "name1": "Rahul Gopalakrishnan",
+                "name2": "Swarnim Shirke",
                 "gender1": "Male",
                 "gender2": "Male"
             },
@@ -3095,17 +3095,18 @@ BAD25={
             "Rohan": 30,
             "Partha Pratim Deka": 29,
             "VK VIJAY BALAJI": 28,
+            "Vaibhav Sharma": 28,
             "Pranav Bhujbal": 28,
             "Swarnim Shirke": 24,
             "Rahul Gopalakrishnan": 19,
             "Tanuman Ghosh": 15,
             "K Roshan Raj": 15,
-            "Vaibhav Sharma": 14,
             "Sourav Das": 13,
             "Nishad Prashant": 12,
             "Jay Mestry": 11,
             "Shahish Keshav Sukale": 11,
             "Manish Kataria": 3,
+            "Shivaraj Kandhasamy": 2,
             "Mayur Shende": 0,
             "Prafull Siddharth Barathe": 0,
             "Aniket Kadu": 0,
@@ -3114,7 +3115,6 @@ BAD25={
             "Asim Ansari": 0,
             "Hitesh Deshmukh": 0,
             "Soumil Girish Sahu": 0,
-            "Shivaraj Kandhasamy": 0,
             "PT1": 0,
             "PT8": 0,
             "PT2": 0,
@@ -3130,13 +3130,18 @@ BAD25={
         },
         "MD": [
             {
-                "mem1": "Rahul Gopalakrishnan",
-                "mem2": "Swarnim Shirke",
-                "pts": 28
+                "mem1": "Rohan",
+                "mem2": "Anindya",
+                "pts": 29
             },
             {
                 "mem1": "Pranav Bhujbal",
                 "mem2": "Vaibhav Sharma",
+                "pts": 28
+            },
+            {
+                "mem1": "Rahul Gopalakrishnan",
+                "mem2": "Swarnim Shirke",
                 "pts": 28
             },
             {
@@ -3155,9 +3160,9 @@ BAD25={
                 "pts": 15
             },
             {
-                "mem1": "Rohan",
-                "mem2": "Anindya",
-                "pts": 14
+                "mem1": "Nishad Prashant",
+                "mem2": "Sourav Das",
+                "pts": 11
             },
             {
                 "mem1": "Shivaraj Kandhasamy",
@@ -3170,11 +3175,6 @@ BAD25={
                 "pts": 0
             },
             {
-                "mem1": "Nishad Prashant",
-                "mem2": "Sourav Das",
-                "pts": 0
-            },
-            {
                 "mem1": "Jay Mestry",
                 "mem2": "Mayur Shende",
                 "pts": 0
@@ -3182,26 +3182,6 @@ BAD25={
             {
                 "mem1": "Shahish Keshav Sukale",
                 "mem2": "Deepak Bankar",
-                "pts": 0
-            },
-            {
-                "mem1": "PT1",
-                "mem2": "PT1",
-                "pts": 0
-            },
-            {
-                "mem1": "PT4",
-                "mem2": "PT4",
-                "pts": 0
-            },
-            {
-                "mem1": "PT2",
-                "mem2": "PT2",
-                "pts": 0
-            },
-            {
-                "mem1": "PT3",
-                "mem2": "PT3",
                 "pts": 0
             }
         ]
