@@ -1955,46 +1955,6 @@ BAD25={
         {
             "category": "MS",
             "date": "14th Jan",
-            "match_no": 2,
-            "match_time": "5:40PM",
-            "date_time": "14th Jan, 5:40PM",
-            "group1": {
-                "name1": "Prafull Siddharth Barathe",
-                "name2": "",
-                "gender1": "Male",
-                "gender2": ""
-            },
-            "group2": {
-                "name1": "Shubham Sati",
-                "name2": "",
-                "gender1": "Male",
-                "gender2": ""
-            },
-            "scores": {
-                "round1": [
-                    0,
-                    0
-                ],
-                "round2": [
-                    0,
-                    0
-                ],
-                "round3": [
-                    0,
-                    0
-                ]
-            },
-            "point_awards": {
-                "group1": 0,
-                "group2": 0
-            },
-            "match_type": "R",
-            "match_held": 0,
-            "message": "Reschedule Requested."
-        },
-        {
-            "category": "MS",
-            "date": "14th Jan",
             "match_no": 3,
             "match_time": "6:20PM",
             "date_time": "14th Jan, 6:20PM",
@@ -2119,7 +2079,7 @@ BAD25={
             "match_time": "5:40PM",
             "date_time": "15th Jan, 5:40PM",
             "group1": {
-                "name1": "K Roshan Raj ",
+                "name1": "Vaibhav Sharma",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2249,6 +2209,46 @@ BAD25={
                 "name2": "Deepak Bankar",
                 "gender1": "Male",
                 "gender2": "Male"
+            },
+            "scores": {
+                "round1": [
+                    0,
+                    0
+                ],
+                "round2": [
+                    0,
+                    0
+                ],
+                "round3": [
+                    0,
+                    0
+                ]
+            },
+            "point_awards": {
+                "group1": 0,
+                "group2": 0
+            },
+            "match_type": "R",
+            "match_held": -1,
+            "message": ""
+        },
+        {
+            "category": "MS",
+            "date": "16th Jan",
+            "match_no": 1,
+            "match_time": "5:00PM",
+            "date_time": "16th Jan, 5:00PM",
+            "group1": {
+                "name1": "Prafull Siddharth Barathe",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
+            },
+            "group2": {
+                "name1": "Shubham Sati",
+                "name2": "",
+                "gender1": "Male",
+                "gender2": ""
             },
             "scores": {
                 "round1": [
@@ -2405,7 +2405,7 @@ BAD25={
                 "gender2": ""
             },
             "group2": {
-                "name1": "Vaibhav Sharma",
+                "name1": "K Roshan Raj ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""

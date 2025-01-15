@@ -477,7 +477,7 @@ function onBadmintonLand(){
     tabbar.add_tab("Players","groups",onBadminton_Player_Click);
     tabbar.add_tab("Matches","sports",onBadminton_Matches_Click);
     tabbar.add_tab("Points","leaderboard",onBadminton_Points_Click)
-    tabbar.add_tab("Reschedules","event_repeat",onBadminton_Reschedule_Click);
+    // tabbar.add_tab("Reschedules","event_repeat",onBadminton_Reschedule_Click);
 
     SetDefaultTab(0);
     
@@ -1389,7 +1389,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("14<sup>th</sup> January, 8:28 PM IST");
+        wall.add_text("15<sup>th</sup> January, 3:11 PM IST");
 
     }else{
         help_btn.innerText="help";
