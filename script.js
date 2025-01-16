@@ -416,7 +416,7 @@ function onHome_Updates_Click(sender){
     // let day=getFormattedDate();
 
     wall.add_section("Match Results");
-    day = "15th Jan"
+    day = "16th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -433,7 +433,7 @@ function onHome_Updates_Click(sender){
 
 
     wall.add_section("Upcoming Matches");
-    day = "16th Jan"
+    day = "17th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -1390,7 +1390,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("16<sup>th</sup> January, 4:20 PM IST");
+        wall.add_text("17<sup>th</sup> January, 2:41 AM IST");
 
     }else{
         help_btn.innerText="help";

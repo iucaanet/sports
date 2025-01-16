@@ -28,8 +28,8 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "12th Jan, 16th Jan"
         },
@@ -39,7 +39,7 @@ BAD25={
             "member2": "",
             "gender1": "Female",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 1,
             "points": "",
             "message": "9th Jan, 16th Jan"
@@ -182,8 +182,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "10th Jan, 15th Jan"
         },
@@ -193,7 +193,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "14th Jan, 16th Jan"
@@ -226,8 +226,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 1,
+            "played": 2,
+            "won": 2,
             "points": "",
             "message": "12th Jan, 16th Jan"
         },
@@ -347,8 +347,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "8th Jan, 14th Jan"
         },
@@ -358,7 +358,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 1,
             "points": "",
             "message": "14th Jan, 16th Jan"
@@ -369,7 +369,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "15th Jan, 16th Jan"
@@ -391,8 +391,8 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "9th Jan, 16th Jan"
         },
@@ -402,7 +402,7 @@ BAD25={
             "member2": "",
             "gender1": "Male",
             "gender2": "",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "8th Jan, 14th Jan"
@@ -490,8 +490,8 @@ BAD25={
             "member2": "SAGAR CHOTALAL SHAH",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
-            "won": 0,
+            "played": 2,
+            "won": 1,
             "points": "",
             "message": "6th Jan, 11th Jan"
         },
@@ -512,7 +512,7 @@ BAD25={
             "member2": "Bikram Kesari Pradhan",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "10th Jan, 11th Jan"
@@ -523,7 +523,7 @@ BAD25={
             "member2": "Shubham Sati",
             "gender1": "Male",
             "gender2": "Male",
-            "played": 1,
+            "played": 2,
             "won": 0,
             "points": "",
             "message": "7th Jan, 11th Jan"
@@ -2252,11 +2252,11 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
+                    21,
                     0
                 ],
                 "round2": [
-                    0,
+                    21,
                     0
                 ],
                 "round3": [
@@ -2265,12 +2265,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 11,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": " <b>Asim Ansari</b>,<b></b> won the match and got <b>11</b> points. Soumil Girish Sahu, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -2292,12 +2292,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    4
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    3
                 ],
                 "round3": [
                     0,
@@ -2305,12 +2305,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Prafull Siddharth Barathe</b>,<b></b> won the match and got <b>15</b> points. Shubham Sati, got <b>0</b> points."
         },
         {
             "category": "WS",
@@ -2332,12 +2332,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    8,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    6,
+                    21
                 ],
                 "round3": [
                     0,
@@ -2346,11 +2346,11 @@ BAD25={
             },
             "point_awards": {
                 "group1": 0,
-                "group2": 0
+                "group2": 14
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Shivani chaudhary</b>,<b></b> won the match and got <b>14</b> points. Khushi Lalit, got <b>0</b> points."
         },
         {
             "category": "MS",
@@ -2372,12 +2372,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    16,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    15,
+                    21
                 ],
                 "round3": [
                     0,
@@ -2385,12 +2385,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 4,
+                "group2": 13
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>K Roshan Raj </b>,<b></b> won the match and got <b>13</b> points. Shivaraj Kandhasamy, got <b>4</b> points."
         },
         {
             "category": "MS",
@@ -2412,12 +2412,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    22,
+                    20
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    17
                 ],
                 "round3": [
                     0,
@@ -2425,12 +2425,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 12,
+                "group2": 7
             },
             "match_type": "R",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": " <b>Sourav Das</b>,<b></b> won the match and got <b>12</b> points. Shahish Keshav Sukale, got <b>7</b> points."
         },
         {
             "category": "MS-U18",
@@ -2479,13 +2479,13 @@ BAD25={
             "match_time": "5:40PM",
             "date_time": "17th Jan, 5:40PM",
             "group1": {
-                "name1": "PT1",
+                "name1": "Rohan",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT8",
+                "name1": "Swarnim Shirke",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2519,13 +2519,13 @@ BAD25={
             "match_time": "6:20PM",
             "date_time": "17th Jan, 6:20PM",
             "group1": {
-                "name1": "PT2",
+                "name1": "Partha Pratim Deka ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT7",
+                "name1": "Sourav Das",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2559,13 +2559,13 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "17th Jan, 7:00PM",
             "group1": {
-                "name1": "PT3",
+                "name1": "K Roshan Raj ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT6",
+                "name1": "VK VIJAY BALAJI",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2599,13 +2599,13 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "17th Jan, 7:40PM",
             "group1": {
-                "name1": "PT4",
+                "name1": "Vaibhav Sharma",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT5",
+                "name1": "Pranav Bhujbal",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2679,13 +2679,13 @@ BAD25={
             "match_time": "5:40PM",
             "date_time": "18th Jan, 5:40PM",
             "group1": {
-                "name1": "PT1",
+                "name1": "Radha Bhushan Joshi",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT4",
+                "name1": "Yogita Kumari",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
@@ -2719,13 +2719,13 @@ BAD25={
             "match_time": "6:20PM",
             "date_time": "18th Jan, 6:20PM",
             "group1": {
-                "name1": "PT2",
+                "name1": "Shivani chaudhary",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "PT4",
+                "name1": "Samruddhi Bhandare",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
@@ -2925,8 +2925,8 @@ BAD25={
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "K Roshan Raj ",
-                "name2": "Partha Pratim Deka ",
+                "name1": "Rahul Gopalakrishnan",
+                "name2": "Swarnim Shirke",
                 "gender1": "Male",
                 "gender2": "Male"
             },
@@ -2965,8 +2965,8 @@ BAD25={
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "Rahul Gopalakrishnan",
-                "name2": "Swarnim Shirke",
+                "name1": "K Roshan Raj ",
+                "name2": "Partha Pratim Deka ",
                 "gender1": "Male",
                 "gender2": "Male"
             },
@@ -3083,46 +3083,35 @@ BAD25={
         },
         "WS": {
             "Radha Bhushan Joshi": 24,
+            "Shivani chaudhary": 20,
             "Samruddhi Bhandare": 19,
             "Yogita Kumari": 11,
-            "Khushi Lalit": 10,
-            "Shivani chaudhary": 6,
-            "PT1": 0,
-            "PT4": 0,
-            "PT2": 0
+            "Khushi Lalit": 10
         },
         "MS": {
             "Rohan": 30,
             "Partha Pratim Deka": 29,
-            "VK VIJAY BALAJI": 28,
+            "K Roshan Raj": 28,
             "Vaibhav Sharma": 28,
             "Pranav Bhujbal": 28,
+            "VK VIJAY BALAJI": 28,
+            "Sourav Das": 25,
             "Swarnim Shirke": 24,
             "Rahul Gopalakrishnan": 19,
+            "Shahish Keshav Sukale": 18,
             "Tanuman Ghosh": 15,
-            "K Roshan Raj": 15,
-            "Sourav Das": 13,
+            "Prafull Siddharth Barathe": 15,
             "Nishad Prashant": 12,
             "Jay Mestry": 11,
-            "Shahish Keshav Sukale": 11,
+            "Asim Ansari": 11,
+            "Shivaraj Kandhasamy": 6,
             "Manish Kataria": 3,
-            "Shivaraj Kandhasamy": 2,
             "Mayur Shende": 0,
-            "Prafull Siddharth Barathe": 0,
             "Aniket Kadu": 0,
             "Shubham Sati": 0,
             "Rohan shelar": 0,
-            "Asim Ansari": 0,
             "Hitesh Deshmukh": 0,
             "Soumil Girish Sahu": 0,
-            "PT1": 0,
-            "PT8": 0,
-            "PT2": 0,
-            "PT7": 0,
-            "PT3": 0,
-            "PT6": 0,
-            "PT4": 0,
-            "PT5": 0,
             "QF1": 0,
             "QF4": 0,
             "QF2": 0,
@@ -3140,13 +3129,13 @@ BAD25={
                 "pts": 28
             },
             {
-                "mem1": "Rahul Gopalakrishnan",
-                "mem2": "Swarnim Shirke",
+                "mem1": "K Roshan Raj",
+                "mem2": "Partha Pratim Deka",
                 "pts": 28
             },
             {
-                "mem1": "K Roshan Raj",
-                "mem2": "Partha Pratim Deka",
+                "mem1": "Rahul Gopalakrishnan",
+                "mem2": "Swarnim Shirke",
                 "pts": 28
             },
             {
