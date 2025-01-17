@@ -416,7 +416,7 @@ function onHome_Updates_Click(sender){
     // let day=getFormattedDate();
 
     wall.add_section("Match Results");
-    day = "16th Jan"
+    day = "17th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -433,7 +433,7 @@ function onHome_Updates_Click(sender){
 
 
     wall.add_section("Upcoming Matches");
-    day = "17th Jan"
+    day = "18th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 

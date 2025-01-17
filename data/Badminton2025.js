@@ -2452,11 +2452,11 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
+                    21,
                     0
                 ],
                 "round2": [
-                    0,
+                    21,
                     0
                 ],
                 "round3": [
@@ -2465,12 +2465,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 11,
                 "group2": 0
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 0,
+            "message": "<b>Prasanna Khodade</b> qualifies for SEMIFINALS. "
         },
         {
             "category": "MS",
@@ -2492,12 +2492,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    10
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    11
                 ],
                 "round3": [
                     0,
@@ -2505,12 +2505,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "QF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Rohan</b>  qualifies for SEMIFINALS. "
         },
         {
             "category": "MS",
@@ -2532,12 +2532,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    6
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    7
                 ],
                 "round3": [
                     0,
@@ -2545,12 +2545,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "QF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Partha Pratim Deka</b> qualifies for SEMIFINALS. "
         },
         {
             "category": "MS",
@@ -2572,11 +2572,11 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
+                    21,
                     0
                 ],
                 "round2": [
-                    0,
+                    21,
                     0
                 ],
                 "round3": [
@@ -2585,12 +2585,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 15,
                 "group2": 0
             },
             "match_type": "QF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>K Roshan Raj</b> qualifies for SEMIFINALS. "
         },
         {
             "category": "MS",
@@ -2612,25 +2612,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    20,
+                    22
                 ],
                 "round2": [
-                    0,
-                    0
+                    23,
+                    21
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    17
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 10,
+                "group2": 8
             },
             "match_type": "QF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Vaibhav Sharma</b> qualifies for SEMIFINALS."
         },
         {
             "category": "MS-U18",
@@ -2759,13 +2759,13 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "18th Jan, 7:00PM",
             "group1": {
-                "name1": "QF1",
+                "name1": "Rohan",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "QF4",
+                "name1": "Vaibhav Sharma",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2799,13 +2799,13 @@ BAD25={
             "match_time": "7:40PM",
             "date_time": "18th Jan, 7:40PM",
             "group1": {
-                "name1": "QF2",
+                "name1": "Partha Pratim Deka ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "QF3",
+                "name1": "K Roshan Raj ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2839,7 +2839,7 @@ BAD25={
             "match_time": "5:40PM",
             "date_time": "19th Jan, 5:40PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "Prasanna Khodade",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
