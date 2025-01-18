@@ -2713,21 +2713,21 @@ BAD25={
             "message": ""
         },
         {
-            "category": "WS",
+            "category": "MS",
             "date": "18th Jan",
             "match_no": 3,
             "match_time": "6:20PM",
             "date_time": "18th Jan, 6:20PM",
             "group1": {
-                "name1": "Shivani chaudhary",
+                "name1": "Rohan",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "Samruddhi Bhandare",
+                "name1": "Vaibhav Sharma",
                 "name2": "",
-                "gender1": "Female",
+                "gender1": "Male",
                 "gender2": ""
             },
             "scores": {
@@ -2753,21 +2753,21 @@ BAD25={
             "message": ""
         },
         {
-            "category": "MS",
+            "category": "WS",
             "date": "18th Jan",
             "match_no": 4,
             "match_time": "7:00PM",
             "date_time": "18th Jan, 7:00PM",
             "group1": {
-                "name1": "Rohan",
+                "name1": "Shivani chaudhary",
                 "name2": "",
-                "gender1": "Male",
+                "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "Vaibhav Sharma",
+                "name1": "Samruddhi Bhandare",
                 "name2": "",
-                "gender1": "Male",
+                "gender1": "Female",
                 "gender2": ""
             },
             "scores": {
