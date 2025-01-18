@@ -2470,7 +2470,7 @@ BAD25={
             },
             "match_type": "SF",
             "match_held": 0,
-            "message": "<b>Prasanna Khodade</b> qualifies for SEMIFINALS. "
+            "message": "<b>Prasanna Khodade</b> qualifies for the FINAL. "
         },
         {
             "category": "MS",
@@ -2652,25 +2652,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    17
                 ],
                 "round2": [
-                    0,
-                    0
+                    15,
+                    21
                 ],
                 "round3": [
-                    0,
-                    0
+                    17,
+                    21
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 7,
+                "group2": 11
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Vedant Purohit</b> qualifies for the FINAL."
         },
         {
             "category": "WS",
@@ -2692,12 +2692,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    14
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    19
                 ],
                 "round3": [
                     0,
@@ -2705,12 +2705,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 13,
+                "group2": 5
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Radha Bhushan Joshi</b> qualifies for the FINAL."
         },
         {
             "category": "MS",
@@ -2732,25 +2732,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    15
                 ],
                 "round2": [
-                    0,
-                    0
+                    19,
+                    21
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    17
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 11,
+                "group2": 7
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Rohan</b> qualifies for for the FINAL."
         },
         {
             "category": "WS",
@@ -2772,12 +2772,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    18,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    13,
+                    21
                 ],
                 "round3": [
                     0,
@@ -2785,12 +2785,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 4,
+                "group2": 13
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Samruddhi Bhandare</b> qualifies for the FINAL."
         },
         {
             "category": "MS",
@@ -2812,25 +2812,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    8,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    18
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    18
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 10,
+                "group2": 7
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Partha Pratim Deka</b> qualifies for the FINAL. "
         },
         {
             "category": "MS-U18",
@@ -2845,7 +2845,7 @@ BAD25={
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "Vedant Purohit",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
@@ -2879,13 +2879,13 @@ BAD25={
             "match_time": "6:20PM",
             "date_time": "19th Jan, 6:20PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "Radha Bhushan Joshi",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "Samruddhi Bhandare",
                 "name2": "",
                 "gender1": "Female",
                 "gender2": ""
@@ -2999,13 +2999,13 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "20th Jan, 7:00PM",
             "group1": {
-                "name1": "TBD",
+                "name1": "Rohan",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
             },
             "group2": {
-                "name1": "TBD",
+                "name1": "Partha Pratim Deka ",
                 "name2": "",
                 "gender1": "Male",
                 "gender2": ""
