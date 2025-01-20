@@ -416,7 +416,7 @@ function onHome_Updates_Click(sender){
     // let day=getFormattedDate();
 
     wall.add_section("Match Results");
-    day = "18th Jan"
+    day = "19th Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -433,7 +433,22 @@ function onHome_Updates_Click(sender){
 
 
     wall.add_section("Upcoming Matches");
-    day = "19th Jan"
+    day = "20th Jan"
+    matches.forEach(mat=>{
+        if (mat.date===day){
+            wall.add_card_match(mat.date_time, mat.category, 
+                mat.group1.name1, mat.group1.name2, mat.group2.name1, mat.group2.name2, 
+                mat.group1.gender1, mat.group1.gender2, mat.group2.gender1, mat.group2.gender2, 
+                mat.message, 
+                mat.scores.round1[0], mat.scores.round1[1], 
+                mat.scores.round2[0], mat.scores.round2[1], 
+                mat.scores.round3[0], mat.scores.round3[1],
+                mat.match_type);
+            }
+
+    })
+
+    day = "21st Jan"
     matches.forEach(mat=>{
         if (mat.date===day){
             wall.add_card_match(mat.date_time, mat.category, 
@@ -1390,7 +1405,7 @@ function onHelp_Click(){
         wall.add_text("If you wish to suggest new features or need additional information, please reach out to the developers, <b>Ranit Behera</b> and <b>Anirban Kopty</b>, for assistance.")
         
         wall.add_section("Last Updated")
-        wall.add_text("19<sup>th</sup> January, 1:20AM IST");
+        wall.add_text("20<sup>th</sup> January, 9:00AM IST");
 
     }else{
         help_btn.innerText="help";

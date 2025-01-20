@@ -2852,25 +2852,25 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    23
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    13
                 ],
                 "round3": [
-                    0,
-                    0
+                    21,
+                    15
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 11,
+                "group2": 6
             },
             "match_type": "F",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Prasanna Khodade</b> won Men's Single (U18) Final."
         },
         {
             "category": "WS",
@@ -2892,12 +2892,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    13,
+                    21
                 ],
                 "round2": [
-                    0,
-                    0
+                    8,
+                    21
                 ],
                 "round3": [
                     0,
@@ -2905,12 +2905,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 1,
+                "group2": 14
             },
             "match_type": "F",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Samruddhi Bhandare</b> won Women's Single Final."
         },
         {
             "category": "MD",
@@ -2932,12 +2932,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    8
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    10
                 ],
                 "round3": [
                     0,
@@ -2945,12 +2945,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
+                "group1": 14,
                 "group2": 0
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Rohan</b> and <b>Anindya</b> qualify for the Final."
         },
         {
             "category": "MD",
@@ -2972,12 +2972,12 @@ BAD25={
             },
             "scores": {
                 "round1": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round2": [
-                    0,
-                    0
+                    21,
+                    16
                 ],
                 "round3": [
                     0,
@@ -2985,12 +2985,12 @@ BAD25={
                 ]
             },
             "point_awards": {
-                "group1": 0,
-                "group2": 0
+                "group1": 12,
+                "group2": 4
             },
             "match_type": "SF",
-            "match_held": -1,
-            "message": ""
+            "match_held": 1,
+            "message": "<b>Pranav Bhujbal</b> and <b>Vaibhav Sharma</b> qualify for the FINAL."
         },
         {
             "category": "MS",
@@ -3039,14 +3039,14 @@ BAD25={
             "match_time": "7:00PM",
             "date_time": "21st Jan, 7:00PM",
             "group1": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "Rohan",
+                "name2": "Anindya",
                 "gender1": "Male",
                 "gender2": "Male"
             },
             "group2": {
-                "name1": "TBD",
-                "name2": "TBD",
+                "name1": "Pranav Bhujbal",
+                "name2": "Vaibhav Sharma",
                 "gender1": "Male",
                 "gender2": "Male"
             },
